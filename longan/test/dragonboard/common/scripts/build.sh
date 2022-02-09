@@ -43,7 +43,7 @@ cp -rf extra/* rootfs/
 echo "generating rootfs..."
 
 NR_SIZE=`du -sm rootfs | awk '{print $1}'`
-NEW_NR_SIZE=$(((($NR_SIZE+572)/16)*16))
+NEW_NR_SIZE=$(((($NR_SIZE+128)/16)*16))
 #NEW_NR_SIZE=360
 TARGET_IMAGE=rootfs.ext4
 

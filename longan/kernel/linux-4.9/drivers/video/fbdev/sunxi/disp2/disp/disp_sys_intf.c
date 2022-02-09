@@ -106,7 +106,7 @@ int disp_sys_register_irq(u32 IrqNo, u32 Flags, void *Handler, void *pArg,
 	__inf("%s, irqNo=%d, Handler=0x%p, pArg=0x%p\n", __func__, IrqNo,
 	      Handler, pArg);
 	return request_irq(IrqNo, (irq_handler_t) Handler, 0x0,
-			   "display", pArg);
+			   "dispaly", pArg);
 }
 
 /*

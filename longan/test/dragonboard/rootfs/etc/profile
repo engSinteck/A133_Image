@@ -25,3 +25,5 @@ if [ -d /etc/profile.d ]; then
   done
   unset i
 fi
+
+. /usr/helperboard/qt_env.sh
