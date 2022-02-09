@@ -1,0 +1,1 @@
+cmd_service/standby/obj-in.o :=  or32-elf-ld -r -o service/standby/obj-in.o  service/standby/standby.o service/standby/standby_dram_crc.o service/standby/wakeup_source.o service/standby/standby-sun50iw10p1/obj-in.o

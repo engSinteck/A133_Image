@@ -1,0 +1,1 @@
+cmd_driver/obj-in.o :=  or32-elf-ld -r -o driver/obj-in.o  driver/cpucfg/obj-in.o driver/prcm/obj-in.o driver/intc/obj-in.o driver/pin/obj-in.o driver/timer/obj-in.o driver/uart/obj-in.o driver/twi/obj-in.o driver/hwmsgbox/obj-in.o driver/dram/obj-in.o driver/pmu/obj-in.o driver/watchdog/obj-in.o
