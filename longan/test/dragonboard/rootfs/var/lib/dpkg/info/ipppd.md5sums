@@ -1,0 +1,15 @@
+11c37275c1ae86b71e9893ae35012a34  usr/sbin/ipppd
+f6cff5519e515ec23d7a8160def41970  usr/sbin/ipppstats
+8bc0d0b47d8a94165479ccebe1ed2fdc  usr/share/doc/ipppd/NOTES.IPPPD.gz
+22deacbf110d983b5a7384abe4463c7e  usr/share/doc/ipppd/README
+67a3a6f041364f6d5c715d704462c8d9  usr/share/doc/ipppd/README.MPPP.gz
+d78e51fdfc7d3d144fe136553f07df83  usr/share/doc/ipppd/README.RADIUS.gz
+2d04dcc23f7e5070a2bd6b3d1a4fadc3  usr/share/doc/ipppd/README.linux.ORIG.gz
+55ffdaca0d7a424a83fc3e8402da0562  usr/share/doc/ipppd/README.mschap80.ORIG.gz
+305067e120f6ece50e82c604a77c9ef9  usr/share/doc/ipppd/README.multiple-ipppd
+8a592356cec2e9fbee983bd0b0f113ea  usr/share/doc/ipppd/copyright
+329179eb928e71fd42ac469744789153  usr/share/doc/ipppd/examples/auth-down
+3077bef6fff353b20ec4d6e935f44d86  usr/share/doc/ipppd/examples/auth-up
+56724ec354c16518e41d81c88a0f9e50  usr/share/isdn/default/ipppd.DEVICE
+4c52511305c08bf960d189125c440905  usr/share/man/man8/ipppd.8.gz
+16d0f8de4179e05992834af883acf95b  usr/share/man/man8/ipppstats.8.gz

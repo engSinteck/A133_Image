@@ -1,0 +1,116 @@
+#! /bin/sh
+# postinst script for ipppd
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+# summary of how this script can be called:
+#        * <postinst> `configure' <most-recently-configured-version>
+#        * <old-postinst> `abort-upgrade' <new version>
+#        * <conflictor's-postinst> `abort-remove' `in-favour' <package>
+#          <new-version>
+#        * <deconfigured's-postinst> `abort-deconfigure' `in-favour'
+#          <failed-install-package> <version> `removing'
+#          <conflicting-package> <version>
+
+tempfile=$(mktemp -t isdnutils.XXXXXX)
+trap 'rm -f "$tempfile"' EXIT
+
+case "$1" in
+    configure)
+	old_pwd="$(pwd)"
+	if [ ! -c /dev/ttyI0 ]; then
+		cd /dev
+		echo "Note: running MAKEDEV to create ISDN devices in /dev..."
+		WRITE_ON_UDEV=1 /sbin/MAKEDEV isdn-tty isdn-io isdn-ippp
+	fi
+	# FIXME BUG! MAKEDEV should create the link by itself
+	if [ ! -d /dev/.udev/ ] && [ ! -d /run/udev ] ; then
+	    # "funny" quoting to avoid Lintian trigger maintainer-script-removes-device-files
+	    "rm" -f /dev/isdnctrl
+	    ln -s isdnctrl0 /dev/isdnctrl
+	fi
+	if [ -L /isdnctrl ]; then
+	    # Cleanup possibly misplaced symlink created by 1:3.25+dfsg1-3+nmu2
+	    rm /isdnctrl
+	fi
+	cd "$old_pwd"
+        forcerestart=false
+        RET=ippp0
+        db_get ipppd/whichif || true
+        case "x$RET" in
+            x|xnone|xmanual)
+                IPPPX=none
+                ;;
+            xippp[0-9]|xippp[1-5][0-9]|xippp6[0-3])
+                IPPPX=$RET
+                ;;
+            *)
+                IPPPX=ippp0
+                ;;
+        esac
+        if [ "$IPPPX" != none -a ! -s /etc/isdn/device.$IPPPX -a ! -s /etc/isdn/ipppd.$IPPPX ]; then
+            db_get ipppd/ispphone || true; ISPPHONE="$RET"
+            if [ "$ISPPHONE" != '' -a "$ISPPHONE" != manual ]; then
+                db_get ipppd/eaz       || true; EAZ="$RET"
+                db_get ipppd/isplogin  || true; ISPLOGIN="$RET"
+                db_get ipppd/isppasswd || true; ISPPASSWD=$(echo "$RET" | sed 's,",\\&,g')
+                # escape any @ in the username, as perl wants to expand that as an arrary
+                ISPLOGIN=$(echo $ISPLOGIN | sed 's,@,\\@,')
+
+                cp /usr/share/isdn/default/device.DEVICE "$tempfile"
+                perl -i -pe '$_ = "" if /^# REMOVE the/; $_ = "" if /^echo "Warning!/; $_ = "" if /^LEADINGZERO=0/; s,^LOCALMSN=\d+,LOCALMSN='"'$EAZ'"',; s,^REMOTEMSN=\d+,REMOTEMSN='"'$ISPPHONE'"',; s, out \$LEADINGZERO\$MSN, out \$MSN,;' "$tempfile"
+                ucf --three-way --debconf-ok "$tempfile" /etc/isdn/device.$IPPPX
+                ucfr ipppd /etc/isdn/device.$IPPPX
+
+                cp /usr/share/isdn/default/ipppd.DEVICE "$tempfile"
+                perl -i -pe '$_ = "" if /^# REMOVE the/; $_ = "" if /^# Warning! not configured yet!/; s,^name X.,name '"$ISPLOGIN"',; s,^#ms-get-dns,ms-get-dns,;' "$tempfile"
+                ucf --three-way --debconf-ok "$tempfile" /etc/isdn/ipppd.$IPPPX
+                ucfr ipppd /etc/isdn/ipppd.$IPPPX
+
+                perl -i -pe "s,^\"?$ISPLOGIN\s,#\$&," /etc/ppp/pap-secrets /etc/ppp/chap-secrets
+                echo "# Added by automatic ipppd configuration" >> /etc/ppp/pap-secrets
+                echo "# Added by automatic ipppd configuration" >> /etc/ppp/chap-secrets
+                printf "\"$ISPLOGIN\"\t\"*\"\t\"$ISPPASSWD\"\n"     >> /etc/ppp/pap-secrets
+                printf "\"$ISPLOGIN\"\t\"*\"\t\"$ISPPASSWD\"\n"     >> /etc/ppp/chap-secrets
+                forcerestart=true
+            fi
+        fi
+
+        if [ -s /etc/init.d/isdnutils-base ]; then
+            err=false
+            if $forcerestart; then
+                invoke-rc.d isdnutils-base restart || err=true
+            else
+                invoke-rc.d isdnutils-base reload ipppd || err=true
+            fi
+            if $err; then
+                db_input high ipppd/isdnutilsinitbad || true
+                db_go
+            fi
+        else
+            db_input high ipppd/noisdnutilsinit || true
+            db_go
+        fi
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 0
+    ;;
+esac
+
+db_stop # grrrr
+
+# Automatically added by dh_installdeb/11.1.4ubuntu1
+dpkg-maintscript-helper mv_conffile /etc/ppp/ip-down.d/99-ipppd /etc/ppp/ip-down.d/ipppd 1:3.25\+dfsg1-3.3 -- "$@"
+dpkg-maintscript-helper mv_conffile /etc/ppp/ip-up.d/00-ipppd /etc/ppp/ip-up.d/ipppd 1:3.25\+dfsg1-3.3 -- "$@"
+# End automatically added section
+
+
+exit 0

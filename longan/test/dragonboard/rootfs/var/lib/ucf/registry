@@ -1,0 +1,2 @@
+openssh-server 	 /etc/ssh/sshd_config
+rsyslog 	 /etc/rsyslog.d/50-default.conf

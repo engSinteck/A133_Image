@@ -1,0 +1,8 @@
+dff227554b70f1019679eea43cc93041  sbin/ethtool
+8a8a2bd4d619a6eedbc3cbd23eb163da  usr/share/doc/ethtool/AUTHORS
+f3835148c6b8faf3af45557762ab5088  usr/share/doc/ethtool/NEWS.gz
+3c8a36b0eb263e2ee9e8e6d334cb09bc  usr/share/doc/ethtool/README
+fe94b59ce34036a63d890409a65cea64  usr/share/doc/ethtool/README.Debian
+006645c3bc021cb272d19f25a47cf277  usr/share/doc/ethtool/changelog.Debian.gz
+cd9bc504d924ec02d5e8c0fbaefa6786  usr/share/doc/ethtool/copyright
+10c31c448c45c8585ecafb4b0b4a7e1e  usr/share/man/man8/ethtool.8.gz

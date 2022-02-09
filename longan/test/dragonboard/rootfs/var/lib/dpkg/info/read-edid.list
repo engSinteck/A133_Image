@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/get-edid
+/usr/bin/parse-edid
+/usr/share
+/usr/share/doc
+/usr/share/doc/read-edid
+/usr/share/doc/read-edid/AUTHORS
+/usr/share/doc/read-edid/ChangeLog
+/usr/share/doc/read-edid/README
+/usr/share/doc/read-edid/changelog.Debian.gz
+/usr/share/doc/read-edid/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/get-edid.1.gz
+/usr/share/man/man1/parse-edid.1.gz

@@ -1,0 +1,71 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: read-edid
+Source: http://www.polypux.org/projects/read-edid/
+
+Files: *
+Copyright: (C) 2009-2015 Matthew Kern <pyrophobicman@gmail.com>
+           (C) 2004 Colin Watson
+           (C) 2001 Progeny Linux Systems, Inc.
+           (C) 2001 John Fremlin
+           (C) 1998 Josh Vanderhoof 
+License: GPL-2+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ can be found in /usr/share/common-licenses/GPL-2 file.
+
+Files: get-edid/i2c-dev.h
+Copyright: (C) 1995-1997 Simon G. Vogl, 
+           (C) 1998-1999 Frodo Looijaard
+License: GPL-2
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ can be found in /usr/share/common-licenses/GPL-2 file.
+
+Files: debian/*
+Copyright: (C) 2000-2002 Branden Robinson <branden@debian.org>, 
+           (C) 2006 Martin-Éric Racine <q-funk@iki.fi>, 
+           (C) 2009-2013 LIU Qi <liuqi82@gmail.com>, 
+           (C) 2014-2015 Dariusz Dwornikowski <dariusz.dwornikowski@cs.put.poznan.pl>
+License: GPL-2+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ can be found in /usr/share/common-licenses/GPL-2 file.

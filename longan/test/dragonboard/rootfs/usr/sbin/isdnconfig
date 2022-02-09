@@ -1,0 +1,338 @@
+#!/bin/sh
+
+# vim:set ts=8 sw=4 shiftround:
+
+# Configuration script for isdn4linux
+
+set -e -C
+
+DEFAULTS=/usr/share/isdn/default
+#VBOXEXAMPLES=/usr/share/doc/isdnvboxserver/examples/default
+
+ipppdOK=true
+vboxOK=true
+if [ ! -x /usr/sbin/ipppd ]; then ipppdOK=false; fi
+if [ ! -x /usr/sbin/vboxgetty ]; then vboxOK=false; fi
+
+# version of cp that doesn't mind if source is gzipped
+mycp() {
+    mycpSRC=$1
+    mycpDEST=$2
+    mycpTAIL=`expr $mycpDEST : '.*\(.\)'`
+    [ x$mycpTAIL = x/ ] && mycpDEST=$mycpDEST`basename $mycpSRC`
+    if [ -f $mycpDEST ]
+    then
+	echo "$mycpDEST already exists, preserving original version."
+	return 1
+    fi
+    if [ -f $mycpSRC ]
+    then
+	cp $mycpSRC $mycpDEST
+    else
+	if [ -f $mycpSRC.gz ]
+	then
+	    zcat $mycpSRC > $mycpDEST
+	else
+	    echo "isdnutils ERROR! $mycpSRC doesn't exist (tell isdnutils@packages.debian.org)"
+	    return 1
+	fi
+    fi
+    return 0
+}
+
+
+search_files() {
+    echo "Searching for existing configuration files..."
+    devices=""
+    for sfA in `ls $PREFIX.* 2>/dev/null`; do
+	test -e $sfA && devices="$devices ${sfA#*.}"
+    done
+    test -z "$devices" && devices=NONE
+    echo "Found : $devices"
+    echo ""
+}
+
+no_create() {
+    echo "No file created."
+    echo -n "Press [Enter] "
+    read dummy
+}
+
+create_warning() {
+    echo "This file is only an example."
+    echo "You have to edit this file for it to work."
+    echo -n "Press [Enter] "
+    read dummy
+}
+
+create_2_warning() {
+    echo "These files are only an example."
+    echo "You have to edit these files for them to work."
+    echo -n "Press [Enter] "
+    read dummy
+}
+
+config_main() {
+    clear
+    echo -n "Isdnutils configuration
+=======================
+
+1	network devices
+2	synchronous ppp daemon"
+    if ! $ipppdOK; then echo -n " (disabled, 'ipppd' package not installed)"; fi
+    echo -n "
+3	modem emulation
+4	voice box configuration"
+    if ! $vboxOK; then echo -n " (disabled, 'isdnvboxserver' pkg not installed)"; fi
+    echo -n "
+
+Q	Quit
+
+Your choice : "
+    read choice dummy
+    case "$choice" in
+	1)	config_net ;;
+	2)	if $ipppdOK; then config_ppp; else echo "sorry, disabled!"; sleep 3; fi ;;
+	3)	config_modem ;;
+	4)	if $vboxOK; then config_vbox; else echo "sorry, disabled!"; sleep 3; fi ;;
+	q|Q)	exit 0;;
+    esac
+}
+
+config_net() {
+    clear
+    echo "Isdnutils configuration network interfaces"
+    echo "======================= ------------------"
+    echo ""
+    PREFIX=/etc/isdn/device; search_files
+
+    echo "
+Devices should be named :
+ - rawip interface		isdn0 isdn1 ..."
+    if $ipppdOK
+    then echo " - synchronous ppp interface	ippp0 ippp1 ..."
+    else echo " - synchronous ppp interface	(disabled, ipppd package not installed)"
+    fi
+    echo -n "
+Name for new interface  : "
+    read interface dummy
+    if test -z "$interface"; then
+	no_create
+    elif test -c "/dev/$interface"; then
+	if ! $ipppdOK && [ `expr "$interface" : ipppd` -eq 5 ]; then
+	    echo "Sorry, ipppd package not installed."
+	    echo -n "Press [Enter] "
+	    read dummy
+	elif mycp $DEFAULTS/device.DEVICE /etc/isdn/device.$interface; then
+	    echo "Installed new config file /etc/isdn/device.$interface ."
+	    create_warning
+	fi
+    else
+	echo "Interface name not found."
+	echo -n "Press [Enter] "
+	read dummy
+    fi
+}
+
+config_ppp() {
+    clear
+    echo "Isdnutils configuration synchronous ppp daemon"
+    echo "======================= ----------------------"
+    echo ""
+    PREFIX=/etc/isdn/ipppd; search_files
+
+    echo  -n "
+Normal setup :	one ipppd for all devices: /dev/ippp0 /dev/ippp1 ...
+		All ippp* network interfaces are handled by a single ipppd
+		process using a single config file.
+
+Special setup :	one ipppd for each device: /dev/ippp0 /dev/ippp1 ...
+		Each ippp* network interface is handled by its own ipppd
+		process, using a specific config file for each.
+		You need to use pppbind on each network interface to select
+		which /dev/ippp* device will be used.
+
+Usually only a single ippp interface is used (for connecting to an ISP), so
+the above isn't really relevant to most users.
+
+Name for new configuration (ippp0 ippp1 ...) : "
+    read device dummy
+    if test -z "$device"
+    then
+	no_create
+    else
+	if test -c "/dev/$device"
+	then
+	    done=0
+	    if mycp $DEFAULTS/ipppd.DEVICE /etc/isdn/ipppd.$device
+	    then
+		echo "Installed new config file /etc/isdn/ipppd.$device ."
+		done=1
+	    fi
+#OLD	    if [ -d /etc/ppp/ip-down.d -a ! -e /etc/ppp/ip-down.d/isdnutils ]
+#OLD	    then
+#OLD		if mycp $IPPPDEXAMPLES/ip-down.d /etc/ppp/ip-down.d/isdnutils
+#OLD		then
+#OLD		   echo "Installed new config file /etc/ppp/ip-down.d/isdnutils ."
+#OLD		   [ -e /etc/ppp/ip-down -a ! -x /etc/ppp/ip-down ] &&
+#OLD						chmod +x /etc/ppp/ip-down
+#OLD		   if [ $done -eq 0 ]
+#OLD		   then	done=1
+#OLD		   else	done=2
+#OLD		   fi
+#OLD		else
+#OLD		   echo "Existing /etc/ppp/ip-up.d/isdnutils not overwritten."
+#OLD		fi
+#OLD	    fi
+	    if [ -d /etc/ppp -a ! -e /etc/ppp/auth-up ]
+	    then
+		if mycp $DEFAULTS/auth-up /etc/ppp/.
+		then
+		   echo "Installed new config file /etc/ppp/auth-up ."
+		   if [ $done -eq 0 ]
+		   then	done=1
+		   else	done=2
+		   fi
+		else
+		   echo "Existing /etc/ppp/auth-up not overwritten."
+		fi
+	    fi
+	    if [ -d /etc/ppp -a ! -e /etc/ppp/auth-down ]
+	    then
+		if mycp $DEFAULTS/auth-down /etc/ppp/.
+		then
+		   echo "Installed new config file /etc/ppp/auth-down ."
+		   if [ $done -eq 0 ]
+		   then	done=1
+		   else	done=2
+		   fi
+		else
+		   echo "Existing /etc/ppp/auth-down not overwritten."
+		fi
+	    fi
+	    chmod +x /etc/ppp/ip-*.d/isdnutils /etc/ppp/auth-* 2> /dev/null || true
+	    if [ $done -eq 1 ]
+	    then
+		create_warning
+	    else
+		if [ $done -gt 1 ]
+		then
+		    create_2_warning
+		fi
+	    fi
+	else
+	    echo "Interface name not found."
+	    echo -n "Press [Enter] "
+	    read dummy
+	fi
+    fi
+}
+
+config_modem() {
+    if test -e /etc/isdn/iprofd.data
+    then
+	echo -n '
+Isdnutils configuration modem emulation
+======================= ---------------
+
+Data File for iprofd (/etc/isdn/iprofd.data) already created.
+If iprofd is running, you can save the settings of your modem emulation
+with any terminal program (e.g. minicom) with "AT&W".
+
+Press [Enter] '
+	read dummy
+    else
+	touch /etc/isdn/iprofd.data
+	clear
+	echo "Isdnutils configuration modem emulation"
+	echo "======================= ---------------"
+	echo -n "
+Data File for iprofd (/etc/isdn/iprofd.data) installed.
+If iprofd is running, you can save the settings of your modem emulation
+with any terminal program (e.g. minicom) with \"AT&W\".
+
+Press [Enter] "
+	read dummy
+    fi
+}
+
+config_vbox() {
+    clear
+    echo "Isdnutils configuration vbox"
+    echo "======================= ----"
+    echo ""
+    echo "Installing example configuration files ... "
+    INSTALL=false
+#??#    for FILE in vboxd.conf vboxgetty.conf; do
+    for FILE in vboxd.conf; do
+#	if test -e /etc/isdn/$FILE
+#	then
+#	    echo "$FILE	already installed."
+#	else
+	    if mycp $DEFAULTS/$FILE /etc/isdn/$FILE; then
+		echo "$FILE	installed."
+		INSTALL=true
+	    fi
+	    chmod 600 /etc/isdn/vboxd.conf
+	    chown root /etc/isdn/vboxd.conf
+#	fi
+    done
+    if $INSTALL
+    then
+	create_2_warning
+	INSTALL=false
+    fi
+    echo ""
+    echo "Note: for a single answering machine it's best to use the debconf setup."
+    echo "      run 'dpkg-reconfigure isdnvboxserver' for that."
+    echo ""
+    echo "You can run several vboxgetty with different MSN's."
+    echo "Edit /etc/inittab to start the vboxgetty, and edit "
+    echo "/etc/isdn/vboxgetty.conf to assign each MSN to a user."
+    echo "Each user needs his own spool directory."
+
+    echo "Searching for existing spool directories..."
+    users=
+    for A in `ls -d /var/spool/vbox/* 2> /dev/null`; do
+	test -e $A && users="$users `basename $A`"
+    done
+    test -z "$users" && users=NONE
+    echo "Found : $users"
+    echo ""
+
+    echo "I need the login name of the user (e.g. aj), not the full name."
+    echo -n "Create new spool directory for user : "
+    read user dummy
+    if test -n "$user"
+    then
+	if getent passwd $user > /dev/null
+	then
+	    mkdir /var/spool/vbox/$user
+	    mkdir /var/spool/vbox/$user/messages
+	    mkdir /var/spool/vbox/$user/incoming
+	    mycp $DEFAULTS/vbox.conf /var/spool/vbox/$user/ &&
+		echo "Installed new config file /var/spool/vbox/$user/vbox.conf"
+	    mycp $DEFAULTS/standard.tcl /var/spool/vbox/$user/ &&
+		echo "Installed new config file /var/spool/vbox/$user/standard.tcl"
+	    mycp $DEFAULTS/beep.msg /var/spool/vbox/$user/messages/ &&
+		echo "Installed default sound file /var/spool/vbox/$user/messages/beep.msg"
+	    mycp $DEFAULTS/standard.msg /var/spool/vbox/$user/messages/ &&
+		echo "Installed default sound file /var/spool/vbox/$user/messages/standard.msg"
+	    usergrp=`id -gn $user`
+	    chown -Rv $user.$usergrp /var/spool/vbox/$user
+	    INSTALL=true
+	else
+	    echo "User $user doesn't exist."
+	fi
+    fi
+    if $INSTALL
+    then
+	create_2_warning
+    else
+	no_create
+    fi
+}
+
+while true; do
+    config_main
+done

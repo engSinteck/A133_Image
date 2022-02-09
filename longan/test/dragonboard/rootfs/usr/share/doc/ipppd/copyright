@@ -1,0 +1,331 @@
+This package was originally debianized by Paul Slootman <paul@debian.org>
+in the period June 2000 - September 2000.
+
+Changes and packaging for Debian were prepared by Paul Slootman
+<paul@debian.org>, Rolf Leggewie <foss@rolf.leggewie.biz> and
+other Debian developers, and are licensed under GPL version 2.
+
+The latest source was downloaded from:
+
+  http://git.misdn.eu
+
+Upstream Authors: the i4l crew ( see http://www.isdn4linux.de/ )
+
+The following files and directories have been removed to comply with the
+Debian Free Software Guidelines:
+
+- isdnlog/tools/telrate/tt.js: no licence stated
+- pcbit/convhexbin.c: no licence stated
+
+Specific copyrights etc. follow. If not listed, the component falls
+either under the GPL version 2 or LGPL version 2.
+
+FAQ:
+    GPL
+    (c) 1999 Matthias Hessler <hessler@isdn4linux.de>
+    Distribution under the terms of the GPL is welcome. However,
+    we offer NO GUARANTEES for the information herein.
+
+Mini-FAQ:
+    Corrections and suggestions welcome, please send them directly to me,
+    Erik Corry, <erik@arbat.com>.
+
+areacode:
+            (C) Copyright 1996-98 by Ullrich von Bassewitz
+                      <uz@musoftware.com>
+
+    This software is provided 'as-is', without any express or implied
+    warranty.  In no event will the authors be held liable for any damages
+    arising from the use of this software.
+
+    Permission is granted to anyone to use this software for any purpose,
+    including commercial applications, and to alter it and redistribute it
+    freely, subject to the following restrictions:
+
+    1. The origin of this software must not be misrepresented; you must not
+       claim that you wrote the original software. If you use this software
+       in a product, an acknowledgment in the product documentation would be
+       appreciated but is not required.
+    2. Altered source versions must be plainly marked as such, and must not
+       be misrepresented as being the original software.
+    3. This notice may not be removed or altered from any source
+       distribution.
+
+eurofile:
+    Source code in directories src and src/lib is subject to the
+    `GNU LIBRARY GENERAL PUBLIC LICENSE' [ LGPL ]
+    It is copyrighted by Henner Eisen.
+
+ipppd:
+    Copyright (c) 1984-2000 Carnegie Mellon University. All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+
+    2. Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in
+       the documentation and/or other materials provided with the
+       distribution.
+
+    3. The name "Carnegie Mellon University" must not be used to
+       endorse or promote products derived from this software without
+       prior written permission. For permission or any legal
+       details, please contact
+         Office of Technology Transfer
+         Carnegie Mellon University
+         5000 Forbes Avenue
+         Pittsburgh, PA  15213-3890
+         (412) 268-4387, fax: (412) 268-7395
+         tech-transfer@andrew.cmu.edu
+
+    4. Redistributions of any form whatsoever must retain the following
+       acknowledgment:
+       "This product includes software developed by Computing Services
+        at Carnegie Mellon University (http://www.cmu.edu/computing/)."
+
+    CARNEGIE MELLON UNIVERSITY DISCLAIMS ALL WARRANTIES WITH REGARD TO
+    THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+    AND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE
+    FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+    AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+    OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+    Copyright 1989 - 1994, John F. Haugh II
+    All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in the
+       documentation and/or other materials provided with the distribution.
+    3. All advertising materials mentioning features or use of this software
+       must display the following acknowledgement:
+        This product includes software developed by John F. Haugh, II
+         and other contributors.
+    4. Neither the name of John F. Haugh, II nor the names of its contributors
+       may be used to endorse or promote products derived from this software
+       without specific prior written permission.
+
+    THIS SOFTWARE IS PROVIDED BY JOHN HAUGH AND CONTRIBUTORS ``AS IS'' AND
+    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+    ARE DISCLAIMED.  IN NO EVENT SHALL JOHN HAUGH OR CONTRIBUTORS BE LIABLE
+    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+    OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+    HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+    LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+    OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+    SUCH DAMAGE.
+
+    Copyright (C) 1990, RSA Data Security, Inc. All rights reserved.
+
+    License to copy and use this software is granted provided that
+    it is identified as the "RSA Data Security, Inc. MD5 Message-
+    Digest Algorithm" in all material mentioning or referencing this
+    software or this function.
+
+    License is also granted to make and use derivative works
+    provided that such works are identified as "derived from the RSA
+    Data Security, Inc. MD5 Message-Digest Algorithm" in all
+    material mentioning or referencing the derived work.
+
+    RSA Data Security, Inc. makes no representations concerning
+    either the merchantability of this software or the suitability
+    of this software for any particular purpose.  It is provided "as
+    is" without express or implied warranty of any kind.
+
+    These notices must be retained in any copies of any part of this
+    documentation and/or software.
+
+    Copyright (c) 1989 Carnegie Mellon University.
+    Copyright (c) 1991 Gregory M. Christy.
+    Copyright (c) 1993 The Australian National University.
+    Copyright (c) 1995 Eric Rosenquist, Strata Software Limited.
+    Copyright (c) 1995 Pedro Roque Marques
+    copyright (c) 1995,1996,1997 Michael Hipp
+    Copyright (C) 1996, Matjaz Godec <gody@elgo.si>
+    Copyright (C) 1996, Lars Fenneberg <in5y050@public.uni-hamburg.de>
+    All rights reserved.
+
+    Redistribution and use in source and binary forms are permitted
+    provided that the above copyright notice and this paragraph are
+    duplicated in all such forms and that any documentation,
+    advertising materials, and other materials related to such
+    distribution and use acknowledge that the software was developed
+    by Carnegie Mellon University.  The name of the
+    University may not be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+    Redistribution and use in source and binary forms are permitted
+    provided that the above copyright notice and this paragraph are
+    duplicated in all such forms and that any documentation,
+    advertising materials, and other materials related to such
+    distribution and use acknowledge that the software was developed
+    by Gregory M. Christy.  The name of the author may not be used to
+    endorse or promote products derived from this software without
+    specific prior written permission.
+
+    Redistribution and use in source and binary forms are permitted
+    provided that the above copyright notice and this paragraph are
+    duplicated in all such forms and that any documentation,
+    advertising materials, and other materials related to such
+    distribution and use acknowledge that the software was developed
+    by the Australian National University.  The name of the University
+    may not be used to endorse or promote products derived from this
+    software without specific prior written permission.
+
+    Redistribution and use in source and binary forms are permitted
+    provided that the above copyright notice and this paragraph are
+    duplicated in all such forms and that any documentation,
+    advertising materials, and other materials related to such
+    distribution and use acknowledge that the software was developed
+    by Eric Rosenquist.  The name of the author may not be used to
+    endorse or promote products derived from this software without
+    specific prior written permission.
+
+    Redistribution and use in source and binary forms are permitted
+    provided that the above copyright notice and this paragraph are
+    duplicated in all such forms and that any documentation,
+    advertising materials, and other materials related to such
+    distribution and use acknowledge that the software was developed
+    by Pedro Roque Marques.  The name of the author may not be used to
+    endorse or promote products derived from this software without
+    specific prior written permission.
+
+    THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+    IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+    WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+    Copyright (c) 1994 The Australian National University.
+    All rights reserved.
+
+    Permission to use, copy, modify, and distribute this software and its
+    documentation is hereby granted, provided that the above copyright
+    notice appears in all copies.  This software is provided without any
+    warranty, express or implied. The Australian National University
+    makes no representations about the suitability of this software for
+    any purpose.
+
+    IN NO EVENT SHALL THE AUSTRALIAN NATIONAL UNIVERSITY BE LIABLE TO ANY
+    PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES
+    ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF
+    THE AUSTRALIAN NATIONAL UNIVERSITY HAVE BEEN ADVISED OF THE POSSIBILITY
+    OF SUCH DAMAGE.
+
+    THE AUSTRALIAN NATIONAL UNIVERSITY SPECIFICALLY DISCLAIMS ANY WARRANTIES,
+    INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+    AND FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
+    ON AN "AS IS" BASIS, AND THE AUSTRALIAN NATIONAL UNIVERSITY HAS NO
+    OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS,
+    OR MODIFICATIONS.
+
+    All rights reserved.
+
+    Copyright (c) 1999-2004 Paul Mackerras. All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+
+    2. The name(s) of the authors of this software must not be used to
+       endorse or promote products derived from this software without
+       prior written permission.
+
+    3. Redistributions of any form whatsoever must retain the following
+       acknowledgment:
+       "This product includes software developed by Paul Mackerras
+        <paulus@samba.org>".
+
+    THE AUTHORS OF THIS SOFTWARE DISCLAIM ALL WARRANTIES WITH REGARD TO
+    THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+    AND FITNESS, IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY
+    SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+    AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+    OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+    Copyright 2010 Ben Hutchings.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the above disclaimer.
+
+    2. The name(s) of the authors of this software must not be used to
+       endorse or promote products derived from this software without
+       prior written permission.
+
+ipppstats:
+    Copyright (c) 1989 Regents of the University of California.
+    All rights reserved.
+
+    Redistribution and use in source and binary forms are permitted
+    provided that the above copyright notice and this paragraph are
+    duplicated in all such forms and that any documentation,
+    advertising materials, and other materials related to such
+    distribution and use acknowledge that the software was developed
+    by the University of California, Berkeley.  The name of the
+    University may not be used to endorse or promote products derived
+    from this software without specific prior written permission.
+    THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+    IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+    WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+Menuconfig:
+    GPL
+    lxdialog is taken from the kernel menuconfig stuff:
+    The windowing support utility (lxdialog) is a VERY modified version of
+    the dialog utility by Savio Lam <lam836@cs.cuhk.hk>.
+    Please DO NOT contact Savio with questions about lxdialog.
+    He will not be able to assist.
+
+vbox:
+   GPL
+                                 Copyright 1996,1997
+            Michael 'Ghandi' Herold <michael@abadonna.franken.de>
+
+xisdnload:
+    Copyright (c) 1989  X Consortium
+
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy of this software and associated documentation files (the
+    "Software"), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR
+    OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+    OTHER DEALINGS IN THE SOFTWARE.
+
+    Except as contained in this notice, the name of the X Consortium shall
+    not be used in advertising or otherwise to promote the sale, use or
+    other dealings in this Software without prior written authorization
+    from the X Consortium.
+
+On Debian systems, the complete text of the GNU General Public License
+version 2 can be found in `/usr/share/common-licenses/GPL-2' and the
+complete text of the GNU Library General Public License version 2 can
+be found in `/usr/share/common-licenses/LGPL-2'.

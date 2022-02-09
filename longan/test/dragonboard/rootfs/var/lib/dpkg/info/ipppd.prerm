@@ -1,0 +1,31 @@
+#! /bin/sh
+# prerm script for ipppd
+
+set -e
+
+case "$1" in
+    remove)
+        if [ -s /etc/init.d/isdnutils-base ]; then
+            invoke-rc.d isdnutils-base stop ipppd
+        else
+            kill `cat ipppd.ippp*.pid >/dev/null 2>&1` >/dev/null 2>&1
+        fi
+        ;;
+    upgrade|deconfigure)
+#       install-info --quiet --remove /usr/info/isdnutils.info.gz
+        ;;
+    failed-upgrade)
+        ;;
+    *)
+        echo "prerm called with unknown argument \`$1'" >&2
+        exit 0
+    ;;
+esac
+
+# Automatically added by dh_installdeb/11.1.4ubuntu1
+dpkg-maintscript-helper mv_conffile /etc/ppp/ip-down.d/99-ipppd /etc/ppp/ip-down.d/ipppd 1:3.25\+dfsg1-3.3 -- "$@"
+dpkg-maintscript-helper mv_conffile /etc/ppp/ip-up.d/00-ipppd /etc/ppp/ip-up.d/ipppd 1:3.25\+dfsg1-3.3 -- "$@"
+# End automatically added section
+
+
+exit 0

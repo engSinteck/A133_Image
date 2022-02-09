@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/aarch64-linux-gnu
+/usr/lib/aarch64-linux-gnu/libpython3.6m.so.1.0
+/usr/lib/python3.6
+/usr/lib/python3.6/config-3.6m-aarch64-linux-gnu
+/usr/share
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libpython3.6
+/usr/lib/aarch64-linux-gnu/libpython3.6m.so.1
+/usr/lib/python3.6/config-3.6m-aarch64-linux-gnu/libpython3.6.so
+/usr/lib/python3.6/config-3.6m-aarch64-linux-gnu/libpython3.6m.so
+/usr/share/doc/libpython3.6

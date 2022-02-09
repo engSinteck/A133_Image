@@ -1,0 +1,9 @@
+[Unit]
+Description=rcS-Service
+After=rcS.service
+[Service]
+Type=forking
+ExecStart=/etc/init.d/rcS start
+[Install]
+WantedBy=multi-user.target
+

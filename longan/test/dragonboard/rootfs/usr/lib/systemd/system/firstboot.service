@@ -1,0 +1,9 @@
+[Unit]
+Description=fristboot-Service
+Before=rcS.service
+[Service]
+Type=oneshot
+ExecStart=/usr/lib/systemd/system/firstboot.sh start
+[Install]
+WantedBy=multi-user.target
+

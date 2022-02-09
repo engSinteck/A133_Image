@@ -1,0 +1,117 @@
+# Options file for ipppd.
+# ipppd will not read /etc/ppp/options or /etc/ppp/ioptions or any other
+# config file. Everything has to be in here.
+
+# REMOVE the next line once configuration is complete #########################
+# Warning! not configured yet!
+# REMOVE the above line once configuration is complete ########################
+
+# "peer" is the name for our syncppp partner.
+
+# STANDARD OPTIONS
+
+#debug			# enable debugging
+#kdebug X		# set kernel debugging level to X
+#nodetach		# (no) fork to the background
+#callback X		# ask for callback (parameter X ?)
+#lock			# create a lock file for device
+#domain X		# add domain X to a given hostname
+#pidfile X		# save pid in file X
+#call X			# take options from privileges file (???)
+#idle X			# idle time limit (seconds)
+#holdoff X		# holdoff time limit (seconds)
+#maxconnect X		# set maximum connection time (in seconds ?)
+#+mp			# enable multi line ppp
+#+pwlog			# log password (WARNING: possible security hole)
+#nomagic		# magic number negotiation
+
+# ppp handshake : tuning
+
+#silent			# don't even try to initiate the connection
+#passive		# wait for the peer to initiate the connection
+#lcp-echo-failure X	# consecutive echo failures
+#lcp-echo-interval X	# time for lcp echo events
+lcp-restart 1		# Set timeout for LCP
+#lcp-max-terminate X	# Set max #xmits for term-reqs
+#lcp-max-configure X	# Set max #xmits for conf-reqs
+#lcp-max-failure X 	# Set max #conf-naks for LCP
+
+
+# AUTHENTICATION
+
+name X			# set local name for auth XXX_
+#user X			# set name for auth with peer; default is value for name
+#usehostname		# use hostname for auth
+#remotename X		# set remote name for auth
+#noauth			# (dont) require peer (the other) to auth
+#require-pap		# allow only pap authentication (dialin only)
+#require-chap		# allow only chap authentication (dialin only)
+#login			# use system password database for pap
+#papcrypt		# pap passwords are encrypted
+
+# AUTHENTICATION TUNING
+#pap-restart X		# Set retransmit timeout for PAP
+#pap-max-authreq X	# Set max #xmits for auth-reqs
+#pap-timeout X		# Set time limit for peer PAP auth.
+#chap-restart X 	# Set timeout for CHAP
+#chap-max-challenge X 	# Set max #xmits for challenge
+#chap-interval X 	# Set interval for rechallenge
+
+# COMPRESSION
+
+#noaccomp		# address compression on/off
+#nopcomp		# protocol field compression on/off
+#novj			# van jacobsen compression on/off
+#novjccomp		# van jacobsen connection-ID compression on/off
+#vj-max-slots X		# tune maximum vj header slots
+#nobsdcomp		# bsd compression on/off
+#nodeflate		# deflate compression on/off
+#nopredictor1		# predictor1 compression in/off
+noccp			# compression negotation on/off
+nolzs			# LZS compression off (not yet supported fully)
+
+
+# IP NETWORKING
+
+#noip			# (do not) disable ip transfer
+#X:Y			# (do not) set local ip to X, remote ip to Y
+noipdefault		#  do not  use name for default ip addr
+#useifip		# (do)     use ip addresses from interface
+#usefirstip		# (do)     use first ip from auth file for remote
+netmask 255.255.255.255	#  do      set netmask, 255.255.255.255 for pointopoint
+#defaultroute 		# (do not) set default route (for Debian config, don't uncomment)
+nohostroute		#  do not  set host route
+#proxyarp		# (do not) set an proxy arp entry
+mru 1524		#  do      set maximum size of receive units to X
+#default-mru		# (do not) enable mru negotation
+mtu 1500		#  do      set max size of transmit units (1500 is OK)
+#useifmtu		# (do not) use mtu from interface
+#ipparam X		# (do not) set ip parameters in script X
+#ms-dns X		# (do not) set dns addr for the peers use (dialin only)
+#ms-wins X		# (do not) wins address for the peers use (dialin only)
+#ms-get-dns		# (do not) accept peers suggestion of dns addr (dialout)
+#set_userip 		# (do not) define valid ip addrs in /etc/ppp/useriptab
+
+
+#ipcp-restart X		# Set timeout for IPCP
+#ipcp-max-terminate X	# Set max #xmits for term-reqs
+#ipcp-max-configure X	# Set max #xmits for conf-reqs
+#ipcp-max-failure X	# Set max #conf-naks for IPCP
+ipcp-accept-local	# Accept peer's address for us
+ipcp-accept-remote	# Accept peer's address for it
+
+# IPX NETWORKING
+
+#noipx			# en/disable ipx
+#ipx-network X 		# IPX network number
+#ipxcp-accept-network	#  Accept peer netowrk
+#ipx-node X 		# IPX node number
+#ipxcp-accept-local	# Accept our address
+#ipxcp-accept-remote	# Accept peer's address
+#ipx-routing X		# IPX routing proto number
+#ipx-router-name X	# IPX router name
+#ipxcp-restart X 	# Set timeout for IPXCP
+#ipxcp-max-terminate X	# max #xmits for term-reqs
+#ipxcp-max-configure X	# max #xmits for conf-reqs
+#ipxcp-max-failure X	# max #conf-naks for IPXCP
+

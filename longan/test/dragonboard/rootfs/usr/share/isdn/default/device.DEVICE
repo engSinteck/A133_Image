@@ -1,0 +1,370 @@
+#!/bin/sh
+
+# REMOVE the next line once configuration is complete #########################
+echo "Warning! $0 not configured yet! Aborting..."; exit 1
+# REMOVE the above line once configuration is complete ########################
+
+
+# Instructions: read the comments for each command, and if necessary, edit
+# the command (e.g. replace EAZ with your real EAZ or MSN). Look for lines
+# marked with XXX_, which is probably all you need to change.
+# If the command is commented out, remove the leading '#' to enable it if
+# the command is needed.
+#
+# After you have configured this file, remove the "Warning!" line above to
+# enable this file.
+
+# If using dynamic IP addresses:
+# Check out the /etc/ppp/ip-up.d/isdnutils and /etc/ppp/ip-down.d/isdnutils
+# scripts, to ensure that any routing is done correctly there (the
+# ip-up.d/isdnutils script is run after a syncPPP link is established, and the
+# ip-down.d/isdnutils script is run after the link goes down).
+# You need to have the ppp package installed for those scripts to work.
+
+set -e	# exit on _any_ error
+
+# Get the device name
+device=`basename $0`; device=${device#*.}
+# this used to be simple, but POSIX is a bit more limited
+# ippp0+8 -> devtype=ippp
+devtype=${device%%[0-9]*}
+# ippp0+8 -> devnums=0+8
+devnums=${device##$devtype}
+# ippp0+8 -> device=ippp8
+device=$devtype${devnums#[0-9]*+}
+dowhat="$1"
+masterslave="$2"
+case "x$masterslave" in
+    xmaster)	master=true;  slave=false;;
+    xslave)	master=false; slave=true; masterdevice="$3";;
+    x)		master=false; slave=false;;
+    *)		echo "Error, $0 called with unknown 2nd arg '$masterslave', aborting!"
+    		exit 1;;
+esac
+
+
+# The (dummy) IP addresses
+#
+# Use 169.255.255.169 for LOCALIP and 10.0.0.2 for REMOTEIP if you have
+# dynamic IP addresses; with static address fill in the real values!
+
+LOCALIP=169.255.255.169	# XXX_
+REMOTEIP=10.0.0.2	# XXX_
+
+# Phone numbers (without the leading zero)
+#
+# REMOTEMSN may be a list of numbers to dial, separated by a space.
+# If you do that, DO put quotes around the whole value! Like:
+# REMOTEMSN='221345788 221345789'
+#
+# The REMOTEMSN must be the areacode (without the leading zero) + phonenumber!
+#
+#      Example: areacode: 0221  phonenumber: 345789
+#               => REMOTEMSN='221345789'
+#
+# EXPLANATION:
+# A zero is added below when it is used as the outgoing number;
+# when it it used as the incoming number, it must be without a leading zero
+# (which is why you must leave that leading zero out below).
+# The local number must also be given without the leading zero!
+#
+# EXCEPTION:
+# In countries where there are NO areacodes, this leading zero must NOT be
+# added. In that case, change the value of LEADINGZERO below to ''
+# LEADINGZERO could conceivably need to be something else in certian
+# situations, so it is configurable.
+
+LOCALMSN=203123456 	# XXX_
+REMOTEMSN=221345789	# XXX_
+LEADINGZERO=0		# XXX_  use LEADINGZERO='' if you have no areacodes.
+
+# DIALMODE:
+# New with kernel 2.0.36 is the `dialmode' setting.
+# dialmode=auto is compatible with the old behaviour (dial-on-demand enabled).
+# Read the isdnctrl manpage for more info.
+# Change the value below if you want a different setting when the interface is
+# started.
+# For slave devices (channel bundling) dialmode _must_ be auto,
+# so for slave devices this setting is ignored.
+
+DIALMODE=auto		# XXX_	other values can be 'on' and 'off'
+
+# Encapsulation (default is syncppp for ipppX devices, rawip for isdnX devices)
+# Change the next four lines if you need some other value.
+if expr ${device} : ippp > /dev/null
+then	ENCAP=syncppp
+else	ENCAP=rawip
+fi
+
+# Configuration (start)
+
+case "$dowhat" in
+start)
+    # XXX_
+    # If running kernel 2.0.31 or higher, enable the IP dynamic hack
+    # (if needed). See linux/Documentation/networking/ip_dynaddr.txt .
+    # Default is: enabled. If you have static IP numbers, you can remove
+    # the next line.
+    [ -f /proc/sys/net/ipv4/ip_dynaddr ] && echo 5 > /proc/sys/net/ipv4/ip_dynaddr
+
+    # First you need to create the interface
+    if $slave
+    then	isdnctrl addslave ${masterdevice} ${device}
+    else	isdnctrl addif ${device}
+    fi
+
+    #	l2_prot name protocol
+    # Set the layer-2 protocol for interface "name". Possible values for
+    # "protocol" are x75i, x75ui, x75bui and hdlc
+    # (most people use hdlc)
+    isdnctrl l2_prot ${device} hdlc
+
+    #	l3_prot name protocol
+    # Set the layer-3 protocol for interface "name". At the moment only
+    # trans is supported.  If protocol is omitted the current setting is
+    # printed.
+    isdnctrl l3_prot ${device} trans
+
+    #	eaz name num
+    # Set the EAZ (German 1TR6 protocol) or MSN (Euro-ISDN E-DSS1) for
+    # interface "name" to "num". For an EAZ this is only one digit, for a
+    # MSN "num" is the whole MSN.
+    # In the Netherlands this includes the areacode, but not the leading 0.
+    # (other countries?)
+    isdnctrl eaz ${device} $LOCALMSN
+
+    #	addphone name out num
+    # Set the phone number(s) of the remote site for the IP-interface
+    # "name". More than one number can be set by calling isdnctrl addphone
+    # repeatedly. If more than one number is set these will be tried one
+    # after another. When using an german SPV-type connection, with a
+    # ICN-card, the number has to be preceeded by a capital S.
+    # This is the "normal" number.
+
+    if [ ! -z "$REMOTEMSN" ]; then
+	for MSN in $REMOTEMSN; do
+	    isdnctrl addphone ${device} out $LEADINGZERO$MSN
+	done
+    fi
+
+    #	addphone name in num
+    # Set the phone number(s) that the IP-interface "name" is supposed to
+    # accept for incoming calls. If no number is given, incoming calls are
+    # disabled. More than one number can be set by calling isdnctrl addphone
+    # repeatedly. Also wildcards can be used (see below).
+    # In the Netherlands (and elsewhere?),
+    # this is with areacode but without leading 0
+    #if [ ! -z "$REMOTEMSN" ]; then
+    #	for MSN in $REMOTEMSN; do
+    #	    isdnctrl addphone ${device} in $MSN
+    #	done
+    #fi
+
+    #	secure name on|off
+    # Turns on or off the security feature for interface "name". If set to
+    # on, incoming calls will only be accepted if the calling number has
+    # been added to the access list with isdnctrl addphone name in.
+    isdnctrl secure ${device} on
+
+    #	huptimeout name seconds
+    # Set the hangup timeout for interface "name" to "seconds". If there
+    # is inactivity (i.e. no traffic on the interface) for the given time
+    # the driver automatically shuts down the connection.
+    # Default is 60 seconds
+    isdnctrl huptimeout ${device} 60	# XXX_
+
+    # 	dialmax name num
+    # Set the number of dial atempts for interface "name" to "num". If
+    # dialing, each phonenumber is tried this many times before giving up.
+    #isdnctrl dialmax ${device} NUM
+
+    #	ihup name on|off
+    # Turn on or off the hangup timeout for incoming calls on interface name
+    #isdnctrl ihup ${device} on
+
+    #	 encap name encapname
+    # Set the encapsulation mode for interface "name". Possible modes for
+    # encapname are: rawip ip cisco-h ethernet syncppp uihdlc
+    # (most people use rawip, syncppp or cisco-h; syncppp is normal for
+    # ISP's, rawip is normal for semi-fixed linux-linux connections)
+    isdnctrl encap ${device} $ENCAP
+
+    #	verbose num
+    # Set verbosity level to <num>.
+    # (2 shows the first package of every connection, that is very useful.)
+    # WARNING: this is a global parameter, that affects all isdn devices!
+    isdnctrl verbose 2
+
+    # CHARGEHUP FUNCTION
+
+    #	chargehup name on|off
+    # Turn on or off hangup before next charge info for interface name. This
+    # can only be used if the ISDN provider transmits charge info during and
+    # after the connection. If set to on, the driver will close the
+    # connection just before the next charge info will  be received if the
+    # interface is inactive.
+    #isdnctrl chargehup ${device} on
+
+    #	chargeint name seconds
+    # When "seconds" are given, the charge interval for the given interface
+    # is set. This may be of use on ISDN lines with no chargeinfo or no
+    # online chargeinfo. The connection will only be closed 2 seconds before
+    # the end of the next charge interval and only, if huptime out seconds
+    # of inactivity have been reached. If ihup is on, also incomming
+    # connections are closed by this mechanism.
+    #isdnctrl chargeint ${device} NUM
+
+    # CALLBACK FUNCTION
+
+    #	callback name off|in|out
+    # Selects callback mode for interface "name". If call-back mode is in,
+    # then after getting an incoming call, a callback is triggered. If
+    # callback mode is out, then this system does the initial call, then
+    # waiting for callback of the remote machine.
+    #isdnctrl callback ${device} MODE
+
+    #	cbdelay name seconds
+    # Set the callback delay for interface "name" to "seconds". If callback
+    # mode for this interface is in, dialing is delayed the given time. If
+    # the callback mode is out, after dialing out and waiting the given
+    # time, a hangup is issued to free the line for the incoming callback
+    # from the remote machine. This hangup-after-dial is disabled by setting
+    # cbdelay to 0.
+    #isdnctrl cbdelay ${device} SECONDS
+
+    #	cbhup name on|off
+    # Turns on or off Hangup (Reject) for interface "name" before starting
+    # Callback.
+    #isdnctrl cbhup ${device} MODE
+
+    #	OTHER OPTIONS
+
+    # There are other options not used by most people.  You can insert these
+    # options here.
+
+    # See also : isdnctrl(8), isdnctrl help text
+
+    # pppbind is needed when using one ipppd per ippp interface
+    # (like Debian does)
+    bindnum=`expr $device : 'ippp\(.*\)'` || true
+    if [ ! -z "$bindnum" ]; then
+	isdnctrl pppbind ${device} $bindnum
+    fi
+
+    #	 NETWORK SETUP
+
+    # Network device setup as usual (not applicable to slave devices!)
+    # See also : ifconfig(8) route(8) or any book about unix networking.
+
+    if ! $slave; then
+	ifconfig ${device} $LOCALIP pointopoint $REMOTEIP netmask 255.255.255.255
+	set +e	# ignore errors from here on
+
+	route del -host $REMOTEIP ${device} 2>/dev/null
+	route add -host $REMOTEIP ${device}
+
+	# setting default route here is only useful if this is your only
+	# outside connection... The default is ippp0 for the default route.
+	# NOTE: default route for ippp0 is also set in /etc/ppp/ip-up.d/00-ipppd
+	#       and /etc/ppp/ip-down.d/99-ipppd ! So if you don't want the
+	#	default route over ippp0, edit those scripts as well.
+	#	Another solution is not to use ippp0 at all; this is only done
+	#	for ippp0 so by skipping that (and starting with ippp1 for
+	#	example) you don't have to edit anything to avoid changing the
+	#	default route!
+	if [ "$bindnum" = 0 ]; then
+	    route del default 2>/dev/null
+	    route add default netmask 0 ${device}
+	fi
+
+	# FIREWALL RULES	XXX_
+
+	# Explicitly list what's allowed, and then deny the rest.
+	# I'm assuming kernel 2.2.x here, hence ipchains
+        # instead of ipfwadm or iptables. Note also that this is pretty
+        # simple-minded, and offers only rudimentary protection.
+	#
+	# The firewall rules below will only work here if using static IP
+	# addresses!!!  For dynamic addresses the rules should be added in
+	# /etc/ppp/ip-up.d/00-isdnutils and deleted in
+	# /etc/ppp/ip-down.d/99-isdnutils .
+	# Also note you usually only want a setup as below for the interface
+	# facing the internet, not if you're using the interface to connect a
+	# local subnet (unless you're using masquerading).
+	# Also be sure to check the config to make sure it fits what you want.
+	#
+	# ipchains -A input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} 1000:
+	# ipchains -A input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} ssh
+	# ipchains -A input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} smtp
+	# ipchains -A input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} ident
+	# ipchains -A input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} ftp
+	# ipchains -A input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} http
+	# ipchains -A input -j ACCEPT -i ${device} -p UDP  -d ${LOCALIP} 1024:
+	# ipchains -A input -j ACCEPT -i ${device} -p ICMP -d ${LOCALIP}
+	# ipchains -A input -j DENY   -i ${device}
+
+	# If you don't have masquerading set up yet, try the following
+        # (I recommend the ipmasq package).
+	# Replace 192.168.1 with the network number you use on the hosts
+	# that will use masquerading.
+	# ipchains -I forward -j MASQ -s 192.168.1.0/24
+    fi # not slave
+
+    # ignore errors in case of older kernel
+    if $slave
+    then	isdnctrl dialmode $device auto      >/dev/null 2>&1
+    else	isdnctrl dialmode $device $DIALMODE >/dev/null 2>&1
+    fi
+    ;;
+
+# Delete the interface
+stop)
+    set +e	# ignore errors from here on
+
+    isdnctrl dialmode $device off >/dev/null 2>&1
+
+    if ! $slave; then
+	# FIREWALL RULES	XXX_
+
+	# Undo the things done above.
+	#
+	# ipchains -D input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} 1000:
+	# ipchains -D input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} ssh
+	# ipchains -D input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} smtp
+	# ipchains -D input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} ident
+	# ipchains -D input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} ftp
+	# ipchains -D input -j ACCEPT -i ${device} -p TCP  -d ${LOCALIP} http
+	# ipchains -D input -j ACCEPT -i ${device} -p UDP  -d ${LOCALIP} 1024:
+	# ipchains -D input -j ACCEPT -i ${device} -p ICMP -d ${LOCALIP}
+	# ipchains -D input -j DENY   -i ${device}
+
+	# If you don't have masquerading set up yet, try the following.
+	# Replace 192.168.1 with the network number you use on the hosts
+	# that will use masquerading.
+	# ipchains -D forward -j MASQ -s 192.168.1.0/24
+
+	# Commands to undo the network stuff
+	route del $REMOTEIP $device	2> /dev/null
+	# only delete default route if set above!
+	# The default is to use ippp0 for your default route.
+	bindnum=`expr $device : 'ippp\(.*\)'`
+	if [ "$bindnum" = 0 ]; then
+	    route del default netmask 0 2>/dev/null
+	fi
+	ifconfig $device down	2> /dev/null
+	isdnctrl delif $device	2> /dev/null
+	# If this was the master device,
+	# the delif will also have removed the slaves.
+    fi
+    ;;
+
+# the rest is generic, don't touch
+*)
+    echo "Usage: $0 {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+
+# vim:set sw=4 si:

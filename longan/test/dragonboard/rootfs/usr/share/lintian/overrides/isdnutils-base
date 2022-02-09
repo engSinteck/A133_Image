@@ -1,0 +1,3 @@
+# - duh, it's an example, why should it be executable
+## why should an example be install outside the examples directory?
+isdnutils-base: script-not-executable usr/share/isdn/default/device.DEVICE

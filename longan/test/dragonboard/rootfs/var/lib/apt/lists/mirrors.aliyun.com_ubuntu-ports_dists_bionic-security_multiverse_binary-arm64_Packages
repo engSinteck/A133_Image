@@ -1,0 +1,183 @@
+Package: jhove
+Architecture: all
+Version: 1.20.1-5~18.04.1ubuntu1
+Priority: optional
+Section: multiverse/utils
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 12000
+Depends: libjaxb-api-java (>= 2.3.1)
+Filename: pool/multiverse/j/jhove/jhove_1.20.1-5~18.04.1ubuntu1_all.deb
+Size: 1426472
+MD5sum: 2ff1cd5931cce8c32e20cba4278b2e67
+SHA1: 2fc5b1ccde31b793910a75e1c78ed8fe89dfc33d
+SHA256: 56f2e6508800ba25623dac2c4448b0efc7a7570d04a961616e6ff815ece3c913
+SHA512: 9b3a38cdfeb06bea96e84e71b21e5543c0bfb1029d205b7a0916e53d8b6a688d2aff5dfb9c285cd816b4493ac856eb25bd51eb2d565c32592cb5d1a8e9f5600c
+Homepage: https://github.com/openpreserve/jhove/
+Description: JSTOR/Harvard Object Validation Environment
+Description-md5: febe0cb6a55fdf2af5baf3d3965883ac
+
+Package: libclamunrar7
+Architecture: arm64
+Version: 0.100.1-1~ubuntu0.18.04.1
+Priority: extra
+Section: multiverse/libs
+Source: libclamunrar
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 77
+Depends: libclamav7, libc6 (>= 2.17)
+Filename: pool/multiverse/libc/libclamunrar/libclamunrar7_0.100.1-1~ubuntu0.18.04.1_arm64.deb
+Size: 29192
+MD5sum: 7786c6529890dac2b218bca79864f064
+SHA1: 01ae66deefa8c3417c1e39dc1e1625f383ac398e
+SHA256: f1c5fbf352cc470ae3c999889739f85f585324b3a8c95e6f65831cce7c3729bd
+SHA512: 9c56f02c33c528205f28f3bd4be4bd5a12ae1bb235b2955b8ee109fe1d99018bb785f742542ed57165f1f70350dbfa8df69f71501348d668ab933c18cc8fb99d
+Homepage: https://www.clamav.net/
+Description: anti-virus utility for Unix - unrar support
+Description-md5: cc91b3ee0883ae72d88576f9ca8c850e
+
+Package: libclamunrar9
+Architecture: arm64
+Version: 0.101.2-1~ubuntu0.18.04.1
+Priority: optional
+Section: multiverse/libs
+Source: libclamunrar
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 273
+Depends: libclamav9, libc6 (>= 2.17), libgcc1 (>= 1:3.0), libstdc++6 (>= 5)
+Filename: pool/multiverse/libc/libclamunrar/libclamunrar9_0.101.2-1~ubuntu0.18.04.1_arm64.deb
+Size: 115424
+MD5sum: 5c8ccee39e6fee22ff76067cb464af52
+SHA1: 0a72b9eb30aafdf87ba7c03638f45da4462a8e93
+SHA256: 5afeef2076c6943b94196e8939687737d0b2d99ace53211768e5b9add38b6197
+SHA512: 3271dbcd736a261fe213b4b01e0767c78f18f2aa8b48cdb116c77d1a612d45761f5949e2b77dcf94fffd45ff4e398edf7dc114dbb41a83b3e0ffad2ca59853d0
+Homepage: https://www.clamav.net/
+Description: anti-virus utility for Unix - unrar support
+Description-md5: 81aaa76cb9df5259f364d29eeca2acc6
+
+Package: libnvidia-common-460-server
+Architecture: all
+Version: 460.91.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: multiverse/libs
+Source: nvidia-graphics-drivers-460-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-460-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-460-server (<< 390.25-0ubuntu2~)
+Filename: pool/multiverse/n/nvidia-graphics-drivers-460-server/libnvidia-common-460-server_460.91.03-0ubuntu0.18.04.1_all.deb
+Size: 9192
+MD5sum: 002e9e12aa2ec2def0ec5ff6ec2363ab
+SHA1: ecd8fa2089f043ad4c78f1b13aa1b7a54196a62a
+SHA256: b86eff8886e4b501aaf4f09b4e0beb33d97d2de23d19e20091d148f93d698fa7
+SHA512: 342d306e79f069c5acb6a040f9e34d3ed5ce0528b586ed0548a50e11df2814b7230d4b9d36044cb03794d464dcfc30b6844df0d8e840ed6d08f761fff590e465
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+
+Package: virtualbox-dkms
+Architecture: all
+Version: 5.2.18-dfsg-2~ubuntu18.04.5
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team  <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 5290
+Provides: virtualbox-modules
+Depends: dkms (>= 2.1.0.0)
+Recommends: virtualbox (>= 5.2.18-dfsg-2~ubuntu18.04.5)
+Filename: pool/multiverse/v/virtualbox/virtualbox-dkms_5.2.18-dfsg-2~ubuntu18.04.5_all.deb
+Size: 685860
+MD5sum: 9286664562019b661ae59849107e31d8
+SHA1: 6225b01c8ecd4f8597d37defdf07d31c58093e43
+SHA256: 56ee0b4cc3cd44f3144e28ec9855efe14d163f23bdac8ce5da62776b14a6b030
+SHA512: 9309eb8a692acb33a3a7d0078d701a49b2abeb5a732ef03311e84fcaeee641580ebd52937e82edfcf7a1987dcc2f7ff6abf63eb6d7ac1b4afc969ad48eb8d092
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - kernel module sources for dkms
+Description-md5: 4d42f0fe51c4a92f2aed5071f84524ae
+
+Package: virtualbox-guest-dkms
+Architecture: all
+Version: 5.2.18-dfsg-2~ubuntu18.04.5
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team  <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 6544
+Provides: virtualbox-guest-modules
+Depends: dkms (>= 2.1.0.0)
+Filename: pool/multiverse/v/virtualbox/virtualbox-guest-dkms_5.2.18-dfsg-2~ubuntu18.04.5_all.deb
+Size: 608532
+MD5sum: 4cea68a28405ce402232a881a83c592a
+SHA1: c3b01bd38e5e404a39584a80a4319904ea08194b
+SHA256: 5ea025d8375085ad8114de4515c278d1f30e9c19164f930896aa5c392fcca003
+SHA512: 658be41c5d3d298a7c436dca1dbb7ce30e37c617b815040ceb4e28979688ea5654d7513046f4b8bdbca6b2b277d7cdf0acf158052de187b6cf5079ce06a6ed07
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - guest addition module source for dkms
+Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
+Description-md5: e15ead9377a7f1e325ded819d3cfaf8b
+
+Package: virtualbox-guest-source
+Architecture: all
+Version: 5.2.18-dfsg-2~ubuntu18.04.5
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team  <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1050
+Depends: build-essential, bzip2, debhelper (>= 10), kbuild, module-assistant
+Filename: pool/multiverse/v/virtualbox/virtualbox-guest-source_5.2.18-dfsg-2~ubuntu18.04.5_all.deb
+Size: 1005808
+MD5sum: 5851ce046a9cc10dfe52e2689f3124a4
+SHA1: 278f88787d9d1b79f633d1fc6ff8adef83d8b85f
+SHA256: f1e58313363dafca511911460a28fd75b83e8ffe84e326e9ff1ca5eb11c5e3f9
+SHA512: 5a8cb7427a33ed8ae7a1fa78ff8254b1664877004927f2d34ecef3ed84ece52265987cf813ded56ff9f46424c82635d2abce0c19a0d6560a6afd27cae69574e9
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - guest addition module source
+Description-md5: 4e8ea50b26a8f2bc5f4e7ef943a32a06
+
+Package: virtualbox-source
+Architecture: all
+Version: 5.2.18-dfsg-2~ubuntu18.04.5
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team  <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 859
+Depends: build-essential, bzip2, debhelper (>= 10), kbuild, module-assistant
+Recommends: virtualbox (>= 5.2.18-dfsg-2~ubuntu18.04.5)
+Filename: pool/multiverse/v/virtualbox/virtualbox-source_5.2.18-dfsg-2~ubuntu18.04.5_all.deb
+Size: 811476
+MD5sum: 8f2cc87a71c1712b980ade9ab75de336
+SHA1: 1b03e657c906c77db12dc502921a41e0d60cfc3d
+SHA256: b696151c47866b63bd760cdaeadc967d92ecaf6070792a552d6d31ef7161523f
+SHA512: d61dc6ccedf88db72dee0b7ee0cf6a5bc7e66aa9c77f8280d8f2c642b11bd37104872c3ad7b05ad31f01e55eecd58bbd0a531335d3a32f4cc491f1d49c4f324d
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - kernel module source
+Description-md5: 53035ede584988f3413156cb7a5dbe8b
+

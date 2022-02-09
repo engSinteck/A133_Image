@@ -1,0 +1,345 @@
+Package: libnvidia-common-390
+Architecture: all
+Version: 390.144-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 36
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-390 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-390 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/libnvidia-common-390_390.144-0ubuntu0.18.04.1_all.deb
+Size: 10200
+MD5sum: b87b14a550262fa5d878fbf6db0eb43f
+SHA1: 2741e1c6eb7d6c650165f806ebc982aa3443c80f
+SHA256: 988697cbe8bd12c492236f2bfc7fab1ccc6ebc09c57fd5d0de49e048d2082896
+SHA512: 032bd8c155bc4d9b6063c57567323b6978e6eb9dfdfa07dc8e1c2e72d29e869a923aba516bda0ddf5ec42adde08dc041d40766acb0eb07a757163143ed34aef8
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-418-server
+Architecture: all
+Version: 418.211.00-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-418-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 34
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-418-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-418-server (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-418-server/libnvidia-common-418-server_418.211.00-0ubuntu0.18.04.1_all.deb
+Size: 8964
+MD5sum: 78e1d9ae196f4276789f835f4865eb25
+SHA1: 0956f35ed4c1339c7fb7eeaf14aca16e2707bfae
+SHA256: 97d4607cfa5ae9d2ab42f8df6d27942ecd656114be19c11f42afbac565df8a87
+SHA512: a6f8101e7d6d622a4e4f32fd5dec387b684800f66cf8e256478c7fa09d065e27454bfd7be786d50b13be60e73e815fb7939de086b0bc90321d6a965443866b4a
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-430
+Architecture: all
+Version: 440.100-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-440
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 19
+Depends: libnvidia-common-440
+Filename: pool/restricted/n/nvidia-graphics-drivers-440/libnvidia-common-430_440.100-0ubuntu0.18.04.1_all.deb
+Size: 6556
+MD5sum: 9846689d0a49e99f8c76b391cfb89b8d
+SHA1: b2b19ff00df4f54074802fb7d479bc1bb3972aab
+SHA256: 4abfd57da5bd43a3e18e439f85272b6c0abaee2e24bcd3f5bdd95012b39f7fea
+SHA512: 47d61885d1837e9a4af4e884d13196095c9476edc6f3efc5821b49bad84844c49077e2d496f0179b8a34d90f5a4fdafc7fde60a08b3a516d64cad1897d9a99fd
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-440
+Description-md5: 50d23315518d9c84683cf238209aae6f
+Supported: 5y
+
+Package: libnvidia-common-440
+Architecture: all
+Version: 440.100-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-440
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Breaks: libnvidia-gl-440 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-440 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-440/libnvidia-common-440_440.100-0ubuntu0.18.04.1_all.deb
+Size: 9608
+MD5sum: 84ce897ede94f4f642b6fac0489b0d7d
+SHA1: 08288d752b680725b5798aa8f6a73b61b9de5a9a
+SHA256: 34c8a3180d3c3b986d925a4b246e00caa68c6a0bb9a0f29d507562a1670dc738
+SHA512: aa43f5062457d300a352c549e2453211cdebd9bf39015fd2ca86f0663af6a02bd9784b5b5270a567c8827c0911e874bf3409a4f5cfe16a1bc89dec520366c380
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-440
+Architecture: all
+Version: 450.119.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-450
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 19
+Depends: libnvidia-common-450
+Filename: pool/restricted/n/nvidia-graphics-drivers-450/libnvidia-common-440_450.119.03-0ubuntu0.18.04.1_all.deb
+Size: 6812
+MD5sum: c07b2d0401482d6a60009cbeeb5de004
+SHA1: 7926d9b36809f13886c932e9ed78b44d1e4321fd
+SHA256: 7569ba522cb26f7a0c33c4cb0b94e932c98f476c52fed7430c067b75e93d3479
+SHA512: 4677498ad57c0cf0d90545f6765baa3fb8528e8f0715729f6552a72989a2c7208b47f505d924684337d2e53d5f5fb01c654665ff7fd2dd1de6e63ca0cc7d26fc
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-450
+Description-md5: 2dbd8005c35ac0b3072ac1ebdded71a0
+Supported: 5y
+
+Package: libnvidia-common-440-server
+Architecture: all
+Version: 450.142.00-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-450-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 19
+Depends: libnvidia-common-450-server
+Filename: pool/restricted/n/nvidia-graphics-drivers-450-server/libnvidia-common-440-server_450.142.00-0ubuntu0.18.04.1_all.deb
+Size: 7288
+MD5sum: 4b2a11d5f358818efecd4184be5bc089
+SHA1: 81e4d3b57837cec3c872cbdf6905918ec3bb9e97
+SHA256: 3afc840fca85aac92a08852e215a80e9587eb050858142e465c74ebddf7720dc
+SHA512: 4dd057841621766910b661998af9749a3580eb753f2d34531a2450038f4db7a73af0dd4fc8f57ebf96b7e1a5c8580d9fbdc836aeba2fda4a1183150ae0202e2c
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-450-server
+Description-md5: 9fa4d974119d7ecb5a92d0caa476d4ac
+Supported: 5y
+
+Package: libnvidia-common-450
+Architecture: all
+Version: 450.119.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-450
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-450 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-450 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-450/libnvidia-common-450_450.119.03-0ubuntu0.18.04.1_all.deb
+Size: 10020
+MD5sum: 7cfc3148da68ec21399ac8ee9acf9b8c
+SHA1: f034201824d192c87961c8be8468f0b4c4c544bf
+SHA256: 80d2229017525f28387328f38af7dac789aa84b2e96ec76e9ba39a3082317680
+SHA512: d5f458b5176c37a9c2135cee544dacdb73fa184fe236926d0fb9c22f1716571893a1e22ddd87db1117f811649a1fb6233ead2132c30ec7f06ca4146e197e1b6b
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-450
+Architecture: all
+Version: 460.91.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-460
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20
+Depends: libnvidia-common-460
+Filename: pool/restricted/n/nvidia-graphics-drivers-460/libnvidia-common-450_460.91.03-0ubuntu0.18.04.1_all.deb
+Size: 7676
+MD5sum: 1a48fb16beb91bcca8afba34a1ac5ab7
+SHA1: 0ce79a213797315ab40fa6ab345cc2b19a867c26
+SHA256: 57af00951dc83f3a76e5ce43e431c0255e1d2d6ce3db6a0190a2103f35eecc6c
+SHA512: a03a0327b7270c43db20a0d4c1f909661953732b9c65a1d6aa9f1cf933744ab2e1d92ba16c78577a7021e84fb79f3c6e66b04e416b858e2abb521225504c4d31
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-460
+Description-md5: 93ac49db55509a82fc28ed1920b20644
+Supported: 5y
+
+Package: libnvidia-common-450-server
+Architecture: all
+Version: 450.142.00-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-450-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-450-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-450-server (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-450-server/libnvidia-common-450-server_450.142.00-0ubuntu0.18.04.1_all.deb
+Size: 10500
+MD5sum: 695ce18020117e44f5ac99b7ab41fc61
+SHA1: 2d05d2f8ced8698cab8dd808c17a1fcc0c9d7e9a
+SHA256: 5120f1013227ff2f1526f3396598e33286a67f879e6303d2dd6dbb63391da0a8
+SHA512: 17f65fad5f0e968d17fafaa952ade39798499a203f77197e58997118109eeb9953f26433d99852f3d69ff3d0e8a11786e9977d089c039527b1c1a82864da39b0
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-455
+Architecture: all
+Version: 460.91.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-460
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20
+Depends: libnvidia-common-460
+Filename: pool/restricted/n/nvidia-graphics-drivers-460/libnvidia-common-455_460.91.03-0ubuntu0.18.04.1_all.deb
+Size: 7676
+MD5sum: b1499cf3f32e13d1ffd5449ce731b3cc
+SHA1: 6418b04c4bdd511a3355b734b6eafd49319cf83d
+SHA256: df25585b6878f3dcc79536b63e0a9c428121ad3bab7487160fa34b03226486d0
+SHA512: 56f55ac1beeb3e0e541326f3389f9b60a3cbc41affabc949f6ed8ccb2709d0113241ff6314dec837087a5b6d513bad2fd0f8e72e4d271c90112737a214744569
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-460
+Description-md5: 93ac49db55509a82fc28ed1920b20644
+Supported: 5y
+
+Package: libnvidia-common-460
+Architecture: all
+Version: 460.91.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-460
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 37
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-460 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-460 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-460/libnvidia-common-460_460.91.03-0ubuntu0.18.04.1_all.deb
+Size: 10976
+MD5sum: 27137084fd2e639f737cf069c2fd7a24
+SHA1: 04e9432afe448675add7179025f571404a01a803
+SHA256: 24cc298e2c710dbbe8f85774571c87dd32a7bdd3348aba8485b5df235dd70223
+SHA512: fa3840959ef5ff437b87b494168aadda68a8bf4465bf98f4c5222b362649b6c2a56c725ceb920d2fb5d03a8ce94eb6a1e9956e2a71d0722dbb47c3e8779f6c30
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-465
+Architecture: all
+Version: 470.57.02-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-470
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 19
+Depends: libnvidia-common-470
+Filename: pool/restricted/n/nvidia-graphics-drivers-470/libnvidia-common-465_470.57.02-0ubuntu0.18.04.1_all.deb
+Size: 5872
+MD5sum: 446a6c42405e2361b72e780f1f6d8ffc
+SHA1: e954c4cdc88028c4e0c33ad43221aeeba72a4bbd
+SHA256: 009f59df7cb804cbc48cb6f928410eca76d571f015e0c7a02824a2b98a6e56a8
+SHA512: 28fe5ef8b9847bf1e229f237f168092671323877a0e165827cf7fbc806383e88aabfc9f3d180be3391b97aa06e43258d203911769614be9233b7f348e753547b
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-470
+Description-md5: 3e21327dc2a171685f9ba9a24fabb120
+Supported: 5y
+
+Package: libnvidia-common-470
+Architecture: all
+Version: 470.57.02-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-470
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 36
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-470 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-470 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-470/libnvidia-common-470_470.57.02-0ubuntu0.18.04.1_all.deb
+Size: 9248
+MD5sum: 6e9aac83d562f9e9c039c2b80183fc38
+SHA1: f33decb3c63af3af2779f7923ce791bcacd96ea5
+SHA256: bb79655cb968b2411a17ab373e3d7124bd00f523114ae9e8eb29cdf04e44205d
+SHA512: 2783a230730d47e62307e52054a7cac8874fa452890e1afe0e2dacd770546be538faee887458d334bcae9fbc236988622f6eee8255665b4887ebff1b0e6a357d
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-470-server
+Architecture: all
+Version: 470.57.02-0ubuntu0.18.04.3
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-470-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-470-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-470-server (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-470-server/libnvidia-common-470-server_470.57.02-0ubuntu0.18.04.3_all.deb
+Size: 9148
+MD5sum: 6523838de91d98ede2e2b18a200b0c46
+SHA1: d033ae0421f6a756d6308d4ec532940a7e798140
+SHA256: 72064bbea280a52db1ef46225c7ba966999fccc24132fb40adc192506e620e9a
+SHA512: c2fa87da79e313d891e6b8c6cc9bfe2c7fc60738ca8f4915804a843c954fe36399837763a824d1731648b77e96f5a34a57e02f931405eaa546e9c4940561c7fa
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+

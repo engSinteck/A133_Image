@@ -1,0 +1,933 @@
+Package: debhelper
+Architecture: all
+Version: 12.1.1ubuntu1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debhelper Maintainers <debhelper@packages.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1606
+Provides: debhelper-compat (= 9), debhelper-compat (= 10), debhelper-compat (= 11), debhelper-compat (= 12), dh-sequence-dwz, dh-sequence-installinitramfs, dh-sequence-systemd
+Depends: autotools-dev, dh-autoreconf (>= 17~), dh-strip-nondeterminism (>= 0.028~), dpkg (>= 1.18.0~), dpkg-dev (>= 1.18.2~), dwz, file (>= 3.23), libdpkg-perl (>= 1.17.14), man-db, po-debconf, perl
+Suggests: dh-make
+Conflicts: pkg-create-dbgsym
+Breaks: cmake (<< 3.9~), dh-systemd (<< 1.38), meson (<< 0.40.0~)
+Replaces: dh-systemd (<< 1.38), pkg-create-dbgsym
+Filename: pool/main/d/debhelper/debhelper_12.1.1ubuntu1~ubuntu18.04.1_all.deb
+Size: 893592
+MD5sum: 600c4b7ef0e6598064ebc18d1c95ee9a
+SHA1: d1d0816e8e1ce01e8aeac5158b5160d6f9754d85
+SHA256: fd2e9e202ef2b9c2b9a6f45196e6f19e8ad5dd3688afa797b4974af74187a683
+SHA512: df3d7781aaa8fcc319eab2823382ee14280a28efa33c94d021a6e6438b354139cccffaace411b21003b8faca487f5d60abc884a26902e2688d7b941629cf8a9f
+Description: helper programs for debian/rules
+Description-md5: c3d35229c1ce392f77324206e097b92e
+Supported: 5y
+
+Package: dh-autoreconf
+Architecture: all
+Version: 19~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Julian Andres Klode <jak@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 46
+Depends: perl, debhelper, autoconf, automake, autopoint, libtool (>= 2.4.2)
+Breaks: dpatch (<< 2.0.38+nmu1~), quilt (<< 0.63-8.2~)
+Enhances: cdbs, debhelper
+Filename: pool/main/d/dh-autoreconf/dh-autoreconf_19~ubuntu18.04.1_all.deb
+Size: 16044
+MD5sum: aca1bdd6edc0fd5d2c844440a8c6106d
+SHA1: 982dce4f2fcc54e56a1074573af52718e8af1cd6
+SHA256: 50f943fafcad70aba6d8a0034ccc1eef694f716f4eb688816309790ecddbb8b0
+SHA512: 387a71a5bb1e39c3bcd03aecb90ac2478818efc99d101d3d90719ee7484080bea272a17b3f48fa66d1f1f2f84b657d99a38f8585bbbe7ce43ba43ae65efba376
+Description: debhelper add-on to call autoreconf and clean up after the build
+Description-md5: 64431da0ae4318a5fbf441743bd5ffc5
+Supported: 5y
+
+Package: erlang-asn1
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1025
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libc6 (>= 2.17)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-asn1_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 712432
+MD5sum: a948aad597bc6ed2a89a3fad268a3c9e
+SHA1: 27f0c5499f7183d14616f82146d455849d520dcd
+SHA256: 2285e7e5ec7e9f48424623bea1e902ceb8e4eec52100ea665463fa118c4910e1
+SHA512: 8e0f28efbbc491182351aca801d53721b5c7bb237fe67e2cb2de9aa7b41979a09d31624b63fea71b725b02b4d46fd9f100f95f06f6a195c81de62aa61641948a
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP modules for ASN.1 support
+Description-md5: ee4d0b49672ea14e8a224f00c393a8c6
+Supported: 5y
+
+Package: erlang-base
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 13284
+Provides: erlang-abi-17.0
+Depends: procps, adduser, libc6 (>= 2.17), libsystemd0, libtinfo5 (>= 6), zlib1g (>= 1:1.2.8)
+Recommends: libsctp1 (>= 1.0.17+dfsg), erlang-crypto (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-syntax-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang, erlang-manpages, erlang-doc
+Conflicts: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe, erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-doc-html (<< 1:13.b.4), erlang-manpages (<= 1:11.b.1-2)
+Breaks: rabbitmq-server (<< 3.7.7)
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe, erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-doc-html (<< 1:13.b.4), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-typer (<< 1:20.0+dfsg), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-base_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 7825168
+MD5sum: a85bd3378953926dea670000599ba8e8
+SHA1: f17f79765c8547e7cbce2f9b0579151476cbae48
+SHA256: 576cfc0bd191d5039331b8085ab965441ee27c1746e19bc55dffac30964f441e
+SHA512: 66308ad5f6ffc53794183aa0e591854589f5088c4c67f1d285f8983f0787344cfe9e4ea0ed2ed016cbbb0b848f1f8c0744975df33ee78a0840908d8ef167d099
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP virtual machine and base applications
+Description-md5: 34f1d00a77372c45835007b286d6b266
+Supported: 5y
+
+Package: erlang-crypto
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 311
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libc6 (>= 2.17), libssl1.1 (>= 1.1.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-crypto_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 128688
+MD5sum: fc4e943c1a0d288e3065eca2fd24ff69
+SHA1: fab9091591b807ff3a1c39933253d41332dae430
+SHA256: 6b948f51d16a2a24f1146fc74a118533df1701251734b7008c5ec602cb9759aa
+SHA512: 89608546531a3901bf67da52af1b5fdf2dab602a5679b5e4392ec076278ec1f3264a00ab1ad08af0cd8d44603c93c0fea2feea6b14024d9c3ee0360a63be86e5
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP cryptographic modules
+Description-md5: 6d6a5e48deb89695b61d6380e84e7e95
+Supported: 5y
+
+Package: erlang-dev
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 3418
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-dev_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 302400
+MD5sum: c0431984e4548009ff02e18b378deda5
+SHA1: 812e81f45b4b36faade4d63c4443dbb13f78dd6c
+SHA256: 1790a13d2fa63680708080920861e1d82119e326d985ab0a121bea9264051f34
+SHA512: 281645dd43a795ecdae42630a58bbf5b427e7237fa57a067274250c68b2b511c461da3bf35c21b83c27a5f703bc3a91127e1c7e71228ed8eec58dde7f698fb8a
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP development libraries and headers
+Description-md5: 023eca40c938a81e31cb3d07fa28976e
+Supported: 5y
+
+Package: erlang-diameter
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1012
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-ssl (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-syntax-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-diameter_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 649472
+MD5sum: 222f45682183a4226974fdcc41d5dace
+SHA1: 17ff11a44db0832ffbf720dd39d9182df3477dfa
+SHA256: 1323be55d40d0fa2d0df2272864f009e549e2caa327bbda8ecdce1c149b95091
+SHA512: 75987d0f5464897f5751fa24f113b4c0888a2f3a3329d3e951b55c4d49d4de39773198708c06ab307c646183f78b3c1c231f975e2d53b906ff5f1f9e9c9c8bb0
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP implementation of RFC 6733 protocol
+Description-md5: 42a0b30fc825ef17d696ef8100828e2c
+Supported: 5y
+
+Package: erlang-doc
+Architecture: all
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Priority: optional
+Section: doc
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 181481
+Provides: erlang-doc-html
+Suggests: erlang:any
+Conflicts: erlang-base:any (<< 1:13.b.4), erlang-base-hipe:any (<< 1:13.b.4), erlang-doc-html
+Replaces: erlang-doc-html
+Filename: pool/main/e/erlang/erlang-doc_22.0.7+dfsg-1build1~ubuntu18.04.1_all.deb
+Size: 15411056
+MD5sum: d68268dbec0574bd2d3839444cf3c7df
+SHA1: ba57b3f6d9e1ecdb90c330401ab2e73b5afb344d
+SHA256: d115533ee8907dfbd35aab39f8b6d48e5b0f1e3115a0a33075f12635a6016811
+SHA512: 835bbc9f618595c53867b78168096855d26f3b2d7d043a4736ff7d66c25c50d633b68c001fd18a6ab681f19ed28b235aabffab94ecfdf39d316150504171023d
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP HTML/PDF documentation
+Description-md5: d151a4898d82d984d031d1b1e1366eea
+Supported: 5y
+
+Package: erlang-edoc
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 453
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-inets (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-syntax-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-xmerl (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-edoc_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 280348
+MD5sum: d5ba5c152d71980ab689cc59f775b556
+SHA1: 91d977d8dfcae2421d41f0c28f1ac6df4e04aebe
+SHA256: 8a511781f4efcd55a1524285fbef9a7932d5bb13ec20c5a951bf8a7af9f0d193
+SHA512: 5c5a8ec112615cffc0c6a8f8d874212a56cded2449b22211376fe391bd73885a6c5ab9dda9fd5d1b17346991411ef586d18b8426e925bc7ad1c98d0fb0d92756
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP module for generating documentation
+Description-md5: a3f918489b4ca4cd8e396c420e04b999
+Supported: 5y
+
+Package: erlang-eldap
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 193
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-asn1 (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-ssl (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-eldap_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 99696
+MD5sum: ddcedbd32e425479e4514daa996ff51c
+SHA1: 4f9e869450e67a674a48f458bbfda357522a81ac
+SHA256: 505b95307d599b7b9281f401ddbcb7d5af78a8a3f56064e31c2c323f2da4bfeb
+SHA512: 74cbc45c0c1c3c3fb08f7c1f1a4fe82de32672a562e421301ca42dcf763ff0f36c010bef0e39eeb05961b7aa29b27d43d08bfd47dd8267ef1d53274f5c29ddbc
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP LDAP library
+Description-md5: 84192ee472dc7261422d95bd91233523
+Supported: 5y
+
+Package: erlang-erl-docgen
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 612
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-edoc (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-xmerl (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: xsltproc, fop, erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-erl-docgen_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 120260
+MD5sum: f18adb5ffea6335890683195a3d2c763
+SHA1: ed0fc691416b3dd7b288e554e998a2dee0706a81
+SHA256: ffa1b745ed189162c81743945718c5b8fbe4b1315a7bf0980b8ff96a97b1287b
+SHA512: 940be17f92a0c490302a64d42842b275159b5c81a4db59b1bb586a36170a6464980d66285e23f5ec1cf204fc84a2ea52bb291823f024d1468946c768c8561e0c
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP documentation stylesheets
+Description-md5: 12eb983b0fd1fd22ee8081c4efc70adf
+Supported: 5y
+
+Package: erlang-eunit
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 251
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-eunit_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 133680
+MD5sum: 2d1b7fc738c65daa461efdd7e0e8933a
+SHA1: 64e84fc1ef1b9bcea9a67305a9abb0fa51d2838c
+SHA256: a3bbb4e60bb0732afb33b6bd0093753aa3ada57124e562aaba2653f2628ccadc
+SHA512: 2fd5c5b21f62c0208ab6e5de0c240a3d499919a64d2fb057dfc3364abf4ea2d8cde49eb43a62237b4e4675542a78ae4c03ea96d0faf5fb3bbc4f78df60e90e91
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP module for unit testing
+Description-md5: 559493af07c14e28bf56267ccbd871a0
+Supported: 5y
+
+Package: erlang-examples
+Architecture: all
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2291
+Depends: erlang-base:any (>= 1:22.0.7+dfsg-1build1~ubuntu18.04.1) | erlang-base-hipe:any (>= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1.0) | erlang-base-hipe:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1.0)
+Recommends: erlang-crypto:any, erlang-inets:any, erlang-megaco:any, erlang-public-key:any, erlang-snmp:any, erlang-ssh:any, erlang-ssl:any, erlang-syntax-tools:any
+Suggests: erlang-wx:any, erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-examples_22.0.7+dfsg-1build1~ubuntu18.04.1_all.deb
+Size: 914424
+MD5sum: e120f9e1c544cad00a0757c1208d37b0
+SHA1: 4b57dda21761a37ff53a94e3a426ea3938229f46
+SHA256: 965bce5721462f552d7b46a2cd3a4ecb4a8baf282f37004d37c1225c0d66739d
+SHA512: e7456f8b86c1e6d6c85747c6c851b906e218c77783e4f0359afc64a7564397ffffc1913a020aa651b24d98e445c135f22bed86db499c6f05879d0e849fb6c6d7
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP application examples
+Description-md5: 7fd4d1d18889e4d971a860ea2e41b36b
+Supported: 5y
+
+Package: erlang-ftp
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 145
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-ssl (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-inets (<< 1:21.0~rc1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-ftp_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 68900
+MD5sum: 7c3f622e988f1dd3bb59d55204b1074e
+SHA1: d0378b3735a3adbce87871ae0fbf79ea33bf1fd3
+SHA256: b4f0a50906f390f5c84be1c83d1fbd38e141b09ca0c5a2d3a037055dbda72ac1
+SHA512: 18517d88e25ded641f4c07929a211ac74698cbc673da3d6857c40b740f36af139d77d050874d76c203ef88d626288a89cd276d33ae7d9da9005773424d194eba
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP FTP client
+Description-md5: 97f938484e6e841e88d0c11037d66a14
+
+Package: erlang-inets
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 891
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-ftp (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-mnesia (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-ssl (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-tftp (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-inets_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 575728
+MD5sum: 016b23ab71ca6db6eebda50a11778c79
+SHA1: 2cf4831e5f5407cf9385d87d20a4a4224016e119
+SHA256: 2b82566d72c64e6af80f5493e06f2c52efedd4f00e2601b81bf2edc30e5c6001
+SHA512: 7ef0a51e2f7ee293c144eedfc6f4b9e102f0469ec5b669ed3148d7856180b3172765fd7debe5e07d6e5c0ed1ff147c408843e8059102533f976a0dbc20842881
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP Internet clients and servers
+Description-md5: 8d70a0f49c4439fde59135fbc5bed418
+Supported: 5y
+
+Package: erlang-megaco
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 9158
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-asn1 (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libc6 (>= 2.17)
+Suggests: erlang-debugger (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-et (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-megaco_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 5389508
+MD5sum: 01099a7f83c65bf6f310c4c661e98cc2
+SHA1: 1806242f35bff8e15ccfa92f6b903f6afde45754
+SHA256: 0bb7c301bf3ed62036dc119994b9589ce210126a7557719d824fa69459c45287
+SHA512: fa705eab35b94b0642d4ecd81e3005578108ff58210b347fdca3cc3ec625cf4342bfc4bb972e63e1d019a7e5e1b6ff3c0e8b2ff69445a26928b3d21bcf059f68
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP implementation of Megaco/H.248 protocol
+Description-md5: 690fb9316fd0c68e524cdd808aa967b2
+Supported: 5y
+
+Package: erlang-mnesia
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1033
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-mnesia_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 716852
+MD5sum: 433fa3520aadef934fbdff6b46453622
+SHA1: 061e550323f61ba0cf150011a094299b8d15e283
+SHA256: 68c8e9aed387ac0423e81e9927a9dd67a6079333b007f094ccd93e5ff75a8e0a
+SHA512: 1e2a09d8996468534df2a06979ad27c32c9171277f19d8c3b2b304d9673ca2a09f4eafc50d3c9a6663939185991ae5953f79293c892eb0a7a0fef74f67c14db6
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP distributed relational/object hybrid database
+Description-md5: 48d2214e21e1f80fbec2f00309f8406f
+Supported: 5y
+
+Package: erlang-nox
+Architecture: all
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 53
+Depends: erlang-base:any | erlang-base-hipe:any, erlang-asn1:any, erlang-crypto:any, erlang-diameter:any, erlang-edoc:any, erlang-eldap:any, erlang-erl-docgen:any, erlang-eunit:any, erlang-ftp:any, erlang-inets:any, erlang-mnesia:any, erlang-odbc:any, erlang-os-mon:any, erlang-parsetools:any, erlang-public-key:any, erlang-runtime-tools:any, erlang-snmp:any, erlang-ssh:any, erlang-ssl:any, erlang-syntax-tools:any, erlang-tftp:any, erlang-tools:any, erlang-xmerl:any
+Suggests: erlang, erlang-manpages, erlang-doc
+Filename: pool/main/e/erlang/erlang-nox_22.0.7+dfsg-1build1~ubuntu18.04.1_all.deb
+Size: 12672
+MD5sum: ea4907866e6d4e2e3b33a25966c0bd2c
+SHA1: 9d86cd77708f789877bd7f2f40e014f8b9386132
+SHA256: cf584158628cdd39877998e4db6f7415d88f70340e998c908aeddec20f5fe176
+SHA512: 137a5cb1203c1c20e458698b9003e0b3ac03c798ad84270e3bc5372ad44a90b642effc169b5a0cf48429ac0c0c0382418040b5df97dd0e1481cddaf3bd27855e
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP applications that don't require X Window System
+Description-md5: 7a788b312a01454a03fd4262bf827fcd
+Supported: 5y
+
+Package: erlang-odbc
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 136
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libc6 (>= 2.17), libodbc1 (>= 2.3.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-odbc_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 44944
+MD5sum: a515e808134e400317b144201eadaf9f
+SHA1: 280ecb99967bfaa37c958fb2fe3a996d3ef1a9c8
+SHA256: 7f6ecdda8766e0912dea0fe21a347e9cadfe6a23f8534a042210b9d33cae7210
+SHA512: a79700af5eedfbf71b2ba6374c2a0565e16a9d77ee3496aec4013128892f61f6ba588393b1a8b60330d6213e0bfd483d0bb3b6ae36cb56ca9ec69e9ef7fb405d
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP interface to SQL databases
+Description-md5: 8fb16205445a0b6f3190216580f2428d
+Supported: 5y
+
+Package: erlang-os-mon
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 181
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-mnesia (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-snmp (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libc6 (>= 2.17)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-os-mon_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 80464
+MD5sum: 34bafe7bc4dfb05a918abcd410f7d511
+SHA1: 09986ab75569a2c33706649bf595a5034210824f
+SHA256: 202d04918550b9e8fb732fe62354bb1f5b83d4f0a36e99703eb100dd21611238
+SHA512: af9061d516ef5c4e040b7967138119ab46f06a711bf6427cbe9943e1c59ffb1fd71314a297f5577c37bfeb5b38b213784a356dfb7863d65d53f9d91f68f4e187
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP operating system monitor
+Description-md5: f8627add1b4145778041a638d379dc3d
+Supported: 5y
+
+Package: erlang-parsetools
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 258
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-parsetools_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 150632
+MD5sum: 9d82c1182c1284b9e7c44a849f8faa02
+SHA1: 4bd3ed0bda61f258c8de7b37b0c25e62d72bf658
+SHA256: ca6e4364b7cf8177513899b0d73a6efcc54d5c4bec4f926cb169ece2c430362f
+SHA512: bbcea4f0d3a37f58a84f86d53efb7325bf8805dd9ac324402896a49cd983120300315b971caf17914328591872f2418a6e9243dd554c4b1d6b48354a340c432e
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP parsing tools
+Description-md5: 3e51e2f8676cdc2b45f2ac3d74b79580
+Supported: 5y
+
+Package: erlang-public-key
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 886
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-asn1 (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-crypto (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-public-key_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 564900
+MD5sum: 3da1864148ae0c9d647a7fb6219d8e88
+SHA1: 917e944cc842c3803c583cc85280f42d249fcd57
+SHA256: 00f860a8f716a4f5d740b914ea1038974a66581092422ba03c8a526485e808df
+SHA512: 7523d729b3fd3436a9d9c2230b45ec24ed9aadea269ed09575021eaa0c3e1fb1129027df0c6acf16901c7a9ed70874ddbe6611f9a1363340578c1ed7e038a270
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP public key infrastructure
+Description-md5: e10bb8263805ad3875bec38b249b88db
+Supported: 5y
+
+Package: erlang-runtime-tools
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 376
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-mnesia (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libc6 (>= 2.17)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-runtime-tools_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 181588
+MD5sum: 52093d533ad220e0d6d213e278caa7cc
+SHA1: 5adfbb09dae47568bf116705d98730a3955583d3
+SHA256: de689a4c93f655543a39ea7bac4cb252bf8d7f1070e95df3d59001c5b4886d65
+SHA512: 4bcb3521fe2c5170b6dee37ed52a2220463f357ad33e3359a611b09adc10ce7b29432bff36e489f700c92a0b917b9e110dd6f93cebd458025ecb4169b4e58126
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP runtime tracing/debugging tools
+Description-md5: a0448be753203ae3013367e215bb963c
+Supported: 5y
+
+Package: erlang-snmp
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2825
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-crypto (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-mnesia (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-snmp_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 1522636
+MD5sum: 4ae3e6da0636604943b717ee8a2d9ede
+SHA1: cf6d65359a5553db3a5b5191323edec01085d26a
+SHA256: 892adc77035802890f1536472ca69a062d486cb37ea8c8022007160c86f548a1
+SHA512: cde32c546b42134789f42dc76a1aab3d02b261057cfc74901f8121163b7fd6264726236a3869e9e82c04e37e9e2d040a7058b5bc8e32c3d63ab5b0c536a39fd8
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP SNMP applications
+Description-md5: dfb924f9e0e51a8acfd28878335946b5
+Supported: 5y
+
+Package: erlang-ssh
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 844
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-crypto (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-public-key (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-ssh_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 626280
+MD5sum: eeb7727d118c0a18b49976dfcf3f3486
+SHA1: dd55f2292a3f2288a25dd01ff4dd8d6e2ebc2381
+SHA256: 62525873314db288be0723d2bb7e73ccf77163ad2418a299c40cb20844a2332d
+SHA512: 856b4ab8350cb6ce43d936ed1135212f80e590069e14d764514b616da059e505748315303de509c34b870328daa6c9efb2a2a9c39e6d18fb33082ef87acf98ac
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP implementation of SSH protocol
+Description-md5: 2ab50c8973bb765ccc1c37f7e496762f
+Supported: 5y
+
+Package: erlang-ssl
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1339
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-crypto (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-public-key (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang-inets (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-ssl_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 1047608
+MD5sum: 9f531a9fe969ca2d654a00c31203a959
+SHA1: 9804e781bc11d34a2362a2802eb5cdc2c08fee65
+SHA256: 6664976a6aa69e9851943ce65d8411b5a029e6da6e53d248ee8957705fa85102
+SHA512: 7e0e85d53689db045f937d016c916003500188d14f15e5ef3a915c4cb9cd20fac0b5c5e883ef211b83e716961d9b65e63901033e8a9fa3f1fc9e92dbe5859c69
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP implementation of SSL
+Description-md5: 15c091acf332c7d47a15da19885fdc6b
+Supported: 5y
+
+Package: erlang-syntax-tools
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 547
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-syntax-tools_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 344128
+MD5sum: 9e8c75db3f23f7b5fbeba93409252f1e
+SHA1: cd515b7cbad079de45feec7bcf71e9c703fb4592
+SHA256: 70d0b495f6aff5be9ba8aa441f8a521cd60fd6e50e71156dd0bb8602332c1213
+SHA512: ac5c9cb7b4ed167a52fe8ca70b279fd80ca3bc44557baaa8bbfbf0c7d046ca76ff36603c85a92a730af89c5a396ee93c642cf4533c3803432e2f1ef8a7e2a203
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP modules for handling abstract Erlang syntax trees
+Description-md5: 734d87e62fdb69e61b39974407f3d15f
+Supported: 5y
+
+Package: erlang-tftp
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 164
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-inets (<< 1:21.0~rc1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-tftp_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 84284
+MD5sum: e83b68a7d0cb6a891522b9fdd0a9d62f
+SHA1: ed92e42dc3323711dfb8f4a3015c6aaaf311943b
+SHA256: 0ddedec81072ff11f34e161188555b4b6ccad65c126eeea758e8306133f4ae3f
+SHA512: a03d29d95bc22a1e3b65bbd4ba2c84d2fe6dacabbbb6c408cb9deba57457abfc78e0bd9fbcfcee7b26bc6fd4d7f7ff7d109de39281db2248ca54901494b86193
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP TFTP client and server
+Description-md5: 8aac13f7fcaec29fd897b963f927502e
+
+Package: erlang-tools
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1122
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libc6 (>= 2.17)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-tools_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 489228
+MD5sum: bd719bcda3c7d7542a9ea1da403fca0f
+SHA1: 1339d32c140151077c00e95cf7f1132611104be9
+SHA256: 7d29e10c02016de688c2f3eaf71ea9df2e06b0675ebb4b38877371a1be16259b
+SHA512: dce0ef90c9985287a97bca05f0a9737e52a0c952ac99dc542502f4a923ab6ef52a32d6e6b97d51a33aa06a6bc4cd3fa2dcb6306d4643d74bf9ac4e5dc7291b36
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP various tools
+Description-md5: 4285755cbac612fc7f4013b85cae332f
+Supported: 5y
+
+Package: erlang-xmerl
+Architecture: arm64
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1576
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/main/e/erlang/erlang-xmerl_22.0.7+dfsg-1build1~ubuntu18.04.1_arm64.deb
+Size: 948840
+MD5sum: 306f8c39243c5feba8ab7dbb1c69bea1
+SHA1: 003ed05452978f160f06c842b6d6046caab57848
+SHA256: 55fc719599cf9311545387d47ae2a8adc2646ffe05199fad64fc55d6ea746704
+SHA512: c807dae38c58d0f56484a1fe6b3bb05b4d87e5d44cf005b7975d62d34a00047ca21ff66191ba3c8d9545ab0c4f4bc58052ee44f290ca1b587a97362ff24a8340
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP XML tools
+Description-md5: 222136c221feb614758c204affd11214
+Supported: 5y
+
+Package: init
+Architecture: arm64
+Version: 1.56+nmu1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: important
+Section: metapackages
+Source: init-system-helpers
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 21
+Pre-Depends: systemd-sysv
+Depends: init-system-helpers (>= 1.25)
+Filename: pool/main/i/init-system-helpers/init_1.56+nmu1~ubuntu18.04.1_arm64.deb
+Size: 6040
+MD5sum: b02d3b43c708cc572013fa4973375659
+SHA1: 4fedd3152775330406be28d7e5536347a8748704
+SHA256: f9d9f7fc774235404127de49be9a87320976ead6d8102bfe2a8af6d28b6ac5d4
+SHA512: 5408d8d8b583072dfe6b3df53d94e4e4565177bf221bb25464a9390abd0002500276ac4ae2d4815940c6964fcd355e7ac3184e44601f5fb3ff15514a7e96069b
+Description: metapackage ensuring an init system is installed
+Task: minimal, ubuntu-core
+Important: yes
+Description-md5: 12a082503782e774ffe62fa80de49eb6
+Supported: 5y
+
+Package: init-system-helpers
+Architecture: all
+Version: 1.56+nmu1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 133
+Depends: perl-base (>= 5.20.1-3)
+Conflicts: file-rc (<< 0.8.17~), openrc (<= 0.18.3-1)
+Breaks: systemd (<< 228), sysvinit-utils (<< 2.88dsf-59.3~)
+Replaces: sysv-rc (<< 2.88dsf-59.3~), sysvinit-utils (<< 2.88dsf-59.3)
+Filename: pool/main/i/init-system-helpers/init-system-helpers_1.56+nmu1~ubuntu18.04.1_all.deb
+Size: 38156
+MD5sum: 5915ea4403e56fd52350a0583673f752
+SHA1: 070600da98a005bce085c0fa4198d49a712e79f4
+SHA256: bd6ebf49ec6c1436822495cf3e13f2a225f166ec31d1201e33b58249042fe782
+SHA512: 2d692c15ae0df3b8601093ddeac17bebaea0b32dd147ce8314338e7bdaaeb271a39fe708ba8eb39df40b9d000bbebc3bca045898f6898f86db4c443493d12ece
+Description: helper tools for all init systems
+Task: minimal
+Description-md5: facafbf6c4b9fd95c34e95938629ecef
+Supported: 5y
+
+Package: iproute2
+Architecture: arm64
+Version: 4.18.0-1ubuntu2~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: important
+Section: net
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Alexander Wirt <formorer@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2216
+Provides: arpd
+Depends: debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.27), libcap2 (>= 1:2.10), libdb5.3, libelf1 (>= 0.131), libmnl0 (>= 1.0.3-4~), libselinux1 (>= 2.0.15), libxtables12 (>= 1.6.0+snapshot20161117), libcap2-bin
+Recommends: libatm1 (>= 2.4.1-17~)
+Suggests: iproute2-doc
+Conflicts: arpd, iproute (<< 20130000-1)
+Replaces: iproute
+Filename: pool/main/i/iproute2/iproute2_4.18.0-1ubuntu2~ubuntu18.04.1_arm64.deb
+Size: 691688
+MD5sum: d0fb59955428b9963a2c14a44d70dc4f
+SHA1: fed059a97fc2a4dd2223a6ac249cbc6705b159b4
+SHA256: 67caaa31868151f4bc930bbbe68e93832c65c7b3e6ebe15e056e1d2435bf47f0
+SHA512: e082251ff7c19daefc268971ab8e586fedf26193aaf73a73fbf01d5c78ee18e2cb3a96cc158d11034ec06c0119a419eea5b1d93b7825a9ac7808ca8473a505ef
+Homepage: https://wiki.linuxfoundation.org/networking/iproute2
+Description: networking and traffic control tools
+Task: minimal, ubuntu-core
+Description-md5: d10cc46ca4a9e5489b7d2c879fcfba17
+Supported: 5y
+
+Package: iproute2-doc
+Architecture: all
+Version: 4.18.0-1ubuntu2~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: iproute2
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Alexander Wirt <formorer@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 128
+Conflicts: iproute-doc (<< 20130000-1)
+Replaces: iproute-doc
+Filename: pool/main/i/iproute2/iproute2-doc_4.18.0-1ubuntu2~ubuntu18.04.1_all.deb
+Size: 51760
+MD5sum: 85172cef6dde9d1b8c3bf67c96f81401
+SHA1: d6dd56ff03cb9cf606c5adfa6547be82f4916270
+SHA256: 4943e96e7b4bf6f42accb5fdcc36523c887991972e8983b52a1a14f338842089
+SHA512: 6f516910e4434b392ad9f5e41f1bbe2106fc86e99f15de07b09ed19d10038a1c3c507df25d5cad42f0c5664258657dbfa47fe4e9593542ddfc09eb0679be2bb2
+Homepage: https://wiki.linuxfoundation.org/networking/iproute2
+Description: networking and traffic control tools - documentation
+Description-md5: 04b627412e2f9e6b31ebbbedd1b39794
+Supported: 5y
+
+Package: rabbitmq-server
+Architecture: all
+Version: 3.8.2-0ubuntu1~ubuntu18.04.1
+Priority: extra
+Section: net
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20586
+Depends: adduser, erlang-base | erlang-base-hipe, erlang-crypto (>= 1:21.3), erlang-eldap (>= 1:21.3), erlang-inets (>= 1:21.3), erlang-mnesia (>= 1:21.3), erlang-os-mon (>= 1:21.3), erlang-parsetools (>= 1:21.3), erlang-public-key (>= 1:21.3), erlang-runtime-tools (>= 1:21.3), erlang-ssl (>= 1:21.3), erlang-syntax-tools (>= 1:21.3), erlang-tools (>= 1:21.3), erlang-xmerl (>= 1:21.3), locales-all, logrotate, lsb-base, socat, python3:any
+Filename: pool/main/r/rabbitmq-server/rabbitmq-server_3.8.2-0ubuntu1~ubuntu18.04.1_all.deb
+Size: 11527892
+MD5sum: 0728fd279aebed2e48a36bdee3a11e69
+SHA1: 5414e9d2a3523de5d5fdb91b5e648590e9a7acf1
+SHA256: e468d9b9fbf727fe5785ac6ccd8e12107bcae99e0a5e624ab9f51a65d09509a8
+SHA512: 0d6cda33ff343bb4a24de305b1e77588bbe6fcd098cc656a9bb2559683d6abfd80f0e7b5ab7b66aa39d819b953ba0720c61d79902f9f9d54b06db8f177cdfc46
+Homepage: https://www.rabbitmq.com/
+Description: AMQP server written in Erlang
+Description-md5: 78e91bfb996ee4ae5d16c93298f5f6e8
+Supported: 5y
+
+Package: smartmontools
+Architecture: arm64
+Version: 7.0-0ubuntu1~ubuntu18.04.1
+Priority: optional
+Section: utils
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Giuseppe Iuculano <iuculano@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1970
+Depends: debianutils (>= 2.2), lsb-base (>= 3.2-14), libc6 (>= 2.27), libcap-ng0, libgcc1 (>= 1:3.0), libselinux1 (>= 1.32), libstdc++6 (>= 5.2), libsystemd0
+Recommends: mailx | mailutils
+Suggests: gsmartcontrol, smart-notifier
+Conflicts: smartsuite, ucsc-smartsuite
+Filename: pool/main/s/smartmontools/smartmontools_7.0-0ubuntu1~ubuntu18.04.1_arm64.deb
+Size: 509996
+MD5sum: 4c6eca64cf96248d1d67439b9758db40
+SHA1: 6b13048527c6ca33e05872b8687b52f16c91087f
+SHA256: 145db4ae9ae9d21aaa97899aca024c7b31f1ed5eb502409dd61eeda319b29be7
+SHA512: 263123a3c4d0eb3400f2ede511b47602227d7ab6f781bb55f4662a6d5201c69501471e854eb8e7d1d97e38b84d2d8fe2a0f8bc13472ff633d3421705773be7bf
+Homepage: http://smartmontools.sourceforge.net/
+Description: control and monitor storage systems using S.M.A.R.T.
+Description-md5: ea81561661ccfc1b07aa52e4cc37874a
+Supported: 5y
+

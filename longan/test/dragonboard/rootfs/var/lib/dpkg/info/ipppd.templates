@@ -1,0 +1,718 @@
+
+Template: ipppd/ispwontdoit
+Type: error
+Description: ISP dialup configuration already exists
+ The device.${IPPP0} and ipppd.${IPPP0} files already exist. Therefore, the
+ ipppd configuration phase won't touch anything there, as it looks like
+ it has already been configured.
+ .
+ If it doesn't work yet, and you want to try the automatic configuration,
+ stop all ISDN processes (use "/etc/init.d/isdnutils stop"), remove the
+ files mentioned above, and rerun the configuration with "dpkg-reconfigure
+ ipppd". After that, restart the ISDN processes with "/etc/init.d/isdnutils
+ start".
+Description-cs.UTF-8: Nastavení ISP vytáčeného připojení již existuje
+ Soubory device.${IPPP0} a ipppd.${IPPP0} již existují. Proto konfigurační část ipppd nebude nic měnit. Zdá se, že je vše nastaveno.
+ .
+ Pokud to nebude fungovat a chcete vyzkoušet automatické nastavení, ukončete všechny procesy ISDN (pomocí "/etc/init.d/isdnutils stop"), odstraňte výše uvedené soubory a spusťte nové nastavení pomocí "dpkg-reconfigure ipppd". Poté spusťte procesy ISDN pomocí "/etc/init.d/isdnutils start".
+Description-da.UTF-8: ISP-opkaldskonfiguration findes allerede
+ Filerne device.${IPPP0} og ipppd.${IPPP0} findes allerede. Derfor vil ipppd-konfigurationsfasen ikke røre noget der, da det ser ud til at den allerede er blevet konfigureret.
+ .
+ Hvis det ikke virker endnu, og du ønsker at prøve den automatiske konfiguration, så stop alle ISDN-processer (brug »/etc/init.d/isdnutils stop«), fjern filerne nævnt ovenfor, og genkør konfigurationen med »dpkg-reconfigure ipppd«. Derefter genstart ISDN-processerne med »/etc/init.d/isdnutils start«.
+Description-de.UTF-8: Konfiguration für Internet-Einwahl existiert bereits
+ Die Dateien device.${IPPP0} und ipppd.${IPPP0} existieren bereits. Weil es so aussieht, als ob ipppd bereits konfiguriert wurde, wird in der Konfigurationsphase dort nichts verändert.
+ .
+ Wenn es noch nicht läuft und Sie die automatische Konfiguration probieren wollen, stoppen Sie alle ISDN-Prozesse (benutzen Sie »/etc/init.d/isdnutils stop«), entfernen Sie die oben benannten Dateien und lassen Sie »dpkg-reconfigure ipppd« nochmals laufen. Danach starten Sie die ISDN-Prozesse erneut mit »/etc/init.d/isdnutils start«.
+Description-es.UTF-8: La configuración del ISP de marcado ya existe
+ Los archivos «device.${IPPP0}» e «ipppd.${IPPP0}» ya existen. Por lo que la fase de configuración de ipppd no tocará nada más de eso, ya que parece que ya ha sido configurado.
+ .
+ Si no funciona todavía, y quiere intentar la configuración automática, pare todos los procesos de RDSI (utilice «/etc/init.d/isdnutils stop»), borre los archivos mencionados anteriormente, y ejecute de nuevo el proceso de configuración mediante «dpkg-reconfigure ipppd». Después de esto, reinicie los procesos de RDSI mediante «/etc/init.d/isdnutils start».
+Description-eu.UTF-8: ISP markatze konfigurazioa badago dagoeneko
+ device.${IPPP0} eta ipppd.${IPPP0} fitxategiak badaude dagoeneko. Hau dela eta ipppd konfigurazio urratsak ez du ezer egingo hemen; dirudienez dagoeneko konfiguratua izan da eta.
+ .
+ Oraindik ez badabil. eta konfigurazio automatikoa probatu nahi baduzu, gelditu ISDN prozesu guztiak ("/etc/init.d/isdnutils stop" erabili), kendu zehazturiko fitxategiak, eta "dpkg-reconfigure ipppd" erabiliz konfigurazioa berrabiarazi. Honen ondoren, ISDN prozesuak berrabiarazi: "/etc/init.d/isdnutils start".
+Description-fi.UTF-8: ISP:n soittosarja-asetukset ovat jo olemassa
+ Tiedostot device.${IPPP0} ja ipppd.${IPPP0} ovat jo olemassa. Niinpä näihin ei kosketa tehtäessä ipppd:n asetuksia, koska näyttää siltä, että asetukset ovat jo olemassa.
+ .
+ Jos ne eivät toimi ja haluat yrittää asetusten automaattista tekemistä, pysäytäkaikki ISDN-prosessit (komennolla ”/etc/init.d/isdnutils stop”), poistayllä mainitut tiedostot ja tee asetukset uudelleen komennolla ”dpkg-reconfigure ipppd”. Tämän jälkeen voit käynnistää ISDN-prosessit uudelleen komennolla ”/etc/init.d/isdnutils start”.
+Description-fr.UTF-8: Configuration d'appel du FAI existante
+ Les fichiers device.${IPPP0} et ipppd.${IPPP0} existent déjà. La configuration semble donc avoir déjà été faite : rien ne sera changé.
+ .
+ Si rien ne fonctionne pour l'instant et si vous voulez essayer la configuration automatique, arrêtez tous les processus RNIS avec la commande « /etc/init.d/isdnutils stop », supprimez les fichiers mentionnés précédemment et relancez la configuration avec la commande « dpkg-reconfigure ipppd ». Ensuite relancez les processus RNIS avec la commande « /etc/init.d/isdnutils start ».
+Description-gl.UTF-8: Xa existe a configuración dun provedor de Internet
+ Os ficheiros device.${IPPP0} e ippd.${IPPP0} xa existen. Polo tanto, a fase de configuración de ipppd non ha tocar nada diso, xa que semella que xa está configurado.
+ .
+ Se aínda non funciona e quere probar a configuración automática, deteña todos os procesos de RDSI (empregue «/etc/init.d/isdnutils stop»), elimine os ficheiros que se mencionan enriba e volva executar a configuración mediante «dpkg-reconfigure ipppd». Despois de facelo, volva iniciar os procesos de RDSI: «/etc/init.d/isdnutils start».
+Description-it.UTF-8: La configurazione della connessione a un ISP già esiste
+ I file device.${IPPP0} e ipppd.${IPPP0} esistono già. Quindi la fase di configurazione di ipppd non li toccherà dato che sembrano essere già configurati.
+ .
+ Se non funzionano e si vuole provare la configurazione automatica, fermare tutti i processi ISDN (usare «/etc/init.d/isdnutils stop»), rimuovere i file menzionati in precedenza e ripetere la configurazione con «dpkg-reconfigure ipppd». Poi riavviare i processi ISDN con «/etc/init.d/isdnutils start».
+Description-ja.UTF-8: プロバイダへのダイアルアップ接続設定が既に存在しています
+ device.${IPPP0} と ipppd.${IPPP0} ファイルが既に存在します。設定作業が済んでいるようなので、ipppd 設定作業では何も行いません。
+ .
+ まだこの設定で接続できておらず、自動設定を行ってみたい場合は (「/etc/init.d/isdnutils stop」を使って) 全ての ISDN 関連プロセスを止め、上記のファイルを削除し、「dpkg-reconfigure ipppd」で再度設定作業を行います。その後で、ISDN 関連プロセスを「/etc/init.d/isdnutils start」で再起動します。
+Description-nl.UTF-8: ISP-inbelconfiguratie bestaat al
+ De bestanden device.${IPPP0} en ipppd.${IPPP0} bestaan al. Het lijkt erop dat dit reeds ingesteld is; bijgevolg blijft de ipppd-configuratiefase hier af.
+ .
+ Wanneer dit nog niet werkt, en u de automatische configuratie wilt gebruiken, dient u: alle ISDN-processen te stoppen (via het commando "/etc/init.d/isdnutils stop"), de bovengenoemde bestanden te verwijderen, vervolgens de configuratie opnieuw uit te voeren (via het commando "dpkg-reconfigure ipppd"), en tenslotte de ISDN-processen te herstarten (via het commando "/etc/init.d/isdnutils start").
+Description-pl.UTF-8: Konfiguracja dostawcy połączenia dodzwanianego już istnieje
+ Pliki device.${IPPP0} i ipppd.${IPPP0} już istnieją. Z tego powodu etap konfiguracji ipppd nie będzie nic modyfikował, ponieważ wygląda na to, że wszystko jest już skonfigurowane.
+ .
+ W celu wypróbowania automatycznej konfiguracji, gdy obecna nie działa poprawnie, proszę zatrzymać wszelkie procesy ISDN (za pomocą "/etc/init.d/isdnutils stop"), usunąć pliki o których wspomniano powyżej i uruchomić proces konfiguracji ponownie, używając "dpkg-reconfigure ipppd". Następnie proszę uruchomić procesy ISDN ponownie, korzystając z "/etc/init.d/isdnutils start".
+Description-pt.UTF-8: Configuração de ligação ao ISP já existe
+ Os ficheiros device.${IPPP0} e ipppd.${IPPP0} já existem. Portanto a fase de configuração do ipppd não fará alterações, pois parece que já está configurado.
+ .
+ Se ainda não funciona e quer tentar a configuração automática, pare todos os processos RDIS (use "/etc/init.d/isdnutils stop"), remova os ficheiros mencionados acima e corra novamente a configuração com "dpkg-reconfigure ipppd". Depois disso, reinicie os processos RDIS com "/etc/init.d/isdnutils start".
+Description-ru.UTF-8: Настройки для дозвона к провайдеру уже существуют
+ Файлы device.${IPPP0} и ipppd.${IPPP0} уже существуют. Похоже, уже всё настроено, поэтому на этапе настройки ipppd ничего делаться не будет.
+ .
+ Если они раньше не работали, и вы хотите попытаться их настроить автоматически, то остановите все процессы ISDN (запустите «/etc/init.d/isdnutils stop»), удалите файлы, перечисленные ранее, и перезапустите настройку командой «dpkg-reconfigure ipppd». После этого, перезапустите процессы ISDN с помощью «/etc/init.d/isdnutils start».
+Description-sv.UTF-8: Uppringningsinställningar för Internetleverantören existerar redan
+ Filerna device.${IPPP0} och ipppd.${IPPP0} existerar redan. Därför kommer konfigurationsfasen av ipppd inte att röra dessa eftersom de ser ut att redan vara konfigurerade.
+ .
+ Om det ännu inte fungerar och du vill försöka med den automatiska konfigurationen, stoppa alla ISDN-processer (använd "/etc/init.d/isdnutils stop") och kör konfigurationen igen med "dpkg-reconfigure ipppd". Efter det, starta om ISDN-processerna: "/etc/init.d/isdnutils start".
+Description-vi.UTF-8: Cấu hình quay số ISP đã có
+ Hai tập tin « device.${IPPP0} » và « ipppd.${IPPP0} » đã có. Vì vậy, giai đoạn cấu hình ipppd này sẽ không sửa đổi gì trong hai tập tin này, có vẻ là nó đã được cấu hình về trước.
+ .
+ Nếu nó chưa hoạt động được, và bạn muốn thử tự động cấu hình, hãy dừng chạy mọi tiến trình ISDN (chạy câu lệnh « etc/init.d/isdnutils stop »), gỡ bỏ các tập tin nói trên, và chạy lại việc cấu hình bằng câu lệnh « dpkg-reconfigure ipppd ». Sau đó thì khởi chạy lại những tiến trình ISDN dùng « /etc/init.d/isdnutils start ».
+
+Template: ipppd/whichif
+Type: string
+Default: ippp0
+Description: Interface to configure:
+ The default setting should be safe for most configurations.
+ .
+ However, if you have special requirements or want to choose
+ to configure another interface, please enter it here.
+ .
+ Leave the field blank if you do not want to configure anything now.
+Description-cs.UTF-8: Nastavované rozhraní:
+ Ve většině případů by mělo vyhovovat výchozí nastavení.
+ .
+ Samozřejmě, pokud máte speciální požadavky nebo chcete nastavit jiné rozhraní, zadejte ho právě zde.
+ .
+ Pokud nyní nechcete nic nastavovat, nechte toto políčko prázdné.
+Description-da.UTF-8: Grænseflade at konfigurere:
+ Standardindstillingen bør være sikker for de fleste konfigurationer.
+ .
+ Hvis du har specielle krav eller ønsker at konfigurere en anden grænseflade, så indtast den venligst her.
+ .
+ Efterlad feltet blankt hvis du ikke ønsker at konfigurere nu.
+Description-de.UTF-8: Zu konfigurierende Schnittstelle:
+ Die Standardeinstellungen sollten für die meisten Konfigurationen gut funktionieren.
+ .
+ Falls Sie allerdings besondere Anforderungen haben oder eine andere Schnittstelle für die Konfiguration auswählen wollen, geben Sie das hier ein.
+ .
+ Lassen Sie das Feld leer, wenn Sie jetzt nichts konfigurieren wollen.
+Description-es.UTF-8: Interfaz a configurar:
+ El valor predeterminado debería ser seguro para la mayoría de las configuraciones.
+ .
+ Sin embargo, si tiene requisitos especiales o quiere escoger configurar otra interfaz, introdúzcala aquí.
+ .
+ Deje este campo en blanco si no quiere configurar nada ahora.
+Description-eu.UTF-8: Interfazea konfiguratzeko:
+ Ezarpen lehenetsia gorde beharko litzateke konfigurazio gehienentzako.
+ .
+ Hala ere, betebehar bereziren bat baduzu edo beste interfaze bat konfiguratzea aukeratzen baduzu, sartu ezazu hemen.
+ .
+ Utzi eremua hutsik ezer gehiago konfiguratzerik ez baduzu nahi.
+Description-fi.UTF-8: Asetettava liitäntä:
+ Oletusasetuksen pitäisi olla turvallinen useimmissa järjestelmissä.
+ .
+ Jos haluat tehdä toisen liitännän asetukset tai järjestelmään liittyy muita erityistarpeita, anna ne tässä.
+ .
+ Jätä kenttä tyhjäksi, jos et halua tehdä nyt mitään asetuksia.
+Description-fr.UTF-8: Interface à configurer :
+ Le réglage par défaut devrait convenir à la plupart des environnements.
+ .
+ Cependant, si vous avez des besoins spécifiques ou souhaitez choisir une autre interface, veuillez l'indiquer ici.
+ .
+ Vous pouvez laisser ce champ vide si vous ne voulez rien configurer maintenant.
+Description-gl.UTF-8: Interface a configurar:
+ A escolla predeterminada debera ser segura para a maioría das configuracións.
+ .
+ Porén, se ten requirimentos especiais ou desexa configurar outra interface indíqueo aquí.
+ .
+ Deixe o campo en branco se non quer configurar agora a conexión manualmente.
+Description-it.UTF-8: Interfaccia da configurare:
+ L'impostazione predefinita dovrebbe andar bene nella maggior parte dei casi.
+ .
+ Comunque se si hanno delle necessità particolari o si vuole configurare un'interfaccia diversa, inserire il nome dell'interfaccia.
+ .
+ Lasciare vuoto il campo per saltare la configurare adesso.
+Description-ja.UTF-8: 設定を行うインターフェイス:
+ デフォルトの設定は、大抵の設定で問題ないはずです。
+ .
+ しかし、特殊な要求がある、あるいは他のインターフェイスの設定の方を選びたいという場合は、ここでそれを入力してください。
+ .
+ 今は何も設定したくない場合は、この欄を空白のままにしておいてください。
+Description-nl.UTF-8: Te configureren apparaat:
+ De standaardinstelling is voor de meeste systemen veilig.
+ .
+ Als u speciale eisen heeft of een andere interface wilt configureren kunt u dat hier aangeven.
+ .
+ Laat dit leeg als u de verbinding nu niet wilt instellen.
+Description-pl.UTF-8: Interfejs do konfiguracji:
+ Domyślne ustawienie powinno być zwykle bezpieczne.
+ .
+ Jeśli jednak ma się specjalne wymagania lub chce się wybrać inny interfejs, proszę go wpisać w tym kroku.
+ .
+ Można pozostawić pole puste, aby niczego teraz nie konfigurować.
+Description-pt.UTF-8: Interface a configurar:
+ A opção pré-definida deve ser segura para a maioria das configurações.
+ .
+ No entanto, se tem requisitos especiais ou quer configurar outra interface, indique-a aqui.
+ .
+ Deixe o campo vazio se não quiser configurar nada agora.
+Description-ru.UTF-8: Настраиваемый интерфейс:
+ В большинстве случаев, подойдёт настройка по умолчанию.
+ .
+ Однако, если у вас есть специальные требования или вы хотите выбрать для настройки другой интерфейс, то введите его здесь.
+ .
+ Оставьте поле пустым, если ничего не хотите настраивать сейчас.
+Description-sv.UTF-8: Gränssnitt att konfigurera:
+ Standardvalen bör vara helt okej för de flesta installationer.
+ .
+ Om du har särskilda krav eller vill göra inställningar för ett annat gränssnitt, ange då detta här.
+ .
+ Lämna fältet blankt om du inte vill göra några inställningar nu.
+Description-vi.UTF-8: Giao diện cần cấu hình:
+ Thiết lập mặc định vẫn an toàn cho phần lớn các cấu hình.
+ .
+ Tuy nhiên, nếu bạn có nhu cầu đặc biệt hoặc muốn cấu hình một giao diện khác, hãy nhập vào đây.
+ .
+ Không muốn cấu hình gì ngay thì bỏ trống.
+
+Template: ipppd/wrongif
+Type: error
+Description: Invalid interface name
+ Valid interface names begin with "ippp" followed by a number between
+ 0 and 63.
+Description-cs.UTF-8: Špatný název rozhraní
+ Platná jména rozhraní začínají na "ippp" a jsou následovaná některým z čísel mezi 0 a 63.
+Description-da.UTF-8: Ugyldigt grænsefladenavn
+ Gyldige grænsefladenavne begynder med »ippp« efterfulgt af et tal mellem 0 og 63.
+Description-de.UTF-8: Ungültiger Schnittstellenname
+ Gültige Schnittstellennamen beginnen mit »ippp«, gefolgt von einer Zahl zwischen 0 bis 63.
+Description-es.UTF-8: Nombre de interfaz inválido
+ Los nombres de interfaz válidos comienzan por «ippp» seguidos de un número entre 0 y 63.
+Description-eu.UTF-8: Baligabeko interfaze-izena
+ Baliozko izenak "ippp" aurrizkiarekin hasi eta jarraian 0 eta 63 arteko zenbaki bat dutenak dira.
+Description-fi.UTF-8: Virheellinen liitännän nimi
+ Kelvolliset liitännän nimet koostuvat merkkijonosta ”ippp” ja väliltä 0-63 olevasta numerosta.
+Description-fr.UTF-8: Nom d'interface incorrect
+ Les noms valables pour les interfaces commencent par « ippp » suivi d'un nombre entre 0 et 63.
+Description-gl.UTF-8: Nome de interface non válido
+ Os nomes de interface válidos comezan por «ippp» e van seguidos por un número entre 0 e 63.
+Description-it.UTF-8: Nome dell'interfaccia non valido
+ I nomi dell'interfaccia validi iniziano con «ippp» seguito da un numero da 0 a 63.
+Description-ja.UTF-8: 不正なインターフェイス名
+ 正しいインターフェイス名は「ippp」で始まり 0 から 63 までの数字が続きます。
+Description-nl.UTF-8: Ongeldige apparaatnaam
+ Geldige apparaatnamen beginnen met "ippp", gevolgd door een getal tussen de 0 en 63.
+Description-pl.UTF-8: Niepoprawna nazwa interfejsu
+ Prawidłowe nazwy interfejsów zaczynają się od "ippp", po którym znajduje się liczba z zakresu 0-63.
+Description-pt.UTF-8: Nome de interface inválido
+ Os nomes de interface válidos começam por "ippp" seguido de um número entre 0 e 63.
+Description-ru.UTF-8: Неправильное имя интерфейса
+ Допускаются имена интерфейсов, которые начинаются с «ippp», за которым следует число от 0 до 63.
+Description-sv.UTF-8: Felaktigt gränssnittsnamn
+ Korrekta namn börjar med "ippp" följt av en siffra mellan 0 och 63.
+Description-vi.UTF-8: Sai đặt tên giao diện
+ Tên giao diện đúng chứa « ippp » và một số từ 0 đến 63, v.d. « ippp3 ».
+
+Template: ipppd/ispphone
+Type: string
+Default: manual
+Description: ISP's telephone number:
+ At least one phone number has to be dialed in order to connect
+ to an Internet service provider (ISP).
+ .
+ Please enter that telephone number here, including dialing prefixes,
+ area codes, and so on, but without any spaces.
+ .
+ Multiple telephone numbers may be entered and should be separated by spaces.
+ .
+ Leave the field blank if you want to configure the connection manually.
+Description-cs.UTF-8: Telefonní číslo ISP:
+ Pro připojení k Internetu vašeho poskytovatele připojení (ISP) je nutné zadat alespoň jedno telefonní číslo.
+ .
+ Zadejte prosím telefonní číslo včetně předvoleb, kódů oblasti a tak dále. Číslo zadejte bez jakýchkoliv mezer.
+ .
+ Můžete zadat více telefonních čísel oddělených pomocí mezer.
+ .
+ Pokud si přejete nastavit připojení ručně, nechte toto políčko prázdné.
+Description-da.UTF-8: ISP's telefonnummer:
+ Mindst et telefonnummer skal ringes op for at forbinde til en internetudbyder (ISP).
+ .
+ Indtast venligst det telefonnummer her, inklusiv opkaldspræfiks, områdekoder og så videre, men uden mellemrum.
+ .
+ Flere telefonnumre kan indtastes og de skal være adskilt af mellemrum.
+ .
+ Efterlad feltet tomt hvis du ønsker at konfigurere forbindelsen manuelt.
+Description-de.UTF-8: Telefonnummer Ihres Internet-Service-Providers:
+ Wenigstens eine Telefonnummer muss gewählt werden, um sich mit einem Internet-Service-Provider (ISP) zu verbinden.
+ .
+ Bitte tragen Sie diese Telefonnummer, inklusive Vorwahl, Ortsvorwahl und so weiter, aber ohne Leerzeichen, hier ein.
+ .
+ Mehrere Telefonnummern können eingegeben werden und sollten mit Leerzeichen getrennt werden.
+ .
+ Lassen Sie das Feld leer, falls Sie die Verbindung manuell konfigurieren wollen.
+Description-es.UTF-8: Número de teléfono del ISP:
+ Al menos se debe marcar un número de teléfono para poder conectar con un Proveedor de Servicio de Internet (ISP).
+ .
+ Introduzca el número de teléfono aquí, incluyendo los prefijos de marcado, códigos de área y demás, sin espacios.
+ .
+ Se pueden introducir varios números de teléfonos separados por espacios.
+ .
+ Deje este campo en blanco si quiere configurar la conexión manualmente.
+Description-eu.UTF-8: ISP-aren telefono zenbakia:
+ Gutxienez telefono zenbaki bat markatu behar da zure internet zerbitzu hornitzailearekin (ISP) konektatzeko.
+ .
+ Idatzi telefono zenbaki hori hemen markatze aurrizkiak, eskualdeko kode, eta beste edozein barne. Idatzi zenbakia zuriunerik gabe.
+ .
+ Hainbat telefono zenbaki idatz ditzakezu. Hori egiteko zuriunez bereizi itzazu.
+ .
+ Utzi eremua hutsik konexioa eskuz konfiguratu nahi baduzu.
+Description-fi.UTF-8: ISP:n puhelinnumero:
+ Yhteydenotto palveluntarjoajaan (ISP) vaatii ainakin yhteen numeroon soittamista.
+ .
+ Syötä puhelinnumero tähän sisältäen mahdolliset etuliitteet, suuntanumerot ja niin edelleen. Syötä numero ilman välilyöntejä.
+ .
+ Voit syöttää useampia puhelinnumeroita välilyönnein eroteltuina.
+ .
+ Jätä kenttä tyhjäksi, jos haluat tehdä yhteyden asetukset käsin.
+Description-fr.UTF-8: Numéro de téléphone du FAI :
+ Au moins un numéro de téléphone doit être indiqué pour paramétrer la connexion à un fournisseur d'accès à l'Internet (FAI).
+ .
+ Veuillez indiquer ce numéro de téléphone, avec préfixe de numérotation, indicatif de zone, etc. N'utilisez pas d'espace.
+ .
+ Vous pouvez indiquer plusieurs numéros de téléphone, en les séparant par des espaces.
+ .
+ Vous pouvez laisser ce champ vide si vous voulez configurer la connexion vous-même.
+Description-gl.UTF-8: Número de teléfono do provedor de Internet:
+ Debe chamarse polo menos un número de teléfono para se conectar ao provedor de Internet (ISP).
+ .
+ Introduza aquí o número de teléfono, incluíndo todos os prefixos, sen espazos.
+ .
+ Pode introducir varios números de teléfono separándoos mediante espazos.
+ .
+ Deixe o campo en branco se quer configurar a conexión manualmente.
+Description-it.UTF-8: Numero telefonico dell'ISP:
+ Almeno un numero telefonico da comporre per connettersi all'Internet Service Provider (ISP).
+ .
+ Inserire il numero di telefono, completo di prefissi di composizione, di indicativi di località e così via, ma senza spazi.
+ .
+ È possibile inserire più numeri di telefono separandoli con degli spazi.
+ .
+ Lasciare vuoto il campo per configurare la connessione manualmente.
+Description-ja.UTF-8: プロバイダの電話番号:
+ インターネットサービスプロバイダ (ISP) に接続するには少なくとも一つの電話番号が必要です。
+ .
+ ここでは接頭番号や市外局番などを含めて電話番号を入力してください。番号は空白を含めないで入力してください。
+ .
+ 複数の電話番号を入力できるので、その場合は番号を空白で区切ってください。
+ .
+ 設定を手動で行いたい場合はこの欄を空にしておいてください。
+Description-nl.UTF-8: Telefoonnummer van uw ISP:
+ Er dient op ten minste één telefoonnummer ingebeld te worden om verbinding te maken met uw Internet Service Provider (ISP).
+ .
+ Voer het telefoonnummer in, inclusief voorvoegsels, regiocodes, enzovoort. Het nummer mag geen spaties bevatten.
+ .
+ U kunt hier meerdere telefoonnummers invoeren; als u dat doet dient u de telefoonnummers te scheiden met spaties.
+ .
+ Laat dit leeg als u de verbinding handmatig wilt instellen.
+Description-pl.UTF-8: Numer telefonu ISP:
+ Przynajmniej jeden numer musi być wybrany, aby połączyć się z dostawcą usług internetowych (ISP).
+ .
+ Proszę go wprowadzić tutaj, razem z wszystkimi prefiksami i numerami kierunkowymi, bez spacji.
+ .
+ Poszczególne numery telefonów proszę oddzielić spacją.
+ .
+ Można pozostawić to pole puste, aby skonfigurować połączenie ręcznie.
+Description-pt.UTF-8: Número de telefone do seu ISP:
+ Pelo menos um número de telefone deve ser marcado para ligar a um fornecedor de acesso à Internet (ISP).
+ .
+ Escreva aqui o número de telefone, incluindo prefixos de ligação, indicativos e outros, mas sem qualquer espaço.
+ .
+ Pode escrever mais que um número de telefone separados por espaços.
+ .
+ Deixe o campo vazio se quiser configurar a ligação manualmente.
+Description-ru.UTF-8: Номер телефона провайдера:
+ Чтобы соединиться с провайдером сервиса интернет (ISP) нужно указать, как минимум, один номер телефона для набора.
+ .
+ Введите здесь номер телефона, включая префиксы набора, код региона и т. д, но без пробелов.
+ .
+ Можно указать несколько телефонных номеров, разделяя их пробелами.
+ .
+ Оставьте поле пустым, если хотите настроить соединение вручную.
+Description-sv.UTF-8: Internetleverantörens telefonnummer:
+ Åtminstone ett telefonnummer måste ringas för att kunna ansluta till en Internetleverantör (ISP).
+ .
+ Ange telefonnumret här, inklusive prefix, riktnummer och så vidare. Ange numret utan några blanksteg.
+ .
+ Du kan ange flera telefonnummer, separera dem med blanksteg.
+ .
+ Lämna fältet blankt om du vill konfigurera anslutningen manuellt.
+Description-vi.UTF-8: Số điện thoại của ISP:
+ Để kết nối đến nhà cung cấp dịch vụ Internet (ISP) thì cần phải quay ít nhất một số điện thoại.
+ .
+ Ở đây thì gõ số điện thoại đó, gồm có tiền tố quốc tế hay vùng, mà không có dấu cách nào.
+ .
+ Cũng có thể nhập nhiều số điện thoại, định giới bằng dấu cách.
+ .
+ Bỏ trống trường này nếu bạn muốn tự cấu hình kết nối.
+
+Template: ipppd/eaz
+Type: string
+Default: 0
+Description: Local MSN:
+ When making a call with ISDN, the MSN (phone number) that is originating
+ the call must be given in the call-setup message. While a wrong MSN will
+ usually be replaced by the main MSN for the ISDN line, especially on
+ PABXes, a wrong MSN (often the extension number in this case) will cause
+ the call-setup to fail. So, it is best to enter the correct local MSN
+ here.
+ .
+ This may also be necessary if you want the costs to be registered to one
+ particular MSN, in case you have more than one MSN and this is supported
+ by your telecommunication providing company.
+Description-cs.UTF-8: Místní MSN:
+ Když provádíte hovory pomocí ISDN, pak musíte zadat telefonní číslo MSN, které jednoznačně určuje hovor. I když bývá špatné MSN obvykle nahrazeno hlavním MSN linky ISDN, tak především na PABX způsobí špatné MSN (v tomto případě často ve formě rozšiřujícího čísla) selhání nastavení hovoru. Takže nejlepší je zadat zde správné místní MSN.
+ .
+ Může to být také nezbytné, pokud chcete mít náklady zaregistrovány u jednoho konkrétního MSN - v případě, že máte více než jedno MSN a je to podporováno vaším poskytovatelem.
+Description-da.UTF-8: Lokal MSN:
+ Når der foretages et opkald med ISDN, skal MSN'en (telefonnummer) som er oprindelse for opkaldet angives i opkaldsopsætningens besked. Mens en forkert MSN normalt vil blive erstattet af hoved-MSN'en for ISDN-linjen, specielt på PABX'er, vil en forkert MSN (ofte udvidelsesnummeret i dette tilfælde) få opkaldsopsætningen til at fejle. Så det er bedst at indtaste den korrekte lokale MSN her.
+ .
+ Dette kan også være nødvendigt, hvis du ønsker, at omkostningen skal registreres på en specifik MSN, i tilfælde af at du har mere end en MSN og dette er understøttet af dit telefonselskab.
+Description-de.UTF-8: Lokale MSN:
+ Wenn ein Anruf über ISDN gemacht wird, muss in der Nachricht zur Anrufeinrichtung die MSN (Telefonnummer) angegeben werden, von der der Anruf ausgehen soll. Auch wenn normalerweise eine falsche MSN durch die Haupt-MSN des Anschlusses ersetzt wird, kann, besonders bei Telekommunikationsanlagen (PABX), eine falsche MSN (oft in diesen Fällen die Durchwahl) zu Problemen führen. Es ist somit das Beste, hier die richtige lokale MSN anzugeben.
+ .
+ Dies kann ebenfalls nötig sein, wenn Sie die Telefonkosten für eine einzelne MSN verbuchen lassen wollen, falls Sie mehr als eine MSN haben und dies von Ihrer Telefongesellschaft unterstützt wird.
+Description-es.UTF-8: MSN («Multiple Subscriber Number», Número de Suscriptor Múltiple) local:
+ Cuando se realiza una llamada RDSI, el MSN (número de teléfono) que origina la llamada debe proporcionarse en el mensaje de configuración de la llamada. Un MSN incorrecto normalmente se reemplazará por el MSN principal para la línea RDSI, especialmente en PABX, un MSN incorrecto (en este caso el número de extensión) provocará que la configuración falle. Por lo que es mejor introducir el MSN local correcto aquí.
+ .
+ Esto también puede ser necesario si quiere registrar los costes en un MSN particular, en el caso de que tenga más de un MSN y éste lo pueda usar su compañía de telecomunicaciones.
+Description-eu.UTF-8: Lokaleko MSN:
+ ISDN bidez dei bat egitean, deiaren jatorri MSNa (telefono zenbakia) eman behar da dei-konfigurazio mezuan. Nahiz normalean okerreko MSN bat ISDN linearen MSN nagusiagatik aldatuko den, batezere PABX-etan okerreko MSN batek (hedapen zenbakia kenduta kasu honetan) dei-konfigurazioak huts egitea eragin dezake. Beraz hobe da MSN zuzena hemen idaztea.
+ .
+ Hau ere beharrezkoa da gastuak MSN berezi bati erregistratu nahi badituzu, MSN bat baino gehiago izan eta zure telekomunikazioko konpainiak onartzen dituen kasuan.
+Description-fi.UTF-8: Paikallinen MSN:
+ Soitettaessa ISDN:llä täytyy yhteydenotossa antaa MSN (puhelinnumero), josta puhelu tulee. Vaikka yleensä väärä MSN korvataan ISDN-linjan pää-MSN:llä, erityisesti PABX:ssä virheellinen MSN aiheuttaa sen, että yhteydenotto epäonnistuu. Tästä syystä on tässä parasta antaa oikea paikallinen MSN.
+ .
+ Tämä saattaa myös olla tarpeen, jos käytössä on useampia MSN:iä ja puhelinyhtiö tukee kustannusten rekisteröimistä jollekin tietylle MSN:lle.
+Description-fr.UTF-8: Numéro de téléphone local (« MSN ») :
+ Lors d'un appel avec une ligne RNIS, le numéro de téléphone émetteur de l'appel (MSN) doit être donné dans le message de configuration. Bien que, d'ordinaire, un numéro erroné soit remplacé par le numéro de téléphone principal de la ligne RNIS, avec certains auto-commutateurs privés, un numéro erroné (souvent à cause d'une erreur dans le suffixe) entraînera l'échec de l'appel. Il vaut donc mieux fournir le numéro interne correct.
+ .
+ Cela peut aussi s'avérer nécessaire si vous voulez enregistrer les coûts de communication d'un numéro particulier quand vous disposez de plus d'un numéro interne et que l'opérateur téléphonique fournit ce service.
+Description-gl.UTF-8: MSN local:
+ Ao chamar por RDSI, o MSN (número de teléfono) polo que se orixina a chamada debe indicarse na mensaxe de estabelecemento da chamada. Aínda que, normalmente, un MSN incorrecto se ha substituír polo MSN principal da liña RDSI, hai ocasións (principalmente en centraliñas) nas que un MSN incorrecto (o número da extensión, neste caso) ha facer que o estabelecemento da chamada falle. Polo tanto é mellor introducir o MSN local correcto.
+ .
+ Tamén pode ser necesario se quere que os custos se rexistren a un MSN determinado, se ten varios MSN e a súa operadora o permite.
+Description-it.UTF-8: MSN locale:
+ Quando si fa una chiamata con ISDN, l'MSN (numero di telefono) che dà origine alla chiamata deve essere passato nel messaggio di call-setup. Di solito un MSN sbagliato viene sostituito dal MSN principale della linea ISDN, nel caso particolare dei un centralini, un MSN sbagliato (spesso il numero dell'interno) comporta il fallimento del call-setup. Quindi si raccomanda di inserire l'MSN corretto.
+ .
+ Ciò potrebbe essere necessario anche per addebitare i costi a un particolare MSN, nel caso si abbia più di un MSN e questo servizio sia supportato dal proprio gestore telefonico.
+Description-ja.UTF-8: ローカルの複数加入者番号 (MSN):
+ ISDN でダイヤルする際、発信元となる複数加入者番号 (電話番号) が呼設定で指示されないといけません。誤った複数加入者番号の場合は、大抵は (特に自動構内交換機上では) ISDN 回線の複数加入者主番号に変更されるので、誤った複数加入者番号 (この場合は追加番号が多い) は呼設定に失敗します。そのため、ここで正確なローカルの複数加入者番号を入力するのがベストです。
+ .
+ 複数加入者番号を複数持っていて遠距離通信会社がサポートしている場合ですが、ある一つの複数加入者番号に経費をまとめたい場合にこの設定も必要かもしれません。
+Description-nl.UTF-8: Lokale MSN:
+ Wanneer via ISDN verbinding gemaakt wordt, dient het telefoonnummer dat de verbinding start (de MSN) opgegeven te worden bij het bericht dat de verbinding tot stand brengt. Normaal wordt een foutieve MSN door de centrale vervangen door het hoofdnummer. Voor huis- en bedrijfscentrales kan het nodig zijn om de juiste MSN (meestal het toestelnummer) in te stellen opdat de centrale hier goed mee om gaat. Daarom kunt u hier best de juiste MSN opgeven.
+ .
+ Dit is ook nodig als u meer dan één nummer heeft en de kosten niet op het hoofdnummer maar op een ander nummer wilt vastleggen. Dit dient door uw ISDN-aanbieder ondersteund te worden. In Nederland geeft u dan het nummer met ingekort netnummer (dus zonder de eerste nul).
+Description-pl.UTF-8: Lokalny MSN:
+ Podczas łączenia z ISDN, wewnętrzny numer telefonu (MSN) musi być podany w wiadomości zestawiającej połączenie. O ile nieprawidłowy MSN będzie zwykle zastąpiony przez główny MSN linii ISDN (szczególnie w centralach automatycznych - PABX), to spowoduje on (często jest wtedy numerem wewnętrznym) niepowodzenie zestawienia połączenia. Dlatego najlepiej jest podać prawidłowy lokalny MSN.
+ .
+ Może być to również potrzebne, aby koszty połączenia były przypisane do danego, pojedynczego MSN, w przypadku jeśli ma się ich więcej i jest to obsługiwane przez firmę telekomunikacyjną.
+Description-pt.UTF-8: MSN Local:
+ Quando faz uma chamada via RDIS, o MSN (número de telefone) que origina a chamada deve ser dado na mensagem de início de chamada. Enquanto que um MSN errado é normalmente substituído pelo MSN principal da linha RDIS, em especial nos PABX, um MSN errado (muitas vezes é a extensão) faz falhar o estabelecimento da chamada. Portanto, é melhor escrever o MSN correcto aqui.
+ .
+ Isto pode ser também necessário se quiser atribuir os custos da chamada a um MSN particular, se tiver mais que um MSN e esta opção for suportada pelo seu operador.
+Description-ru.UTF-8: Локальный MSN:
+ При звонке ISDN, в сообщении установления вызова должен быть задан MSN (телефонный номер), который осуществляет соединение. Так как, обычно, неправильный MSN будет заменён основным MSN ISDN линии, особенно на АТСах, неверные MSN (часто расширенный номер в данном случае) приводят к невозможности установления вызова. Поэтому лучше ввести здесь правильный локальный MSN.
+ .
+ Это также может быть необходимо, если вы хотите считать стоимость звонков для определённого MSN в случае, если у вас более одного MSN и это поддерживает ваша телефонная компания.
+Description-sv.UTF-8: Lokal MSN:
+ Vid uppringning med ISDN måste MSN (telefonnummer) skickas med i det utgående uppringningsmeddelandet. Ett felaktigt MSN kommer vanligen att ersättas med huvud-MSN för ISDN-linjen. Speciellt på PABX:er kommer ett felaktigt MSN (vanligt anknytningsnummer i detta fallet) att innebära att uppringen misslyckas. Det är helt enkelt rekomenderat att ange korrekt lokalt MSN här.
+ .
+ Detta kan tillämpas om du vill att kostnaderna ska registreras på ett speciellt MSN, om du har fler än ett MSN och den här metoden stöds av din leverantör.
+Description-vi.UTF-8: MSN cục bộ :
+ Khi gọi điện thoại bằng ISDN, MSN (số điện thoại) đang khởi tạo cuộc điện thoại cũng phải được đưa ra trong thông điệp thiết lập cuộc gọi. Dù một MSN sai bình thường được thay thế bằng MSN chính của dây ISDN, đặc biệt trên PABX một MSN sai (v.d. số thứ tự phần mở rộng) gây ra lỗi thiết lập cuộc gọi. Vì thế nên gõ vào đây MSN địa phương đúng.
+ .
+ Cũng vậy nếu bạn muốn chi phí được đăng ký với một MSN nào đó, trong trường hợp bạn có nhiều MSN và công ty viễn thông hỗ trợ chức năng này.
+
+Template: ipppd/isplogin
+Type: string
+Description: ISP account name:
+ Most ISPs require an account name and password to be provided when
+ connecting.
+Description-cs.UTF-8: Jméno účtu ISP:
+ Většina ISP vyžadují pro připojení zadání uživatelského jména a hesla.
+Description-da.UTF-8: ISP-kontonavn:
+ De fleste ISP'er kræver, at et kontonavn og adgangskode angives når der forbindes.
+Description-de.UTF-8: ISP-Zugangsname:
+ Die meisten ISP benötigen einen Zugangsnamen und ein Passwort, um eine Verbindung herzustellen.
+Description-es.UTF-8: Nombre de la cuenta del ISP:
+ La mayoría de los ISP necesitan proporcionar un nombre de cuenta y una contraseña al realizar la conexión.
+Description-eu.UTF-8: ISP kontuaren izena:
+ ISP gehienek kontuaren izena eta pasahitz bat behar dute konexioa eskaintzeko.
+Description-fi.UTF-8: ISP-käyttäjätunnus:
+ Useimmat ISP:t vaativat käyttäjätunnuksen ja salasanan syöttämistä yhteyttä otettaessa.
+Description-fr.UTF-8: Identifiant pour la connexion au FAI :
+ La plupart des fournisseurs d'accès à l'Internet imposent l'utilisation d'un identifiant et d'un mot de passe de connexion.
+Description-gl.UTF-8: Nome da conta no provedor de internet:
+ A maioría dos ISP piden que se forneza un nome de conta e o contrasinal cando se conecta.
+Description-it.UTF-8: Nome dell'account per l'ISP:
+ La maggior parte degli ISP richiedono che al momento della connessione sia fornito il nome e la password dell'account.
+Description-ja.UTF-8: プロバイダのアカウント名:
+ 多くのプロバイダでは、接続時に与えられたアカウント名とパスワードを必要とします。
+Description-nl.UTF-8: ISP-gebruikersnaam:
+ Bij de meeste ISP's heeft u een gebruikersnaam en wachtwoord nodig om een verbinding te maken.
+Description-pl.UTF-8: Nazwa konta ISP:
+ Większość dostawców do połączenia wymaga podania nazwy konta i hasła.
+Description-pt.UTF-8: Nome de utilizador para o ISP:
+ A maioria dos ISPs requer um nome de utilizador e uma palavra-chave para estabelecer a ligação.
+Description-ru.UTF-8: Имя учётной записи пользователя у провайдера:
+ Большинство провайдеров требует вводить имя и пароль при подключении.
+Description-sv.UTF-8: Användarnamn hos Internetleverantör:
+ De flesta Internetleverantörer kräver att användarnamn och lösenord anges vid anslutning.
+Description-vi.UTF-8: Tên tài khoản ISP:
+ Hậu hết ISP yêu cầu một tên tài khoản và mật khẩu được nhập khi kết nối.
+
+Template: ipppd/isppasswd
+Type: password
+Description: ISP password:
+ Please enter the password to use when connecting to the ISP. This password
+ will be kept in /etc/ppp/pap-secrets and
+ /etc/ppp/chap-secrets together with the account name.
+Description-cs.UTF-8: Heslo ISP:
+ Zadejte prosím heslo pro připojení k ISP. Toto heslo bude uloženo v /etc/ppp/pap-secrets a /etc/ppp/chap-secrets spolu se jménem účtu.
+Description-da.UTF-8: ISP-adgangskode:
+ Indtast venligst adgangskoden der skal bruges, når der forbindes til ISP'en. Denne adgangskode vil blive opbevaret i /etc/ppp/pap-secrets og /etc/ppp/chap-secrets sammen med kontonavnet.
+Description-de.UTF-8: ISP-Passwort:
+ Bitte geben Sie das Zugangspasswort für Ihren ISP an. Das Passwort wird zusammen mit dem Benutzernamen in den Dateien /etc/ppp/pap-secrets und /etc/ppp/chap-secrets gespreichert.
+Description-es.UTF-8: Contraseña del ISP:
+ Introduzca la contraseña a usar al conectar con el ISP. Esta contraseña se guardará en «/etc/ppp/pap-secrets» y «/etc/ppp/chap-secrets» junto al nombre de la cuenta.
+Description-eu.UTF-8: ISPko pasahitza:
+ Idatzi pasahitza ISParekin konektatzean erabiltzeko. Hemen idazten duzun pasahitza /etc/ppp/pap-secrets eta /etc/ppp/chap-secrets-en gordeko da erabiltzaile-izenaren ondoan.
+Description-fi.UTF-8: ISP-salasana:
+ Anna salasana, jota käytetään otettaessa yhteyttä ISP:hen. Tässä annettu salasana tallennetaan käyttäjätunnuksen kanssa tiedostoihin /etc/ppp/pap-secrets ja /etc/ppp/chap-secrets.
+Description-fr.UTF-8: Mot de passe pour la connexion au FAI :
+ Veuillez indiquer le mot de passe à utiliser pour la connexion au fournisseur d'accès à l'Internet. Ce mot de passe sera conservé dans /etc/ppp/pap-secrets et dans /etc/ppp/chap-secrets avec l'identifiant associé.
+Description-gl.UTF-8: Contrasinal no provedor:
+ Introduza o contrasinal a empregar cando se conecte co ISP. Este contrasinal hase gardar nos ficheiros /etc/ppp/pap-secrets e /etc/ppp/chap-secrets xunto co nome de usuario.
+Description-it.UTF-8: Password per l'ISP:
+ Inserire la password da usare per la connessione all'ISP. La password verrà memorizzata in /etc/ppp/pap-secrets e /etc/ppp/chap-secrets insieme al nome dell'account.
+Description-ja.UTF-8: プロバイダのパスワード:
+ プロバイダに接続する際に使うパスワードを入力してください。このパスワードはアカウントと共に /etc/ppp/pap-secrets と /etc/ppp/chap-secrets に保存されます。
+Description-nl.UTF-8: ISP-wachtwoord:
+ Voer het wachtwoord in. Dit wachtwoord wordt, samen met de gebruikersnaam, toegevoegd in /etc/ppp/pap-secrets en /etc/ppp/chap-secrets.
+Description-pl.UTF-8: Hasło ISP:
+ Proszę podać hasło używane do połączenia z dostawcą. Będzie ono przechowywane w /etc/ppp/pap-secrets i /etc/ppp/chap-secrets razem z nazwą konta.
+Description-pt.UTF-8: Palavra-chave para o ISP:
+ Indique a palavra-chave a usar ao ligar-se ao ISP. Esta palavra-chave será guardada em /etc/ppp/pap-secrets e /etc/ppp/chap-secrets juntamente com o seu nome de utilizador.
+Description-ru.UTF-8: Пароль у провайдера:
+ Введите пароль, требуемый для подключения к провайдеру. Этот пароль будет записан в файлы /etc/ppp/pap-secrets и /etc/ppp/chap-secrets вместе с именем учётной записи пользователя.
+Description-sv.UTF-8: Lösenord hos Internetleverantör:
+ Ange lösenordet som ska användas vid anslutning till Internetleverantören. Detta lösenord kommer att lagras i /etc/ppp/pap-secrets och /etc/ppp/chap-secrets tillsammans med användarnamnet.
+Description-vi.UTF-8: Mật khẩu ISP:
+ Hãy gõ mật khẩu cần sử dụng khi kết nối tới ISP. Mật khẩu này được lưu vào « /etc/ppp/pap-secrets » và « /etc/ppp/chap-secrets » cùng với tên tài khoản.
+
+Template: ipppd/isploginpapalreadythere
+Type: error
+Description: ISP user name already in pap-secrets
+ The user name you entered for logging into your ISP is already listed in
+ the /etc/ppp/pap-secrets file. The existing entry
+ will be commented out, and a new entry with the data you just entered will
+ be inserted.
+Description-cs.UTF-8: Uživatelské jméno ISP je již v pap-secrets uloženo
+ Uživatelské jméno, které jste zadali pro přihlášení k vašemu ISP, je již v souboru /etc/ppp/pap-secrets uvedeno. Stávající hodnota bude zakomentována a nová vložena na její místo.
+Description-da.UTF-8: ISP-brugernavn er allerede i pap-secrets
+ Brugernavnet, du indtastede for at logge ind hos din ISP, er allerede angivet i filen /etc/ppp/pap-secrets. Det eksisterende punkt vil blive udkommenteret, og et nyt punkt med dataene, du netop har indtastet, vil blive indsat.
+Description-de.UTF-8: Der Benutzername für diesen Internet Service Provider kommt in der Datei pap-secrets bereits vor.
+ Der Benutzername, den Sie für die Anmeldung bei Ihrem ISP eingegeben haben, ist bereits in der Datei /etc/ppp/pap-secrets aufgeführt. Der existierende Eintrag wird auskommentiert und ein neuer Eintrag mit den Daten, die Sie gerade eingegeben haben, wird eingefügt.
+Description-es.UTF-8: El nombre de usuario del ISP ya está en el archivo «pap-secrets»
+ El nombre de usuario que introdujo para la identificación en su ISP ya está en el archivo «/etc/ppp/pap-secrets». Se comentará la entrada existente, y se insertará una nueva entrada con los datos que acaba de introducir.
+Description-eu.UTF-8: ISP erabiltzaile-izena dagoeneko pap-secrets fitxategian dago
+ ISPan saioa hasteko idatzi duzun erabiltzaile-izena dagoeneko badago /etc/ppp/pap-secrets fitxategian. Hau ez da arazo bat, lehendik zegoen sarrera komentatu egingo da, eta idatzi berri dituzun datuekin sarrera berria txertatuko da.
+Description-fi.UTF-8: ISP-käyttäjätunnus on jo tiedostossa pap-secrets
+ Käyttäjätunnus, joka annettiin ISP:lle kirjautumista varten on jo listattu tiedostossa /etc/ppp/pap-secrets. Olemassa oleva tietue kommentoidaan pois ja uusi, juuri annetut tiedot sisältävä tietue lisätään.
+Description-fr.UTF-8: Identifiant de FAI déjà dans pap-secrets
+ L'identifiant que vous avez indiqué pour la connexion à votre FAI existe déjà dans le fichier /etc/ppp/pap-secrets. L'entrée existante sera mise en commentaire et la valeur que vous venez d'indiquer sera utilisée à la place.
+Description-gl.UTF-8: O nome de usuario do provedor de Internet xa está en pap-secrets
+ O nome de usuario que introduciu para se conectar ao provedor de Internet xa figura no ficheiro /etc/ppp/pap-secrets. A entrada existente hase comentar, e hase engadir unha nova entrada cos datos que acaba de introducir.
+Description-it.UTF-8: Nome utente per l'ISP già presente in pap-secrets
+ Il nome utente indicato per la connessione all'ISP è già presente nel file /etc/ppp/pap-secrets. Il valore esistente verrà commentato e verrà inserita una nuova riga con il valore appena inserito.
+Description-ja.UTF-8: プロバイダのユーザ名が既に pap-secrets にあります
+ あなたが入力したプロバイダにログインするためのユーザ名は、既に /etc/ppp/pap-secrets ファイルに存在しています。既存のエントリはコメントアウトされ、今入力したデータで新しいエントリが挿入されます。
+Description-nl.UTF-8: Deze gebruikersnaam wordt reeds gebruikt in pap-secrets
+ De gebruikersnaam die u opgaf voor het aanmelden bij uw ISP wordt reeds genoemd in het bestand /etc/ppp/pap-secrets. De bestaande ingang wordt als commentaar gemarkeerd en een nieuwe ingang wordt aangemaakt met de zojuist ingevoerde gegevens.
+Description-pl.UTF-8: Nazwa użytkownika ISP znajduje się już w pap-secrets
+ Nazwa użytkownika używana do zalogowania się do dostawcy już istnieje w pliku /etc/ppp/pap-secrets. Istniejący wpis zostanie ukryty, a używany będzie ten nowo podany.
+Description-pt.UTF-8: Nome de utilizador de ISP já presente em pap-secrets
+ O nome de utilizador que introduziu para aceder ao seu ISP já está definido no ficheiro /etc/ppp/pap-secrets. A linha existente será comentada e uma nova linha com os dados que escreveu será adicionada.
+Description-ru.UTF-8: Имя пользователя для провайдера уже есть в pap-secrets
+ Указанное имя пользователя для подключения к провайдеру уже есть в файле /etc/ppp/pap-secrets. Существующая запись будет закомментирована, а новая запись с только что введёнными данными будет добавлена.
+Description-sv.UTF-8: Användarnamnet finns redan i pap-secrets
+ Användarnamnet du angav för anslutning till din Internetleverantör finns redan i filen /etc/ppp/pap-secrets. Den existerande posten kommer att kommenteras ut och en ny post med det data du precis angav kommer att läggas till.
+Description-vi.UTF-8: Tên người dùng ISP đã có trong « pap-secrets »
+ Để đăng nhập vào ISP, bạn đã gõ một tên người dùng đã có trong tập tin « /etc/ppp/pap-secrets ». Phần mềm này sẽ ghi chú tắt mục nhập đã có, và tạo một mục nhập khác với dữ liệu bạn mới gõ vào.
+
+Template: ipppd/isploginchapalreadythere
+Type: error
+Description: ISP user name already in chap-secrets
+ The user name you entered for logging into your ISP is already listed in
+ the /etc/ppp/chap-secrets file. The existing entry
+ will be commented out, and a new entry with the data you just entered will
+ be inserted.
+Description-cs.UTF-8: Uživatelské jméno ISP je již v chap-secrets uloženo
+ Uživatelské jméno, které jste zadali pro přihlášení k vašemu ISP je již v souboru /etc/ppp/chap-secrets uvedeno. Stávající hodnota bude zakomentována a nová vložena na její místo.
+Description-da.UTF-8: ISP-brugernavn er allerede i chap-secrets
+ Brugernavnet, du indtastede for at logge ind hos din ISP, er allerede angivet i filen /etc/ppp/chap-secrets. Det eksisterende punkt vil blive udkommenteret, og et nyt punkt med dataene, du netop har indtastet, vil blive indsat.
+Description-de.UTF-8: Der Benutzername für diesen Internet Service Provider kommt in der Datei chap-secrets bereits vor.
+ Der Benutzername, den Sie für die Anmeldung bei Ihrem ISP eingegeben haben, ist bereits in der Datei /etc/ppp/chap-secrets aufgeführt. Der existierende Eintrag wird auskommentiert und ein neuer Eintrag mit den Daten, die Sie gerade eingegeben haben, wird eingefügt.
+Description-es.UTF-8: El nombre de usuario del ISP ya está en el archivo «chap-secrets»
+ El nombre de usuario que introdujo para la identificación en su ISP ya está en el archivo «/etc/ppp/chap-secrets». Se comentará la entrada existente, y se insertará una nueva entrada con los datos que acaba de introducir.
+Description-eu.UTF-8: ISP erabiltzaile-izena dagoeneko chap-secrets fitxategian
+ ISPan saioa hasteko idatzi duzun erabiltzaile-izena dagoeneko badago /etc/ppp/chap-secrets fitxategian. Hau ez da arazo bat, lehendik zegoen sarrera komentatu egingo da, eta idatzi berri dituzun datuekin sarrera berria txertatuko da.
+Description-fi.UTF-8: ISP-käyttäjätunnus on jo tiedostossa chap-secrets
+ Käyttäjätunnus, joka annettiin ISP:lle kirjautumista varten on jo listattu tiedostossa /etc/ppp/chap-secrets. Olemassa oleva tietue kommentoidaan pois ja uusi, juuri annetut tiedot sisältävä tietue lisätään.
+Description-fr.UTF-8: Identifiant de FAI déjà dans chap-secrets
+ L'identifiant que vous avez indiqué pour la connexion à votre FAI existe déjà dans le fichier /etc/ppp/chap-secrets. L'entrée existante sera mise en commentaire et la valeur que vous venez d'indiquer sera utilisée à la place.
+Description-gl.UTF-8: O nome de usuario do provedor de Internet xa está en chap-secrets
+ O nome de usuario que introduciu para se conectar ao provedor de Internet xa figura no ficheiro /etc/ppp/chap-secrets. A entrada existente hase comentar, e hase engadir unha nova entrada cos datos que acaba de introducir.
+Description-it.UTF-8: Nome utente per l'ISP già presente in chap-secrets
+ Il nome utente inserito per la connessione all'ISP è già presente nel file /etc/ppp/chap-secrets. Il valore esistente verrà commentato e verrà inserita una nuova voce con il valore appena inserito.
+Description-ja.UTF-8: プロバイダのユーザ名が既に chap-secrets にあります
+ あなたが入力したプロバイダにログインするためのユーザ名は、既に /etc/ppp/chap-secrets ファイルに存在しています。既存のエントリはコメントアウトされ、今入力したデータで新しいエントリが挿入されます。
+Description-nl.UTF-8: Deze gebruikersnaam wordt reeds gebruikt in chap-secrets
+ De gebruikersnaam die u opgaf voor het aanmelden bij uw ISP wordt reeds genoemd in het bestand /etc/ppp/chap-secrets. De bestaande ingang wordt als commentaar gemarkeerd en een nieuwe ingang wordt aangemaakt met de zojuist ingevoerde gegevens.
+Description-pl.UTF-8: Nazwa użytkownika ISP znajduje się już w chap-secrets
+ Nazwa użytkownika używana do zalogowania się do dostawcy już istnieje w pliku /etc/ppp/chap-secrets. Istniejący wpis zostanie ukryty, a używany będzie ten nowo podany.
+Description-pt.UTF-8: Nome de utilizador de ISP já presente em chap-secrets
+ O nome de utilizador que introduziu para aceder ao seu ISP já está definido no ficheiro /etc/ppp/chap-secrets. A linha existente será comentada e uma nova linha com os dados que escreveu será adicionada.
+Description-ru.UTF-8: Имя пользователя для провайдера уже есть в chap-secrets
+ Указанное имя пользователя для подключения к провайдеру уже есть в файле /etc/ppp/chap-secrets. Существующая запись будет закомментирована, а новая запись с только что введёнными данными будет добавлена.
+Description-sv.UTF-8: Användarnamnet finns redan i chap-secrets
+ Användarnamnet du angav för anslutning till din Internetleverantör finns redan i filen /etc/ppp/chap-secrets. Den existerande posten kommer att kommenteras ut och en ny post med det data du precis angav kommer att läggas till.
+Description-vi.UTF-8: Tên người dùng ISP đã có trong « chap-secrets »
+ Để đăng nhập vào ISP, bạn đã gõ một tên người dùng đã có trong tập tin « /etc/ppp/chap-secrets ». Phần mềm này sẽ ghi chú tắt mục nhập đã có, và tạo một mục nhập khác với dữ liệu bạn mới gõ vào.
+
+Template: ipppd/isploginpapchapalreadythere
+Type: error
+Description: ISP user name already in chap-secrets and pap-secrets
+ The user name you entered for logging into your ISP is already listed in
+ the chap-secrets and pap-secrets files in /etc/ppp/.
+ The existing entries will be commented out, and new entries with the data
+ you just entered will be inserted.
+Description-cs.UTF-8: Uživatelské jméno ISP je již v chap-secrets a pap-secrets uloženo
+ Uživatelské jméno, které jste zadali pro přihlášení k vašemu ISP je již v souborech chap-secrets a pap-secrets (adresář /etc/ppp/) uvedeno. Stávající hodnota bude zakomentována a nová vložena na její místo.
+Description-da.UTF-8: ISP-brugernavn er allerede i chap-secrets og pap-secrets
+ Brugernavnet, du indtastede for at logge ind hos din ISP, er allerede angivet i filerne chap-secrets og pap-secrets i /etc/ppp/. De eksisterende punkter vil blive udkommenteret, og nye punkter med dataene, du netop har indtastet, vil blive indsat.
+Description-de.UTF-8: Der Benutzername für diesen Internet Service Provider kommt in den Dateien chap-secrets und pap-secrets bereits vor.
+ Der Benutzername, den Sie für die Anmeldung bei Ihrem ISP eingegeben haben, ist bereits in den Dateien chap-secrets und pap-secrets im Verzeichnis /etc/ppp/ aufgeführt. Die existierenden Einträge werden auskommentiert und neue Einträge mit den Daten, die Sie gerade eingegeben haben, werden eingefügt.
+Description-es.UTF-8: El nombre de usuario ya está en los archivos «chap-secrets» y «pap-secrets»
+ El nombre de usuario que introdujo para la identificación en su ISP ya está en los archivos «chap-secrets» y «pap-secrets» del directorio «/etc/ppp/». Se comentará la entrada existente, y se insertará una nueva entrada con los datos que acaba de introducir.
+Description-eu.UTF-8: ISP erabiltzaile-izena dagoeneko chap-secrets eta pap-secrets fitxategietan
+ ISPan saioa hasteko idatzi duzun erabiltzaile-izena dagoeneko badago /etc/ppp/-ko chap-secrets eta pap-secrets fitxategietan. Hau ez da arazo bat, lehendik zeuden sarrerak komentatu egingo da, eta idatzi berri dituzun datuekin sarrera berriak txertatuko dira.
+Description-fi.UTF-8: ISP-käyttäjätunnus on jo tiedostoissa chap-secrets ja pap-secrets
+ Käyttäjätunnus, joka annettiin ISP:lle kirjautumista varten on jo listattu hakemistossa /etc/ppp olevissa tiedostoissa chap-secrets ja pap-secrets. Olemassa olevat tietueet kommentoidaan pois ja uudet, juuri annetut tiedot sisältävät tietueet lisätään.
+Description-fr.UTF-8: Identifiant de FAI déjà dans chap-secrets et pap-secrets
+ L'identifiant que vous avez indiqué pour la connexion à votre FAI existe déjà dans les fichiers chap-secrets et pap-secrets du répertoire /etc/ppp/. L'entrée existante sera mise en commentaire et la valeur que vous venez d'indiquer sera utilisée à la place.
+Description-gl.UTF-8: O nome de usuario do provedor de Internet xa está en chap-secrets e pap-secrets
+ O nome de usuario que introduciu para se conectar ao provedor de Internet xa figura nos ficheiros pap-secrets e chap-secrets de /etc/ppp/. As entradas existentes hanse comentar, e hanse engadir novas entrada cos datos que acaba de introducir.
+Description-it.UTF-8: Nome utente per l'ISP già presente in pap-secrets e chap-secrets
+ Il nome utente indicato per la connessione all'ISP è già presente nei file chap-secrets e pap-secrets in /etc/ppp. I valori esistenti verranno commentati e verranno inserite delle nuove voci con i valori appena inseriti.
+Description-ja.UTF-8: プロバイダのユーザ名が既に chap-secrets と pap-secrets にあります
+ あなたが入力したプロバイダにログインするためのユーザ名は、既に /etc/ppp の chap-secrets ファイルと pap-secrets ファイルに存在しています。既存のエントリはコメントアウトされ、今入力したデータで新しいエントリが挿入されます。
+Description-nl.UTF-8: Deze gebruikersnaam wordt reeds gebruikt in chap-secrets en pap-secrets
+ De gebruikersnaam die u opgaf voor het aanmelden bij uw ISP wordt reeds genoemd in de /etc/ppp/chap-secrets en /etc/ppp/pap-secrets bestanden. In beide bestanden wordt de bestaande ingang als commentaar gemarkeerd en wordt een nieuwe ingang met de juiste gegevens aangemaakt.
+Description-pl.UTF-8: Nazwa użytkownika ISP znajduje się już w chap-secrets i pap-secrets
+ Nazwa użytkownika używana do zalogowania się do dostawcy już istnieje w plikach chap-secrets i pap-secrets w katalogu /etc/ppp. Istniejące wpisy zostaną ukryte, a używane będą te nowo podane.
+Description-pt.UTF-8: Nome de utilizador de ISP já presente em chap-secrets e pap-secrets
+ O nome de utilizador que introduziu para aceder ao seu ISP já está definido nos ficheiros chap-secrets e pap-secrets em /etc/ppp/. As linhas existentes serão comentadas e novas linhas com os dados que escreveu serão adicionadas.
+Description-ru.UTF-8: Имя пользователя для провайдера уже есть в chap-secrets и pap-secrets
+ Указанное имя пользователя для подключения к провайдеру уже есть в файлах chap-secrets и pap-secrets в каталоге /etc/ppp/. Существующие записи будут закомментированы, а новые записи с только что введёнными данными будут добавлены.
+Description-sv.UTF-8: Användarnamnet finns redan i chap-secrets och pap-secrets
+ Användarnamnet du angav för anslutning till din Internetleverantör finns redan i filerna chap-secrets och pap-secrets i katalogen /etc/ppp/. De existerande posterna kommer att kommenteras ut och nya poster med det data du precis angav kommer att läggas till.
+Description-vi.UTF-8: Tên người dùng ISP đã có trong « chap-secrets » và « pap-secrets »
+ Để đăng nhập vào ISP, bạn đã gõ một tên người dùng đã có trong tập tin  « /etc/ppp/pap-secrets » và « /etc/ppp/chap-secrets ». Phần mềm này sẽ ghi chú tắt các mục nhập đã có, và tạo các mục nhập khác với dữ liệu bạn mới gõ vào.
+
+Template: ipppd/noisdnutilsinit
+Type: error
+Description: (Re)start ipppd manually
+ There is no /etc/init.d/isdnutils on this system; hence you will have to
+ stop and start any ipppd daemons manually.
+Description-cs.UTF-8: Restartovat (spustit) ipppd ručně
+ Ve vašem systému není soubor /etc/init.d/isdnutils; takže budete muset zastavovat a spouštět daemony ipppd ručně.
+Description-da.UTF-8: (Gen)start ipppd manuelt
+ Der er ingen /etc/init.d/isdnutils på dette system; du vil derfor skulle stoppe og starte alle ipppd-dæmoner manuelt.
+Description-de.UTF-8: ipppd von Hand (neu) starten
+ Die Datei /etc/init.d/isdnutils gibt es in Ihrem System nicht. Deshalb werden Sie jeden ipppd-Daemon von Hand starten und stoppen müssen.
+Description-es.UTF-8: (Re)inicie ipppd manualmente
+ No hay «/etc/init.d/isdnutils» en este sistema, de modo que tendrá que parar e iniciar cualquier demonio ipppd manualmente.
+Description-eu.UTF-8: (Berr)abiarazi ipppd eskuz
+ Ez dago /etc/init.d/isdnutils sisteman, beraz ipppd-ren edozein daemon eskuz abiarazi eta gelditu beharko duzu.
+Description-fi.UTF-8: Käynnistä ipppd (uudelleen) käsin
+ Järjestelmässä ei ole tiedostoa /etc/init.d/isdnutils. Tämän takia kaikki ipppd-taustaohjelmat tulee pysäyttää ja käynnistää uudelleen käsin.
+Description-fr.UTF-8: Lancement manuel d'ipppd
+ Il n'existe pas de script /etc/init.d/isdnutils sur ce système. Vous devez donc lancer ou arrêter les démons ipppd vous-même.
+Description-gl.UTF-8: (Re)inicie ipppd á man
+ Non existe o ficheiro /etc/init.d/isdnutils neste sistema, polo tanto, ha ter que deter e iniciar os servizos ipppd á man.
+Description-it.UTF-8: (Ri)avviare ipppd manualmente
+ Nel sistema non esiste /etc/init.d/isdnutils; quindi i demoni ipppd devono essere fermati e avviati manualmente.
+Description-ja.UTF-8: ipppd を手動で (再) 起動する
+ このシステムには /etc/init.d/isdnutils がありません。その為、ipppd デーモン群を手動で停止、起動する必要がでます。
+Description-nl.UTF-8: ipppd handmatig (her)starten
+ Er is geen /etc/init.d/isdnutils aanwezig op uw systeem; bijgevolg dient u de vereiste ipppd-achtergronddiensten zelf te starten en te stoppen.
+Description-pl.UTF-8: Konieczny ręczny (re)start ipppd
+ W tym systemie nie ma /etc/init.d/isdnutils, więc konieczne jest ręczne zatrzymanie i uruchomienie demonów ipppd.
+Description-pt.UTF-8: (Re)iniciar ipppd manualmente
+ Não existe o /etc/init.d/isdnutils no seu sistema; portanto tem que parar e iniciar todos os daemons ipppd manualmente.
+Description-ru.UTF-8: (Пере)запуск ipppd вручную
+ В системе нет файла /etc/init.d/isdnutils; следовательно, вам придётся останавливать и запускать все службы ipppd вручную.
+Description-sv.UTF-8: Starta (om) ipppd på egen hand
+ Filen /etc/init.d/isdnutils finns inte på ditt system; därför måste du stoppa och starta ipppd-demonerna för hand.
+Description-vi.UTF-8: Khởi chạy lại ipppd bằng tay
+ Không có tập tin « /etc/init.d/isdnutils » trên hệ thống này thì bạn cần phải tự dừng chạy và khởi chạy trình nền (dæmon) ippd nào.
+
+Template: ipppd/isdnutilsinitbad
+Type: error
+Description: Error running isdnutils init script
+ The /etc/init.d/isdnutils script ran with errors. Please check the
+ installation of the isdnutils-base package; reinstall it if necessary.
+ Perhaps moving /etc/init.d/isdnutils.dpkg-dist (if it exists) to
+ /etc/init.d/isdnutils will also help.
+Description-cs.UTF-8: Chyba při spuštění inicializačního skriptu isdnutils
+ Skript /etc/init.d/isdnutils běžel s chybami. Zkontrolujte prosím instalaci balíčku isdnutils-base a pokud to bude třeba, přeinstalujte jej. Možná také pomůže přesunutí /etc/init.d/isdnutils.dpkg-dist (pokud existuje) do /etc/init.d/isdnutils.
+Description-da.UTF-8: Fejl under kørsel af isdnutils' opstartsskript
+ Skriptet /etc/init.d/isdnutils blev kørt med fejl. Tjek venligst installationen af pakken isdnutils-base; geninstaller om nødvendigt. Måske vil flytning af /etc/init.d/isdnutils.dpkg-dist (hvis den findes) til /etc/init.d/isdnutils også hjælpe.
+Description-de.UTF-8: Fehler bei der Ausführung des isdnutils-init-Skriptes
+ Das Skript /etc/init.d/isdnutils war nicht erfolgreich. Bitte überprüfen Sie die Installation des Pakets isdnutils-base; installieren Sie es erneut wenn nötig. Unter Umständen kann es helfen, /etc/init.d/isdnutils.dpkg-dist (wenn die Datei existiert) in /etc/init.d/isdnutils umzubenennen (überschreiben).
+Description-es.UTF-8: Se produjo un error al ejecutar el script de inicio de isdnutils
+ El script «/etc/init.d/isdnutils» falló al ejecutarse. Compruebe la instalación del paquete isdnutils-base, reinstale dicho paquete si es necesario. Quizá mover «/etc/init.d/isdnutils.dpkg-dist» (si existe) a «/etc/init.d/isdnutils» pueda ayudar.
+Description-eu.UTF-8: Errorea isdnutils-en hasierako script-a exekutatzean
+ /etc/init.d/isdnutils script-a erroreekin exekutatu da. Egiaztatu isdnutils-base paketearen instalazioa, eta berrinstala ezazu beharrezkoa izanez gero. Agian /etc/init.d/isdnutils.dpkg-dist (egonez gero) /etc/init.d/isdnutils -ra mugitzeak lagun dezake.
+Description-fi.UTF-8: Virhe ajettaessa isdnutils-alustuskomentosarjaa
+ Komentosarjan /etc/init.d/isdnutils ajo aiheutti virheitä. Tarkista paketin isdnutils-base asennus ja asenna se uudelleen tarvittaessa. Jos tiedosto /etc/init.d/isdnutils.dpkg-dist on olemassa, sen siirtäminen nimelle /etc/init.d/isdnutils saattaa auttaa.
+Description-fr.UTF-8: Erreur à l'exécution du script de démarrage d'isdnutils
+ Des erreurs se sont produites pendant l'exécution du script /etc/init.d/isdnutils. Veuillez vérifier l'installation du paquet isdnutils-base et réinstallez-le si nécessaire. Il sera peut-être judicieux de renommer le fichier /etc/init.d/isdnutils.dpkg-dist (s'il existe) en /etc/init.d/isdnutils.
+Description-gl.UTF-8: Erro ao executar o script de inicio de isdnutils
+ O script /etc/init.d/isdnutils tivo erros. Comprobe a instalación do paquete isdnutils-base; volva instalalo se é preciso. Se cadra, se move /etc/init.d/isdnutils.dpkg-dist (de existir) a /etc/init.d/isdnutils pode funcionar.
+Description-it.UTF-8: Errore nell'eseguire lo script init di isdnutils
+ L'esecuzione dello script /etc/init.d/isdnutils ha prodotto degli errori, controllare l'installazione del pacchetto isdnutils-base; se necessario ripeterne l'installazione. Provare a spostare /etc/init.d/isdnutils.dpkg-dist (se esiste) in /etc/init.d/isdnutils.
+Description-ja.UTF-8: isdnutils 初期化スクリプト動作中のエラー
+ /etc/init.d/isdnutils の動作にエラーが起きました。isdnutils-base がインストールされているかをチェックして、必要であれば再インストールしてください。(存在していれば) /etc/init.d/isdnutils.dpkg-dist を /etc/init.d/isdnutils に移動するのも良いかもしれません。
+Description-nl.UTF-8: Fouten tijdens uitvoeren isdnutils init script
+ Er waren fouten bij het uitvoeren van het /etc/init.d/isdnutils script. Gelieve de installatie van het isdnutils-base pakket te controleren; dit pakket zonodig herinstalleren. Het verplaatsen van /etc/init.d/isdnutils.dpkg-dist naar /etc/init.d/isdnutils kan ook helpen (wanneer deze bestaat).
+Description-pl.UTF-8: Błąd skryptu inicjującego isdnutils
+ Skrypt /etc/init.d/isdnutils uruchomił się z błędem. Proszę sprawdzić instalację pakietu isdnutils-base i zainstalować go ponownie, jeśli jest taka potrzeba. Może pomóc również przeniesienie /etc/init.d/isdnutils.dpkg-dist (jeśli istnieje) do /etc/init.d/isdnutils.
+Description-pt.UTF-8: Erro ao executar o script de init do isdnutils
+ A execução do script /etc/init.d/isdnutils causou erros. Por favor verifique a instalação do pacote isdnutils-base; reinstale-o se necessário. Talvez ajude mover o /etc/init.d/isdnutils.dpkg-dist (se existir) para /etc/init.d/isdnutils.
+Description-ru.UTF-8: Ошибка в работе сценария запуска isdnutils
+ Сценарий /etc/init.d/isdnutils выполнился с ошибками. Проверьте установку пакета isdnutils-base; переустановите его, если нужно. Возможно также поможет перемещение /etc/init.d/isdnutils.dpkg-dist (если он есть) в /etc/init.d/isdnutils.
+Description-sv.UTF-8: Fel vid körning av init-skriptet isdnutils
+ Skriptet /etc/init.d/isdnutils kördes och fel uppstod. Vänligen kontrollera installationen av paketet isdnutils-base; installera om det om det behövs. Kanske flyttning av /etc/init.d/isdnutils.dpkg-dist (den den existerar) till /etc/init.d/isdnutils kan hjälpa.
+Description-vi.UTF-8: Gặp lỗi khi chạy văn lệnh sơ khởi isdnutils
+ Văn lệnh « /etc/init.d/isdnutils » đã chạy với lỗi. Hãy kiểm tra xem lại bản cài đặt của gói « isdnutils-base », và cài đặt lại nó nếu cần thiết. Có lẽ việc di chuyển tập tin « /etc/init.d/isdnutils.dpkg-dist » (nếu còn có) sang « /etc/init.d/isdnutils » sẽ cũng có ích.

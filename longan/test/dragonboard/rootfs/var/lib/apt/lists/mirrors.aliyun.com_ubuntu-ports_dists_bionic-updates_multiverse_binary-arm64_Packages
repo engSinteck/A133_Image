@@ -1,0 +1,394 @@
+Package: broadcom-sta-common
+Architecture: all
+Version: 6.30.223.271-8ubuntu0.1
+Priority: optional
+Section: multiverse/admin
+Source: broadcom-sta
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Eduard Bloch <blade@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 31
+Recommends: broadcom-sta-source, module-assistant
+Filename: pool/multiverse/b/broadcom-sta/broadcom-sta-common_6.30.223.271-8ubuntu0.1_all.deb
+Size: 9256
+MD5sum: ae6c37e03b6b06c70ecc357749147184
+SHA1: 21fb8043ce68bf1b44daa06b8d8d258e00c9ee08
+SHA256: 89d8c36e56771b252afe2137b8cb986806213ea90584d46d85348340d726f8f6
+SHA512: 80175e74efaf4c8c7b2b22af51ef2521a9bd901718cd1de72ac6da5220f5663909214e5eb7f12d2078fca3f58fe32563b4a2aad925ae087a289a15819b8dc360
+Homepage: http://www.broadcom.com/support/802.11/linux_sta.php
+Description: Common files for the Broadcom STA Wireless driver
+Description-md5: a6bd57d95d48308610bc995bd8922939
+
+Package: broadcom-sta-dkms
+Architecture: all
+Version: 6.30.223.271-8ubuntu0.1
+Priority: optional
+Section: multiverse/admin
+Source: broadcom-sta
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Eduard Bloch <blade@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 14139
+Provides: broadcom-sta-modules
+Depends: dkms (>= 2.1.0.0)
+Recommends: wireless-tools
+Conflicts: broadcom-sta-modules
+Filename: pool/multiverse/b/broadcom-sta/broadcom-sta-dkms_6.30.223.271-8ubuntu0.1_all.deb
+Size: 2204576
+MD5sum: 2e8c58f7d3748424921687d616b5de4b
+SHA1: 233446074b15c339b3a73bac469c3834c380113c
+SHA256: 12d1e3410b9daf6bf7f6ceeebdec76e5d49d567c40f9ae715eb36092009f7ead
+SHA512: 229e8a2a9df00c272ecc592b665390f886310d81ac55ba2f688f5495262833ef8b1378022e80ff3a7509b5275f4e7af6d7c325feb46f011de04f3638550d43a5
+Homepage: http://www.broadcom.com/support/802.11/linux_sta.php
+Description: dkms source for the Broadcom STA Wireless driver
+Description-md5: 4c9c20d84937e0293fe598f44d785bce
+
+Package: broadcom-sta-source
+Architecture: all
+Version: 6.30.223.271-8ubuntu0.1
+Priority: optional
+Section: multiverse/admin
+Source: broadcom-sta
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Eduard Bloch <blade@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2189
+Depends: debhelper (>= 8), make, xz-utils
+Recommends: module-assistant
+Filename: pool/multiverse/b/broadcom-sta/broadcom-sta-source_6.30.223.271-8ubuntu0.1_all.deb
+Size: 2219612
+MD5sum: a3eddca945f342276db5c51f4f5c3d36
+SHA1: fdf33e5099378d69d0c3227fe043a3561f0fafb6
+SHA256: 2ac9867135c65cac9a81f55f4e06fc5168274dc24b68cbf0261f925ba8cc792f
+SHA512: 51aee423b54a9be8fe8892078f97febbbd0a98472db2d8f1b3a70675002f3a734ed2f061830d3d09182abd1179ab48e534771012d3314c0c33574863ddb42eb1
+Homepage: http://www.broadcom.com/support/802.11/linux_sta.php
+Description: Source for the Broadcom STA Wireless driver
+Description-md5: 5bb170970da4a03f1c53b6f0202148ef
+
+Package: jhove
+Architecture: all
+Version: 1.20.1-5~18.04.1ubuntu1
+Priority: optional
+Section: multiverse/utils
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 12000
+Depends: libjaxb-api-java (>= 2.3.1)
+Filename: pool/multiverse/j/jhove/jhove_1.20.1-5~18.04.1ubuntu1_all.deb
+Size: 1426472
+MD5sum: 2ff1cd5931cce8c32e20cba4278b2e67
+SHA1: 2fc5b1ccde31b793910a75e1c78ed8fe89dfc33d
+SHA256: 56f2e6508800ba25623dac2c4448b0efc7a7570d04a961616e6ff815ece3c913
+SHA512: 9b3a38cdfeb06bea96e84e71b21e5543c0bfb1029d205b7a0916e53d8b6a688d2aff5dfb9c285cd816b4493ac856eb25bd51eb2d565c32592cb5d1a8e9f5600c
+Homepage: https://github.com/openpreserve/jhove/
+Description: JSTOR/Harvard Object Validation Environment
+Description-md5: febe0cb6a55fdf2af5baf3d3965883ac
+
+Package: libclamunrar7
+Architecture: arm64
+Version: 0.100.1-1~ubuntu0.18.04.1
+Priority: extra
+Section: multiverse/libs
+Source: libclamunrar
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 77
+Depends: libclamav7, libc6 (>= 2.17)
+Filename: pool/multiverse/libc/libclamunrar/libclamunrar7_0.100.1-1~ubuntu0.18.04.1_arm64.deb
+Size: 29192
+MD5sum: 7786c6529890dac2b218bca79864f064
+SHA1: 01ae66deefa8c3417c1e39dc1e1625f383ac398e
+SHA256: f1c5fbf352cc470ae3c999889739f85f585324b3a8c95e6f65831cce7c3729bd
+SHA512: 9c56f02c33c528205f28f3bd4be4bd5a12ae1bb235b2955b8ee109fe1d99018bb785f742542ed57165f1f70350dbfa8df69f71501348d668ab933c18cc8fb99d
+Homepage: https://www.clamav.net/
+Description: anti-virus utility for Unix - unrar support
+Description-md5: cc91b3ee0883ae72d88576f9ca8c850e
+
+Package: libclamunrar9
+Architecture: arm64
+Version: 0.101.2-1~ubuntu0.18.04.1
+Priority: optional
+Section: multiverse/libs
+Source: libclamunrar
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 273
+Depends: libclamav9, libc6 (>= 2.17), libgcc1 (>= 1:3.0), libstdc++6 (>= 5)
+Filename: pool/multiverse/libc/libclamunrar/libclamunrar9_0.101.2-1~ubuntu0.18.04.1_arm64.deb
+Size: 115424
+MD5sum: 5c8ccee39e6fee22ff76067cb464af52
+SHA1: 0a72b9eb30aafdf87ba7c03638f45da4462a8e93
+SHA256: 5afeef2076c6943b94196e8939687737d0b2d99ace53211768e5b9add38b6197
+SHA512: 3271dbcd736a261fe213b4b01e0767c78f18f2aa8b48cdb116c77d1a612d45761f5949e2b77dcf94fffd45ff4e398edf7dc114dbb41a83b3e0ffad2ca59853d0
+Homepage: https://www.clamav.net/
+Description: anti-virus utility for Unix - unrar support
+Description-md5: 81aaa76cb9df5259f364d29eeca2acc6
+
+Package: libnvidia-common-455
+Architecture: all
+Version: 455.45.01-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: multiverse/libs
+Source: nvidia-graphics-drivers-455
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Breaks: libnvidia-gl-455 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-455 (<< 390.25-0ubuntu2~)
+Filename: pool/multiverse/n/nvidia-graphics-drivers-455/libnvidia-common-455_455.45.01-0ubuntu0.18.04.1_all.deb
+Size: 9308
+MD5sum: f3b1198d729084ec4627307369ef0ec7
+SHA1: 6bb7560d08835c5f7704544a0a942e77a9be2a02
+SHA256: 50af0f68c4e687b2ff37fc2c22023079cf50f3e66f1f4c48c1d3d64bd4336612
+SHA512: 917c95bfeb425a8c39cc0d3c15bda811953081a017438cc31e80b7d1fe92bb15807fa04b0910b16d648f4f0be70a30e9a73c77d3853fee1abeaabc91312320b8
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-460-server
+Architecture: all
+Version: 460.91.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: multiverse/libs
+Source: nvidia-graphics-drivers-460-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-460-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-460-server (<< 390.25-0ubuntu2~)
+Filename: pool/multiverse/n/nvidia-graphics-drivers-460-server/libnvidia-common-460-server_460.91.03-0ubuntu0.18.04.1_all.deb
+Size: 9192
+MD5sum: 002e9e12aa2ec2def0ec5ff6ec2363ab
+SHA1: ecd8fa2089f043ad4c78f1b13aa1b7a54196a62a
+SHA256: b86eff8886e4b501aaf4f09b4e0beb33d97d2de23d19e20091d148f93d698fa7
+SHA512: 342d306e79f069c5acb6a040f9e34d3ed5ce0528b586ed0548a50e11df2814b7230d4b9d36044cb03794d464dcfc30b6844df0d8e840ed6d08f761fff590e465
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+
+Package: linux-firmware-raspi2
+Architecture: arm64
+Version: 1.20200601+arm64-0ubuntu2~18.04.1
+Priority: optional
+Section: multiverse/misc
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 23558
+Filename: pool/multiverse/l/linux-firmware-raspi2/linux-firmware-raspi2_1.20200601+arm64-0ubuntu2~18.04.1_arm64.deb
+Size: 5199948
+MD5sum: 7f8a78ce1ba27479d129f77bb73fb78c
+SHA1: a6c20a72bd6a80a44ba41ad7c0e3d3641048fbbc
+SHA256: 3bc19da7b7dacc2acb9f745f0393179afb5f2128b9f2ee5504cc9040fc853171
+SHA512: 1f2c96c6e051e67eddfe0cb865fd5fe04bc67bf74b0e6ac56f3d919777556f63b71e88e6cf1c5b74d5bfc8ab2d83dd239fbcd4973f1e499622cfb8c911327d60
+Homepage: https://github.com/raspberrypi/firmware
+Description: Raspberry Pi 2/3/4 GPU firmware and bootloaders
+Description-md5: 1eae7edc83929faa465de3cae99b870f
+
+Package: virtualbox-dkms
+Architecture: all
+Version: 5.2.42-dfsg-0~ubuntu1.18.04.1
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 5339
+Provides: virtualbox-modules
+Depends: dkms (>= 2.1.0.0)
+Recommends: virtualbox (>= 5.2.42-dfsg-0~ubuntu1.18.04.1)
+Filename: pool/multiverse/v/virtualbox/virtualbox-dkms_5.2.42-dfsg-0~ubuntu1.18.04.1_all.deb
+Size: 664304
+MD5sum: 1b189eea6b9135510bccdacf95488718
+SHA1: 39c3b37630915f496b4e715d2241473c020abf66
+SHA256: f62275ce71b4500120b21208a043100f01864dc80cdfb2ca3fb90db5b5d3e975
+SHA512: e8a08165194aaf329a033b2e3afc951ac4667bba643d49d6b85f7ece0d20615268bd0bf49c2d1c504c858c2a62b1fc1aca86823d4871f5bb2d13eba504aba482
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - kernel module sources for dkms
+Description-md5: 4d42f0fe51c4a92f2aed5071f84524ae
+
+Package: virtualbox-ext-pack
+Architecture: all
+Version: 5.2.42-1~ubuntu1.18.04.1
+Priority: extra
+Section: multiverse/misc
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 127
+Pre-Depends: debconf
+Depends: virtualbox (>= 5.2.42-dfsg-0~) | virtualbox-5.2, virtualbox (<< 5.2.42-dfsg-z) | virtualbox-5.2, wget, debconf (>= 0.5) | debconf-2.0
+Filename: pool/multiverse/v/virtualbox-ext-pack/virtualbox-ext-pack_5.2.42-1~ubuntu1.18.04.1_all.deb
+Size: 10216
+MD5sum: 1aa37ac42f25ce02af0b056b533736c3
+SHA1: c153bbc182d93f440cd53b64edc464205bae8222
+SHA256: 61fb4d0645269b193d85947b1b1aa993d605cdab650bdd699b7a1dc97131c187
+SHA512: ffc22aa4e3d9fc2ebda3b617900097efce7e970322f2b7fecdcdfa5a49454b5be3e8c7270048a56e5fce32139b6add623f495a64b5dfd18b4961913f23b9d9d7
+Homepage: https://www.virtualbox.org
+Description: extra capabilities for VirtualBox, downloader.
+Description-md5: d34299a0a1c7bf804958800947ea531c
+
+Package: virtualbox-guest-additions-iso
+Architecture: all
+Version: 5.2.42-1~ubuntu1.18.04.1
+Priority: extra
+Section: multiverse/misc
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 48688
+Recommends: virtualbox (>= 5.2.42)
+Conflicts: virtualbox-2.0, virtualbox-2.1, virtualbox-2.2, virtualbox-3.0, virtualbox-3.1, virtualbox-3.2, virtualbox-4.0, virtualbox-4.1, virtualbox-4.2, virtualbox-4.3, virtualbox-5.0, virtualbox-5.1
+Breaks: virtualbox-guest-additions (<< 4.0.6-1~)
+Replaces: virtualbox-guest-additions (<< 4.0.6-1~)
+Filename: pool/multiverse/v/virtualbox-guest-additions-iso/virtualbox-guest-additions-iso_5.2.42-1~ubuntu1.18.04.1_all.deb
+Size: 34253600
+MD5sum: 6c00d8d7d33b65122d64e48294c57c27
+SHA1: 911dd460cacc037baba6db501acf06d365346f90
+SHA256: 28395459da935460da4410c47d2d4656d757b96d8e6f1ce2bbbeb40e1ec5e78f
+SHA512: 0d9295c7a6affd4dd9c18c16862493680fc5a2572ea772d555000f71f28af8dd76c450bc69155d59f4596e167d82120e34ec076d8701d40a7a7cee3cd67a985d
+Homepage: https://www.virtualbox.org
+Description: guest additions iso image for VirtualBox
+Description-md5: 11a9eaac064138ec238f7c2ee4c018df
+
+Package: virtualbox-guest-dkms
+Architecture: all
+Version: 5.2.42-dfsg-0~ubuntu1.18.04.1
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 6610
+Provides: virtualbox-guest-modules
+Depends: dkms (>= 2.1.0.0)
+Filename: pool/multiverse/v/virtualbox/virtualbox-guest-dkms_5.2.42-dfsg-0~ubuntu1.18.04.1_all.deb
+Size: 587316
+MD5sum: ef9514c73ab409ab2ca6f3e4a4b1c612
+SHA1: e63d99082b86bef017ec02c4e59ea4673dbe37bc
+SHA256: 0d1d4800c5762d076d91a0aa2b5f9160c207e7d68b10ff71199f8ddbba4f6f95
+SHA512: 763a0e9799fd694fc771d562b8e363fef0e718b75d653bb971e072cd99328705cd28ee3de205cc5d383d58f1d8184d13de7dc3c02ccc07ecb7ad328954b3b138
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - guest addition module source for dkms
+Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
+Description-md5: e15ead9377a7f1e325ded819d3cfaf8b
+
+Package: virtualbox-guest-dkms-hwe
+Architecture: all
+Version: 5.2.42-dfsg-0~ubuntu1.18.04.1
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 6611
+Provides: virtualbox-guest-dkms, virtualbox-guest-modules
+Depends: dkms (>= 2.1.0.0)
+Conflicts: virtualbox-guest-dkms
+Replaces: virtualbox-guest-dkms
+Filename: pool/multiverse/v/virtualbox-hwe/virtualbox-guest-dkms-hwe_5.2.42-dfsg-0~ubuntu1.18.04.1_all.deb
+Size: 587492
+MD5sum: 0c874535e29e8168944fad9d7208437b
+SHA1: 99e05792270b3ed593ab1501de478804d3d04910
+SHA256: f4787d60ad6d91531bd05ee51bf6be36056d9d6ddcbabd51fd59260efe45a802
+SHA512: 5ce337fbc81f88ac18e5fc28dbc9d3837ca85024c94ec29e50a8a1b7f9bfc88f910651e549ecd1a39b3f4f82f755c0140787daa52918316009bd9a533881944f
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - guest addition module source for dkms
+Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
+Description-md5: 5da76c89e724bb98d7f67d251fa8de7d
+
+Package: virtualbox-guest-source
+Architecture: all
+Version: 5.2.42-dfsg-0~ubuntu1.18.04.1
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1057
+Depends: build-essential, bzip2, debhelper (>= 10), kbuild, module-assistant
+Filename: pool/multiverse/v/virtualbox/virtualbox-guest-source_5.2.42-dfsg-0~ubuntu1.18.04.1_all.deb
+Size: 985372
+MD5sum: 8243ff4e676c29a7cc506bc2898c3f5e
+SHA1: f67150d2223367f094b22d174b2d068c4846dc96
+SHA256: 7bb96df27e95c3b14e9607657bac3ad255a8274ef63b3056b012b7c9a95c9a46
+SHA512: 7816f80495d9c3562ceabb4a276a819e1c6918da0ff22eefef2fcf87cac1aad375c24a4f37b1710a55eeaeafbc11464e0bd729b6c2fc10660255d6d08640915f
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - guest addition module source
+Description-md5: 4e8ea50b26a8f2bc5f4e7ef943a32a06
+
+Package: virtualbox-guest-source-hwe
+Architecture: all
+Version: 5.2.42-dfsg-0~ubuntu1.18.04.1
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1060
+Provides: virtualbox-guest-source
+Depends: build-essential, bzip2, debhelper (>= 10), kbuild, module-assistant
+Conflicts: virtualbox-guest-source
+Replaces: virtualbox-guest-source
+Filename: pool/multiverse/v/virtualbox-hwe/virtualbox-guest-source-hwe_5.2.42-dfsg-0~ubuntu1.18.04.1_all.deb
+Size: 986844
+MD5sum: 27b93ce194188da39dc805cc6f40a5bb
+SHA1: c4ef7eeb0fc082c3cfdfbc98b528829626e1ebcb
+SHA256: ea54df7fd71a01a37a57d02c84789ca75dfef30409824d657616d984363fda6d
+SHA512: 4e359e9d9ef1a2acd2f5870d4ba22a97af41edf40a8f73074b57f1cd42b330c4127a0bafed3bc0d96fbec71dd0c2b6f56e339fa79b17ac7552bea408d8819230
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - guest addition module source
+Description-md5: 4e8ea50b26a8f2bc5f4e7ef943a32a06
+
+Package: virtualbox-source
+Architecture: all
+Version: 5.2.42-dfsg-0~ubuntu1.18.04.1
+Priority: optional
+Section: multiverse/kernel
+Source: virtualbox
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <team+debian-virtualbox@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 870
+Depends: build-essential, bzip2, debhelper (>= 10), kbuild, module-assistant
+Recommends: virtualbox (>= 5.2.42-dfsg-0~ubuntu1.18.04.1)
+Filename: pool/multiverse/v/virtualbox/virtualbox-source_5.2.42-dfsg-0~ubuntu1.18.04.1_all.deb
+Size: 795512
+MD5sum: f8c37781f9de650b91f27adb888b25cd
+SHA1: 48feb61803e911768c0b4336fd7dff8dd2bbae68
+SHA256: d8b0c31a94c7c826f724a1b032e6d140896c347dff81f039fc5e26292ded32d9
+SHA512: 0df8fe76c0616329c4cac18c83316773f0f4580115ce34f280e6121d97933b6677c50264f053fdb11314ff1fcb47c9ec96342209aba6581167604d43e9619f0d
+Homepage: https://www.virtualbox.org
+Description: x86 virtualization solution - kernel module source
+Description-md5: 53035ede584988f3413156cb7a5dbe8b
+

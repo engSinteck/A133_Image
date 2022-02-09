@@ -13,6 +13,5 @@
 /output/bin/
 /output/firmware
 /rootfs.ext4
-/rootfs/
 /src/lib/libscript.a
 *.d

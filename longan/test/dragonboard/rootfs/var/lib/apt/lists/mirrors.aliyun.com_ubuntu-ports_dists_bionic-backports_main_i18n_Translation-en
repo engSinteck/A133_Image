@@ -1,0 +1,285 @@
+Package: debhelper
+Description-md5: c3d35229c1ce392f77324206e097b92e
+Description-en: helper programs for debian/rules
+ A collection of programs that can be used in a debian/rules file to
+ automate common tasks related to building Debian packages. Programs
+ are included to install various files into your package, compress
+ files, fix file permissions, integrate your package with the Debian
+ menu system, debconf, doc-base, etc. Most Debian packages use debhelper
+ as part of their build process.
+
+Package: dh-autoreconf
+Description-md5: 64431da0ae4318a5fbf441743bd5ffc5
+Description-en: debhelper add-on to call autoreconf and clean up after the build
+ dh-autoreconf provides a debhelper sequence addon named 'autoreconf' and two
+ commands, dh_autoreconf and dh_autoreconf_clean.
+ .
+ The dh_autoreconf command creates a list of the files and their checksums,
+ calls autoreconf and then creates a second list for the new files.
+ .
+ The dh_autoreconf_clean command compares these two lists and removes all
+ files which have been added or changed (files may be excluded if needed).
+ .
+ For CDBS users, a rule is provided to call the dh-autoreconf programs at
+ the right time.
+
+Package: erlang-asn1
+Description-md5: ee4d0b49672ea14e8a224f00c393a8c6
+Description-en: Erlang/OTP modules for ASN.1 support
+ The Asn1 application contains modules with compile-time and run-time
+ support for ASN.1 in Erlang/OTP.
+
+Package: erlang-base
+Description-md5: 34f1d00a77372c45835007b286d6b266
+Description-en: Erlang/OTP virtual machine and base applications
+ This package contains the Erlang/OTP runtime implementation, which is
+ configured and built without HiPE support (compiles to byte-code only),
+ and minimal set of Erlang applications:
+  compiler - compiles Erlang code to byte-code;
+  erts - the Erlang runtime system application;
+  kernel - code necessary to run the Erlang runtime system itself;
+  ose - code for Enea OSE operating system;
+  sasl - the system architecture support libraries application;
+  stdlib - modules for manipulating lists, strings, files etc.
+
+Package: erlang-crypto
+Description-md5: 6d6a5e48deb89695b61d6380e84e7e95
+Description-en: Erlang/OTP cryptographic modules
+ The Crypto Application provides functions for computation of message
+ digests, encryption and decryption functions. It uses OpenSSL for
+ actual calculations.
+
+Package: erlang-dev
+Description-md5: 023eca40c938a81e31cb3d07fa28976e
+Description-en: Erlang/OTP development libraries and headers
+ The files for application development in Erlang. They include headers for
+ all applications included into Erlang/OTP distribution and C interface
+ libraries.
+
+Package: erlang-diameter
+Description-md5: 42a0b30fc825ef17d696ef8100828e2c
+Description-en: Erlang/OTP implementation of RFC 6733 protocol
+ Interface with which a user creates a service that sends and receives
+ messages using the Diameter protocol as defined in RFC 6733.
+
+Package: erlang-doc
+Description-md5: d151a4898d82d984d031d1b1e1366eea
+Description-en: Erlang/OTP HTML/PDF documentation
+ Documentation for the Erlang programming language and OTP
+ library in HTML and PDF formats.
+
+Package: erlang-edoc
+Description-md5: a3f918489b4ca4cd8e396c420e04b999
+Description-en: Erlang/OTP module for generating documentation
+ EDoc is the Erlang program documentation generator. Inspired by the
+ Javadoc tool for the Java programming language, EDoc is adapted to
+ the conventions of the Erlang world.
+
+Package: erlang-eldap
+Description-md5: 84192ee472dc7261422d95bd91233523
+Description-en: Erlang/OTP LDAP library
+ Eldap is a module which provides a client API to the Lightweight
+ Directory Access Protocol (LDAP).
+
+Package: erlang-erl-docgen
+Description-md5: 12eb983b0fd1fd22ee8081c4efc70adf
+Description-en: Erlang/OTP documentation stylesheets
+ The erl_docgen package includes XSLT stylesheets and document type
+ definitions used for Erlang/OTP documentation. They allow one to
+ transform documentation to manpage, HTML, and PDF formats.
+
+Package: erlang-eunit
+Description-md5: 559493af07c14e28bf56267ccbd871a0
+Description-en: Erlang/OTP module for unit testing
+ The EUnit application contains modules with support for unit testing.
+
+Package: erlang-examples
+Description-md5: 7fd4d1d18889e4d971a860ea2e41b36b
+Description-en: Erlang/OTP application examples
+ The examples, included in the Erlang/OTP system distribution.
+
+Package: erlang-ftp
+Description-md5: 97f938484e6e841e88d0c11037d66a14
+Description-en: Erlang/OTP FTP client
+ The ftp application implements a client for file transfer
+ according to a subset of the File Transfer Protocol (FTP).
+
+Package: erlang-inets
+Description-md5: 8d70a0f49c4439fde59135fbc5bed418
+Description-en: Erlang/OTP Internet clients and servers
+ Inets is a container for Internet clients and servers. Currently
+ a HTTP client and server are provided in Inets.
+
+Package: erlang-megaco
+Description-md5: 690fb9316fd0c68e524cdd808aa967b2
+Description-en: Erlang/OTP implementation of Megaco/H.248 protocol
+ The Megaco application is a framework for building applications on
+ top of the Megaco/H.248 protocol.
+
+Package: erlang-mnesia
+Description-md5: 48d2214e21e1f80fbec2f00309f8406f
+Description-en: Erlang/OTP distributed relational/object hybrid database
+ Mnesia is a distributed Database Management System (DBMS), appropriate
+ for telecommunications applications and other Erlang applications
+ which require continuous operation and exhibit soft real-time properties.
+
+Package: erlang-nox
+Description-md5: 7a788b312a01454a03fd4262bf827fcd
+Description-en: Erlang/OTP applications that don't require X Window System
+ This package is a dummy package which will install all Erlang/OTP
+ applications which do not require X Window System to run.
+
+Package: erlang-odbc
+Description-md5: 8fb16205445a0b6f3190216580f2428d
+Description-en: Erlang/OTP interface to SQL databases
+ The Erlang ODBC application provides an interface for accessing
+ relational SQL databases from Erlang.
+
+Package: erlang-os-mon
+Description-md5: f8627add1b4145778041a638d379dc3d
+Description-en: Erlang/OTP operating system monitor
+ The operating system monitor, OS_Mon, provides services for
+ monitoring CPU load, disk usage, memory usage and OS messages.
+
+Package: erlang-parsetools
+Description-md5: 3e51e2f8676cdc2b45f2ac3d74b79580
+Description-en: Erlang/OTP parsing tools
+ The Parsetools application contains utilities for parsing. Currently,
+ it includes yecc module. Yecc is an LALR-1 parser generator for Erlang,
+ similar to yacc. Yecc takes a BNF grammar definition as input, and
+ produces Erlang code for a parser as output.
+
+Package: erlang-public-key
+Description-md5: e10bb8263805ad3875bec38b249b88db
+Description-en: Erlang/OTP public key infrastructure
+ Provides functions to handle public key infrastructure from RFC 3280
+ (X.509 certificates) and some parts of the PKCS-standard.
+
+Package: erlang-runtime-tools
+Description-md5: a0448be753203ae3013367e215bb963c
+Description-en: Erlang/OTP runtime tracing/debugging tools
+ Runtime_Tools provides low-footprint tracing/debugging tools suitable
+ for inclusion in a production system.
+
+Package: erlang-snmp
+Description-md5: dfb924f9e0e51a8acfd28878335946b5
+Description-en: Erlang/OTP SNMP applications
+ A multilingual Simple Network Management Protocol application features
+ an Extensible Agent, simple manager, a MIB compiler and facilities for
+ implementing SNMP MIBs etc.
+ .
+ The OTP_Mibs application provides an SNMP management information base
+ for Erlang nodes.
+
+Package: erlang-ssh
+Description-md5: 2ab50c8973bb765ccc1c37f7e496762f
+Description-en: Erlang/OTP implementation of SSH protocol
+ The SSH application is an erlang implementation of the secure
+ shell protocol.
+
+Package: erlang-ssl
+Description-md5: 15c091acf332c7d47a15da19885fdc6b
+Description-en: Erlang/OTP implementation of SSL
+ The SSL application provides secure communication over sockets.
+
+Package: erlang-syntax-tools
+Description-md5: 734d87e62fdb69e61b39974407f3d15f
+Description-en: Erlang/OTP modules for handling abstract Erlang syntax trees
+ Syntax_Tools contains modules for handling abstract Erlang syntax
+ trees in a way that is compatible with the "parse trees" of the
+ STDLIB module erl_parse, together with utilities for reading source
+ files in unusual ways and pretty-printing syntax trees. Also it
+ includes a module merger and renamer called Igor, as well as an
+ automatic code-cleaner.
+
+Package: erlang-tftp
+Description-md5: 8aac13f7fcaec29fd897b963f927502e
+Description-en: Erlang/OTP TFTP client and server
+ The tftp application implements client and server for file
+ transfer according to the Trivial File Transfer Protocol (TFTP).
+
+Package: erlang-tools
+Description-md5: 4285755cbac612fc7f4013b85cae332f
+Description-en: Erlang/OTP various tools
+ The Tools application contains a number of stand-alone tools, which are
+ useful when developing Erlang programs.
+ .
+  cover - A coverage analysis tool for Erlang.
+  cprof - A profiling tool that shows how many times each function
+    is called. Uses a kind of local call trace breakpoints containing
+    counters to achieve very low runtime performance degradation.
+  eprof - A time profiling tool; measures how time is used in Erlang
+    programs. Predecessor of fprof (see below).
+  fprof - Another Erlang profiler; measures how time is used in Erlang
+    programs. Uses trace to file to minimize runtime performance
+    impact, and displays time for calling and called functions.
+  instrument - Utility functions for obtaining and analyzing resource
+    usage in an instrumented Erlang runtime system.
+  make - A make utility for Erlang similar to UNIX make.
+  tags - A tool for generating Emacs TAGS files from Erlang source
+    files.
+  xref - A cross reference tool. Can be used to check dependencies
+    between functions, modules, applications and releases.
+
+Package: erlang-xmerl
+Description-md5: 222136c221feb614758c204affd11214
+Description-en: Erlang/OTP XML tools
+ The xmerl application contains modules for processing XML.
+
+Package: init
+Description-md5: 12a082503782e774ffe62fa80de49eb6
+Description-en: metapackage ensuring an init system is installed
+ This package is a metapackage which allows you to select from the available
+ init systems while ensuring that one of these is available on the system at
+ all times.
+
+Package: init-system-helpers
+Description-md5: facafbf6c4b9fd95c34e95938629ecef
+Description-en: helper tools for all init systems
+ This package contains helper tools that are necessary for switching between
+ the various init systems that Debian contains (e. g. sysvinit or
+ systemd). An example is deb-systemd-helper, a script that enables systemd unit
+ files without depending on a running systemd.
+ .
+ It also includes the "service", "invoke-rc.d", and "update-rc.d" scripts which
+ provide an abstraction for enabling, disabling, starting, and stopping
+ services for all supported Debian init systems as specified by the policy.
+ .
+ While this package is maintained by pkg-systemd-maintainers, it is NOT
+ specific to systemd at all. Maintainers of other init systems are welcome to
+ include their helpers in this package.
+
+Package: iproute2
+Description-md5: d10cc46ca4a9e5489b7d2c879fcfba17
+Description-en: networking and traffic control tools
+ The iproute2 suite is a collection of utilities for networking and
+ traffic control.
+ .
+ These tools communicate with the Linux kernel via the (rt)netlink
+ interface, providing advanced features not available through the
+ legacy net-tools commands 'ifconfig' and 'route'.
+
+Package: iproute2-doc
+Description-md5: 04b627412e2f9e6b31ebbbedd1b39794
+Description-en: networking and traffic control tools - documentation
+ The iproute2 suite is a collection of utilities for networking and
+ traffic control.
+ .
+ This package contains the documentation for iproute.
+
+Package: rabbitmq-server
+Description-md5: 78e91bfb996ee4ae5d16c93298f5f6e8
+Description-en: AMQP server written in Erlang
+ RabbitMQ is an implementation of AMQP, the emerging standard for high
+ performance enterprise messaging. The RabbitMQ server is a robust and
+ scalable implementation of an AMQP broker.
+
+Package: smartmontools
+Description-md5: ea81561661ccfc1b07aa52e4cc37874a
+Description-en: control and monitor storage systems using S.M.A.R.T.
+ The smartmontools package contains two utility programs (smartctl and smartd)
+ to control and monitor storage systems using the Self-Monitoring, Analysis and
+ Reporting Technology System (S.M.A.R.T.) built into most modern ATA and SCSI
+ hard disks. It is derived from the smartsuite package, and includes support
+ for ATA/ATAPI-5 disks. It should run on any modern Linux system.
+
