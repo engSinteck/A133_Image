@@ -1,0 +1,5 @@
+config NCS8801S_LVDS_EDP
+tristate "external ncs8801s lvds switch edp chip driver"
+default N
+help
+This is ncs8801s lvds switch edp driver

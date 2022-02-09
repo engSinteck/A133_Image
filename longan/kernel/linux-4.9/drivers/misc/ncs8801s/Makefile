@@ -1,0 +1,1 @@
+obj-$(CONFIG_NCS8801S_LVDS_EDP) += ncs8801s.o

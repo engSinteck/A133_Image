@@ -1,0 +1,7 @@
+config IT66121_RGB_TO_HDMI
+    tristate "external rgb switch hdmi chip driver"
+    default N
+    select SND_SUNXI_SOC_SUNXI_DAUDIO
+    help
+      This is rgb switch hdmi driver. Audio output depends on SUNXI_DAUDIO,
+      so select SND_SUNXI_SOC_SUNXI_DAUDIO.

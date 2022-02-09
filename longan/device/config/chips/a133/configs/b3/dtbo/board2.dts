@@ -1,0 +1,21 @@
+/dts-v1/;
+/plugin/;
+/ {
+  /* As DTS design, these properties only for loader, won't overlay */
+  compatible = "board_manufacturer,board_model";
+
+  /* These properties are examples */
+  board_id = <0x00000002>;
+  board_rev = <0x00000000>;
+  another_hw_information = "some_data";
+  soc_id = <0x68000000>;
+
+};
+
+&soc {
+	dtbo_version = <0x00000001>;
+	dtbo{
+		compatible = "allwinner,sunxi-dtbo";
+		dtbo_type = <2>;
+	};
+};

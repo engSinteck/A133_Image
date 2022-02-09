@@ -1,0 +1,9 @@
+menu "Device Drivers"
+
+source "driver/pmu/Kconfig"
+
+source "driver/twi/Kconfig"
+
+source "driver/watchdog/Kconfig"
+
+endmenu

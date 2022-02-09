@@ -1,0 +1,7 @@
+/dts-v1/;
+/plugin/;
+&soc {
+	device_type2 = "soc_test2";
+
+
+};

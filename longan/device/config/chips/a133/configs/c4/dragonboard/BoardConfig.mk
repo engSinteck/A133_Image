@@ -1,0 +1,1 @@
+LICHEE_KERN_DEFCONF := helpera133_dragonboard_defconfig
