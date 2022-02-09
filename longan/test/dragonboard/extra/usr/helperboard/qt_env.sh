@@ -8,9 +8,11 @@ do
 	if [ $? -eq "0" ]; then
 		export TSDEVICE=/dev/input/event$i
 		export QT_QPA_GENERIC_PLUGINS=evdevtouch:/dev/input/event$i
+	        export QT_QPA_EVDEV_TOUCHSCREEN_PARAMETERS=/dev/input/event$i:rotate=90
 	fi
 done
-export QWS_SIZE=480x272
+export QWS_SIZE=400x1280
+export TSLIB_CALIBFILE=/etc/pointercal
 export QT_QPA_FB_NO_LIBINPUT=1
 export QT_QPA_PLATFORM=linuxfb:tty=/dev/fb0
 export QT_QPA_FONTDIR=/usr/share/fonts
