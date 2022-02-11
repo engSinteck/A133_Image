@@ -1462,10 +1462,18 @@ pull up or pull down(default 0), driver level(default 1), data>
 		    status = "okay";
 	   };
 	   
-	   spi0: spi@05010000 {
-		status = "okay";
-	  };
-
+		spi1: spi@05011000 {
+			pinctrl-0 = <&spi1_pins_a &spi1_pins_b>;
+			pinctrl-1 = <&spi1_pins_c>;
+			spi_slave_mode = <0>;
+			status = "okay";
+			spidev@0 {
+                        	compatible = "rohm,dh2228fv";
+                        	reg = <0>;
+                        	spi-max-frequency = <1000000>;
+                	};
+		};
+	   
 		gmac0: eth@05020000 {
 			compatible = "allwinner,sunxi-gmac";
 		    reg = <0x0 0x05020000 0x0 0x10000>,
