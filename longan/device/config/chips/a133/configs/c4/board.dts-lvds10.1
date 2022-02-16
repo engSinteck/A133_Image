@@ -156,8 +156,8 @@
 			pwm2_pin_a: pwm2@0 {
 				allwinner,pins = "PD20";
 				allwinner,function = "pwm2";
-				allwinner,muxsel = <0x02>;
-				allwinner,drive = <0x2>;
+				allwinner,muxsel = <0x03>;
+				allwinner,drive = <0x3>;
 				allwinner,pull = <0>;
 				allwinner,data = <0xffffffff>;
 			};
@@ -174,8 +174,8 @@
 			pwm3_pin_a: pwm3@0 {
 				allwinner,pins = "PD21";
 				allwinner,function = "pwm3";
-				allwinner,muxsel = <0x02>;
-				allwinner,drive = <0x2>;
+				allwinner,muxsel = <0x03>;
+				allwinner,drive = <0x3>;
 				allwinner,pull = <0>;
 				allwinner,data = <0xffffffff>;
 			};
@@ -780,6 +780,18 @@
 			pinctrl-names = "active", "sleep";
 			pinctrl-0 = <&pwm0_pin_a>;
 			pinctrl-1 = <&pwm0_pin_b>;
+		};
+		
+		pwm2: pwm2@0300a000 {
+			pinctrl-names = "active", "sleep";
+			pinctrl-0 = <&pwm2_pin_a>;
+			pinctrl-1 = <&pwm2_pin_b>;
+		};
+		
+		pwm3: pwm3@0300a000 {
+			pinctrl-names = "active", "sleep";
+			pinctrl-0 = <&pwm3_pin_a>;
+			pinctrl-1 = <&pwm3_pin_b>;
 		};
 				
 		spi0: spi@05010000 {
@@ -1466,6 +1478,20 @@ pull up or pull down(default 0), driver level(default 1), data>
                         	reg = <0>;
                         	spi-max-frequency = <1000000>;
                 	};
+		};
+		
+		pwm2: pwm2@0300a000 {
+			pinctrl-names = "active", "sleep";
+			pinctrl-0 = <&pwm2_pin_a>;
+			pinctrl-1 = <&pwm2_pin_b>;
+			status = "okay";
+		};
+		
+		pwm3: pwm3@0300a000 {
+			pinctrl-names = "active", "sleep";
+			pinctrl-0 = <&pwm3_pin_a>;
+			pinctrl-1 = <&pwm3_pin_b>;
+			status = "okay";
 		};
 	   
 		gmac0: eth@05020000 {
