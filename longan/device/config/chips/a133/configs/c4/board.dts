@@ -781,7 +781,7 @@
 			pinctrl-0 = <&pwm0_pin_a>;
 			pinctrl-1 = <&pwm0_pin_b>;
 		};
-
+				
 		spi0: spi@05010000 {
 			pinctrl-0 = <&spi0_pins_a &spi0_pins_b>;
 			pinctrl-1 = <&spi1_pins_c>;
@@ -1448,20 +1448,14 @@ pull up or pull down(default 0), driver level(default 1), data>
 		    uart2_type = <2>;
 			uart2_port = <2>;
 		    status = "okay";
-	   };
+	   	};
 
 		uart3: uart@05000c00 {
 		    uart2_type = <2>;
 			uart2_port = <3>;
 		    status = "okay";
-	   };
+	   	};
 
-		uart4: uart@05001000 {
-		    uart2_type = <2>;
-			uart2_port = <4>;
-		    status = "okay";
-	   };
-	   
 		spi1: spi@05011000 {
 			pinctrl-0 = <&spi1_pins_a &spi1_pins_b>;
 			pinctrl-1 = <&spi1_pins_c>;
@@ -1494,7 +1488,7 @@ pull up or pull down(default 0), driver level(default 1), data>
 			gmac-power1 = "axp81x_eldo2:1800000";
 			gmac-power2 = "axp81x_fldo1:1200000";
 		    status = "okay";
-	    };
+	    	};
 
 		pio: pinctrl@0300b000 {
 			gmac_pins_baijie: gmac@2 {
@@ -1515,6 +1509,7 @@ pull up or pull down(default 0), driver level(default 1), data>
 		};
 
 	};
+	
 	gpu: gpu@0x01800000 {
 			gpu_idle = <0>;
 			dvfs_status = <1>;
