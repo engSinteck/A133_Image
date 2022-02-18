@@ -1457,15 +1457,15 @@ pull up or pull down(default 0), driver level(default 1), data>
 		};
 
 		uart2: uart@05000800 {
-		    uart2_type = <2>;
-			uart2_port = <2>;
-		    status = "okay";
+			uart2_type = <2>;
+		   	uart2_port = <2>;
+		    	status = "okay";
 	   	};
 
 		uart3: uart@05000c00 {
-		    uart2_type = <2>;
+		    	uart2_type = <2>;
 			uart2_port = <3>;
-		    status = "okay";
+		    	status = "okay";
 	   	};
 
 		spi1: spi@05011000 {
@@ -1495,25 +1495,24 @@ pull up or pull down(default 0), driver level(default 1), data>
 			pwms = <&pwm3 0 20000 0>;
 			status = "okay";
 		};
-		/*
+
 		leds {
-			compatible = "gpio-leds";
-			pinctrl-names = "default";
-			pinctrl-0 = <&work_led_gpio>, <&diy_led_gpio>;
-
-			work-led {
-				label = "work";
-				default-state = "on";
-				gpios = <&gpio0 RK_PB3 GPIO_ACTIVE_HIGH>;
+			compatible = "allwinner,gpio-leds";
+			status = "okay";
+			
+			status-led {
+				label = "status-led";
+				status-led = <&pio PH 13 1 0 1 0>;
+				status = "okay";
 			};
-
-			diy-led {
-				label = "diy";
-				default-state = "off";
-				gpios = <&gpio0 RK_PA2 GPIO_ACTIVE_HIGH>;
+			
+			fail-led {
+				label = "fail-led";
+				status-led = <&pio PH 19 1 0 1 0>;
+				status = "okay";
 			};
 		};
-	       */
+		
 		gmac0: eth@05020000 {
 			compatible = "allwinner,sunxi-gmac";
 		    reg = <0x0 0x05020000 0x0 0x10000>,
