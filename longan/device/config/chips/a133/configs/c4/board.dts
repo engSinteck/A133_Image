@@ -1496,23 +1496,6 @@ pull up or pull down(default 0), driver level(default 1), data>
 			status = "okay";
 		};
 
-		leds {
-			compatible = "allwinner,gpio-leds";
-			status = "okay";
-			
-			status-led {
-				label = "status-led";
-				status-led = <&pio PH 13 1 0 1 0>;
-				status = "okay";
-			};
-			
-			fail-led {
-				label = "fail-led";
-				status-led = <&pio PH 19 1 0 1 0>;
-				status = "okay";
-			};
-		};
-		
 		gmac0: eth@05020000 {
 			compatible = "allwinner,sunxi-gmac";
 		    reg = <0x0 0x05020000 0x0 0x10000>,
